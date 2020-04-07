@@ -1,25 +1,31 @@
 *{box-sizing: border-box;}
 body{margin: 0;}
 img.BG {
-	max-width: 100%;
+	width: 100%;
+	height: 100%;
 	position: fixed;
 	top: 0;
-	left: 10px}
+	left: 0}
 img.BGL{
-	max-height: 100%;
+	height: 100%;
 	position: fixed;
 	top: 0;
 	left: 0;}	
 img.BGR{
-	max-height: 100%;
+	height: 100%;
 	position: fixed;
 	top: 0;
 	right: 0;}
-
-span.MN{
-	position: fixed;
+#main-content {
+	position: absolute;
+    width: 4%;
+    height: 5%;
     top: 4%;
-    left: 48%;
+    left: 48%;}
+#main-content span:nth-child(1){
+	width: 100%;
+	height: 100%;
+	position: relative;
     color: white;
     font-size: 23px;
     font-family: serif;
@@ -31,10 +37,13 @@ span.MN{
 	60%{color: #44B3C2}
 	80%{color: #9F6164}
 	100%{color: #218C8D}}
-span.MN1{
-	position: fixed;
-    top: 10%;
-    left: 41%;
+#main-content1 {
+	position: absolute;
+    width: 20%;
+    top: 8%;
+    left: 41%;}
+#main-content1 span:nth-child(1){
+	position: relative;
     color: white;
     font-family: cursive;
     font-size: 36px;
@@ -46,12 +55,15 @@ span.MN1{
 	60%{color: #44B3C2}
 	80%{color: #9F6164}
 	100%{color: #218C8D}}
-img.PHT{
-	max-height: 100%;
-	position: fixed;
-	top: 20px;
-    left: 150px;
-	max-width: 380px;
+#main-image {
+	position: absolute;
+    width: 26%;
+	top: 5%;
+    left: 12%;
+}
+#main-image img:nth-child(1){
+	width: 100%;
+	position: relative;
 	animation:PHT 1s linear infinite }
 @keyframes PHT{
 	0%{opacity: 1;transform: scale(0.85, 0.85)}
@@ -59,13 +71,16 @@ img.PHT{
 	40%{opacity: 0.2}
 	60%{opacity: 1}
 	80%{opacity: 0.5}
-	100%{opacity: 0.2}}		
-img.PHP{
-	max-height: 100%;
-	position: fixed;
-	top: 20px;
-    right: 150px;
-	max-width: 380px;
+	100%{opacity: 0.2}}	
+#main-image1 {
+	position: absolute;
+    width: 26%;
+	top: 5%;
+    right: 12%;
+}	
+#main-image1 img:nth-child(1){
+	width: 100%;
+	position: relative;
 	animation:PHP 1s linear infinite }
 @keyframes PHP{
 	0%{opacity: 1;transform: scale(0.85, 0.85)}
@@ -73,28 +88,35 @@ img.PHP{
 	40%{opacity: 0.2}
 	60%{opacity: 1}
 	80%{opacity: 0.5}
-	100%{opacity: 0.2}}		
-img.PHD{
+	100%{opacity: 0.2}}	
+#main-image2 {
+	position: absolute;
+    width: 26%;
+	bottom: 0%;
+    left: 12%;
+}		
+#main-image2 img:nth-child(1){
 	max-height: 100%;
-	position: fixed;
-	top: 350px;
-    left: 200px;
-	max-width: 380px;
+	position: relative;
+	width: 100%;
 	animation:PHD 1s linear infinite }	
 @keyframes PHD{
-	0%{opacity: 1;transform: scale(1.1, 1.1)}
+	0%{opacity: 1;transform: scale(0.85, 0.85)}
 	20%{opacity: 0.5}
 	40%{opacity: 0.2}
 	60%{opacity: 1}
 	80%{opacity: 0.5}
 	100%{opacity: 0.2}}	
-img.GN{
-	max-height: 100%;
-	position: fixed;
-	top: 450px;
+#main-image3 {
+	position: absolute;
+    width: 26%;
+	bottom: 0%;
     right: 9%;
-	max-width: 300px;
-	animation:run 3s ease-out infinite }	
+}	
+#main-image3 img:nth-child(1){
+	position: relative;
+	width: 100%;
+	animation:run 2s ease-out infinite }	
 @keyframes run{
 	from {right: 9%}
-	to {right: 18%}}
+	to {right: 22%}}
