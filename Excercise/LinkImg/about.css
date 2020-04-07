@@ -1,0 +1,20 @@
+a:link {
+	color: black;
+}
+
+.abc:visited {
+	color: red;
+}
+.abc:hover{
+	color: blue;
+}
+.abc:active{
+	color: green;
+}
+img{
+
+	width: 30%;
+}
+p{
+	margin-left: 20px;
+}

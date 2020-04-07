@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="detail.css" type="text/css">
+</head>
+<body>
+	<a href="index.html">Trang Chủ</a>
+	<h1>CSS và cách sử dụng trên HTML</h1>
+	<p>CSS: Cascading style sheets. <br>
+	CSS dùng để trình bày nội dung, có 3 cách trình bày:</p>
+	<p>Inline style: Nhúng trực tiếp vào trong các Tag. <br>
+		Internal Style: Sử dụng thẻ style nhúng trực tiếp trong tag Head. <br>
+	Enternal Style: Sử dụng thẻ link liên kết bên trong vs bên ngoài bằng CSS </p>
+	**Lưu Ý: nên dùng Enternal style.
+	<p><b><u>Excercise:</u></b> <br>
+	Đâu là cú pháp đúng để nhúng file style.css vào trang HTML?: <b>link rel="stylesheet" type="text/css" href="style.css"</b></p>
+	<p>Để sử dụng Internal style & inline ta phải dùng thẻ nào?: <b>style</b></p>
+	<p>Để sử dụng External style ta phải dùng thẻ nào?: <b>LInk</b></p>
+	<h1>CSS và cách sử dụng trên trang HTML- Syntax</h1>
+	<p>Dấu ; dùng để ngăn cách khi có nhiều Attribute trên cùng 1 element. <br>
+	Có nhiều kiểu màu, nhưng nên dùng 3 kiểu chính sau:
+		- Color names: Gọi tên tiếng anh. <br>
+		- Hexadecimal colors: Dùng bảng mã hexa. <br>
+	- RGB Colors: Red-Blue-Green, phối màu.</p>
+	<p>Note: Khi có hai thuộc tính giống nhau thì thuộc tính sau sẽ đè lên thuộc tính trước đó & cái chi tiết hơn sẽ ưu tiên hơn. <br>
+	- Khi muốn giữ lại thuộc tính nào ta sử dụng lệnh: <b>!Important</b>.</p>
+	<h1>CSS Selectors</h1>
+	<p>Có rất nhiều selectors: có 3 loại chính: Element, ID, Class. <br>
+		Group Selector năng cách bởi dấu phẩy( Nhóm các selector cùng style). <br>
+		Cú pháp: #iD và .Class (ID chỉ dùng một lân, còn class dùng không giới hạn) <br>
+		Đặt tên chi ID & Class không bắt đầu bằng số, và dùng tiếng việt có dấu. <br>
+		Mức độ ưu tiên của selectors( khi style trùng nhau giảm dần): <br> 
+		<b>Inline style -> ID selector => class selector => element selector.</b>
+		Một số Selector hay dùng: <br>
+		<b>*</b> : Chọn tất cả element. <br>
+		<b>.box1, .box2</b> : Chọn toàn bộ element có class="box1" và toàn bộ element có class="box2". <br>
+		<b>.box1.box2</b> : 	Chọn những element mà có đồng thời cả 2 class "box1" và "box2" (class="box1 box2") <br>
+		<b>.box1 .box2</b> : 	Chọn toàn bộ element có class="box2" mà nằm bên trong element có class="box1" <br>
+		<b>.box1 > .box2</b> : Chọn những element có class="box2" mà bao quanh trực tiếp bởi element có class="box1".
+	</p>
+	<h1>Styling Text</h1>
+	<p>Các Attribute thường dùng:<br>
+		<b>- Text-align</b>: căn vị trí text- trái-phải-giữa- đều hai bên. <br>
+	<b>- Text-transformation </b>: Chuyển chữ sang dạng viêt hoa, thường, hoặc chữ cái đầu viết hoa. <br>
+<b>- Text-decoration</b>: Thêm dấu gạch ngang, gạch chân... <br>
+<b>Font-size</b>: Cỡ chữ. Tiêu đề thông thường có cỡ chữ gấp 1,5 lần font-size.</p>
+<b>Font-style</b>: 	Xác định loại chữ.. <br>
+<b>font-variant</b>: Chuyển đổi kiểu chữ (thường thành hoa). <br>
+<b>font-weight</b>: 	Hiển thị chữ đậm hay thường. <br>
+<b>font-family</b>: Xác định giá trị font family cho chữ: arial...
+<p><i>Đơn vị đo lường trong CSS:</i><br>
+ - Px: Pixels( Điểm ảnh trên màn hình máy tính). <br>
+- Em(tương đương với kích thước của font-size hiện dùng). VD: Font-size 16px => 1 em= 16px. <br>
+- %: Áp dụng được cho nhiều giao diện.</p>
+<b><u>Excercise:</u></b>
+<p>Những đơn vị nào sau đây có thể dùng trong CSS? px,pc,pt. <br>
+Những đơn vị nào sau đây không có trong CSS? dm, m. <br>
+</p>
+	<h1>HDSD Chorme Developer Tools= Chrome Dev tool</h1>	
+	F12: Inspect Element để test. <br>
+	<u><b>Excercise:</b></u>	<br>
+	<p>Ký hiệu user agent stylesheet trên tab Styles của DevTools có nghĩa là gì?: Là style mặc định của browser <br>	Style bị gạch ngang trong Chrome DevTools có nghĩa là gì?: Style đó không hợp lệ, bị style khác đè lên, bị người dùng disable. <br> Dùng Chrome DevTools chỉnh sửa style của trang web khác có làm trang web đó bị vỡ giao diện hay không? Không.</p>
+<p></p>
+</body>
+</html>

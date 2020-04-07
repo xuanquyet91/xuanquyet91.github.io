@@ -1,0 +1,46 @@
+*{
+	max-width: 1100px;
+	margin: auto;
+}
+nav{
+	background: #a70e1a;
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+nav a{
+	display: inline-table;
+	padding: 20px;
+	color: white;
+	text-decoration: none;
+	font-size: 20px;
+}
+article b{
+	font-size: 20px;
+}
+main p{
+	font-size: 16px;
+	text-indent: 20px;
+}
+img{
+	margin-left: 20%;
+}
+aside a{
+	text-decoration: none;
+	color: blue;
+}
+footer{
+	margin-top:  30px;
+	text-align:center;
+	background: grey;
+}
+address p{
+	color: white;
+	padding: 5px;
+}
+header nav a:hover{
+	color: blue;
+}
+aside a:hover{
+	color: red;
+}
