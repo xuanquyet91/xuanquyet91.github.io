@@ -39,7 +39,7 @@ switch (new Date().getMonth() + 1){
 // Bài 2. Một sinh viên có điểm kiểm tra môn lập trình web là x dưới dạng số (0 <= x <= 10).
 //  Hãy chuyển điểm số sang dạng chữ với điều kiện sau:
 
-function diemthi(x){
+function score(x){
 	if (x < 4) {
 		console.log("Điểm F");
 		//dk 1 đúng
@@ -63,25 +63,25 @@ function diemthi(x){
 //với tham số truyền vào là mã quốc gia, sử dụng switch và mặc định dịch sang tiếng Việt.
 
 function translate(maQG) {
-switch (maQG) {
-  case "VN": 
-  case "JP":
-  case "UK":
-  case "US":
-  case "UZ":
-    document.write("Xin Chào")
-  break;
-  default:
-    document.write("Lỗi")
-  break;
- }
+	switch (maQG) {
+	  case "VN": 
+	  case "JP":
+	  case "UK":
+	  case "US":
+	  case "UZ":
+	    document.write("Xin Chào")
+	  break;
+	  default:
+	    document.write("Lỗi")
+	  break;
+	 }
 }
 
 // Bài 4: - Bài 4. Cho 1 mảng chỉ gồm các giá trị true và false. 
 // Hãy kiểm tra xem giá trị true xuất hiện lần đầu trong mảng ở vị trí nào.
 // Booleann(["false","false","false","true","true"])
 
-function Booleann(arr){
+function boolean(arr){
 	for (var i = 0; i < arr.length; i++) {
 		(i);
 		if (arr[i] == "true") {

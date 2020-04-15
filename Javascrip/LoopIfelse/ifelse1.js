@@ -4,9 +4,9 @@ console.log("hello")
 // kiểm tra xem 2 tham số có phải là number không và tìm ra số lớn nhất 
 // trong 2 số đó.
 
-function Solon(y,z){
-	if (typeof y == "number" & typeof z == "number") {
-		return Math.max(y,z);
+function nubmax(x,y){
+	if (typeof x == "number" & typeof y == "number") {
+		return Math.max(x,y);
 	}else
 		return "False";
 }
@@ -16,15 +16,15 @@ function Solon(y,z){
 // Bài 3: Cho 1 mảng các số bất kỳ. 
 // Tạo ra 1 mảng mới chỉ chứa các số chẵn lấy ra từ mảng trên 
 // và sắp xếp theo thứ tự giảm dần.
-// if (dk[i] % 2. TEST: sochan([2,3,11,8,9,10])
+// if (dk[i] % 2. TEST: even([2,3,11,8,9,10])
 
-function sochan(dk){
-	console.log(dk.sort(function(a, b){return b - a}));
-		for (var i = 0; i < dk.length; i++) {
+function even(arr){
+	console.log(arr.sort(function(a, b){return b - a}));
+		for (var i = 0; i < arr.length; i++) {
 			var final = 1;
-			if (dk[i] % 2 !== 0) { continue;
-			} document.write((final= dk[i] * final)+ '<br>') ;
-		} 
+			if (arr[i] % 2 !== 0) { continue;
+			} document.write('[' + (final= arr[i] * final) + ']');
+		}
 	}
 
 //Bài 4: 	Một trang web cho phép người dùng tạo tài khoản. 
@@ -46,7 +46,7 @@ function sochan(dk){
 //	obj.username = a;
 
 
-function nhap(a,b,c){
+function douCheck(a,b,c){
 	var obj = { username: "username", password: "secret", confirm: "secret"};
 	obj.username = a;
 	obj.password = b;
@@ -66,5 +66,5 @@ function nhap(a,b,c){
 			arr.push('pass')
 		}else 
 			arr.push('fail')
-	document.write(arr);
+		document.write(arr);
 } 
