@@ -20,12 +20,19 @@ function nubmax(x,y){
 
 function even(arr){
 	console.log(arr.sort(function(a, b){return b - a}));
-		for (var i = 0; i < arr.length; i++) {
-			var final = 1;
-			if (arr[i] % 2 !== 0) { continue;
-			} document.write('[' + (final= arr[i] * final) + ']');
-		}
+	var total = [];
+	// có mảng rỗng
+	for (var i = 0; i < arr.length; i++) {
+		if (arr[i] % 2 !== 0) { 
+			continue;
+		} 
+		console.log(arr[i]);
+		console.log(total.push(arr[i]))
+		// push kết quả vào mảng mảng rông
 	}
+	return total;
+	// trả ra cái mảng rỗ ở trên 
+}
 
 //Bài 4: 	Một trang web cho phép người dùng tạo tài khoản. 
 //Hãy viết hàm kiểm tra tính hợp lệ của thông tin người dùng nhập vào.
