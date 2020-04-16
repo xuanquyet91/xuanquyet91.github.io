@@ -19,19 +19,19 @@ function nubmax(x,y){
 // if (dk[i] % 2. TEST: even([2,3,11,8,9,10])
 
 function even(arr){
-	console.log(arr.sort(function(a, b){return b - a}));
 	var total = [];
 	// có mảng rỗng
 	for (var i = 0; i < arr.length; i++) {
 		if (arr[i] % 2 !== 0) { 
 			continue;
 		} 
-		console.log(arr[i]);
-		console.log(total.push(arr[i]))
+		arr[i];
+		total.push(arr[i]);
 		// push kết quả vào mảng mảng rông
 	}
-	return total;
+	 total;
 	// trả ra cái mảng rỗ ở trên 
+	return (total.sort(function(a, b){return b - a}));
 }
 
 //Bài 4: 	Một trang web cho phép người dùng tạo tài khoản. 
@@ -51,13 +51,10 @@ function even(arr){
 //	var c = obj.confirm;
 //	var obj= {};
 //	obj.username = a;
+//	test: gán ở console.log: var obj = { username: "username", password: "secret", confirm: "secret"};
+// douCheck({username: "bongda", password: "a", confirm: "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"})
 
-
-function douCheck(a,b,c){
-	var obj = { username: "username", password: "secret", confirm: "secret"};
-	obj.username = a;
-	obj.password = b;
-	obj.confirm = c;
+function douCheck(obj){
 	var arr = [];
 	if (obj.username !== null && obj.username.length <20) {
 			arr.push('pass')

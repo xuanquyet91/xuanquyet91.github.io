@@ -3,36 +3,36 @@ console.log('hello')
 // Bài 1: Bài 1. In ra màn hình ngày, tháng năm hiện tại và xác định đó là mùa nào trong năm. 
 // Ví dụ lấy ngày tháng năm hiện tại bằng đối tượng Date của javascript:
  
-var date = new Date().getDate();
-var month = new Date().getMonth() + 1;
-var year = new Date().getFullYear();
-var arr = [];
-switch (new Date().getMonth() + 1){
-	case 1:
-	case 2:
-	case 3:
-		document.write(arr= 'Đây là mùa Xuân' +' '+ date +'/' + month +'/' + year + '.');
-		break;
-	case 4:
-	case 5:
-	case 6:
-	arr.push('Đây là mùa Hạ')
-		document.write(arr +' '+ (new Date().getDate()) +'/' + (new Date().getMonth() + 1) +'/' + (new Date().getFullYear())+ '.');
-		break;
-	case 7:
-	case 8:
-	case 9:
-		document.write(arr= 'Đây là mùa Thu' +' '+ (new Date().getDate()) +'/' + (new Date().getMonth() + 1) +'/' + (new Date().getFullYear())+ '.');
-		break;
-	case 10:
-	case 11:
-	case 12:
-		document.write(arr= 'Đây là mùa Đông' +' '+ (new Date().getDate()) +'/' + (new Date().getMonth() + 1) +'/' + (new Date().getFullYear())+ '.');
-		break;
-	default:
-    	document.write(arr= 'Đây là Lỗi');
-    	break;
-}	
+ function nowseason(){
+	var date = new Date().getDate();
+	var month = new Date().getMonth() + 1;
+	var year = new Date().getFullYear();
+	switch (new Date().getMonth() + 1){
+		case 1:
+		case 2:
+		case 3:
+			document.write('Đây là mùa Xuân' +' '+ date +'/' + month +'/' + year + '.');
+			break;
+		case 4:
+		case 5:
+		case 6:
+			document.write('Đây là mùa Hạ'+' '+ (new Date().getDate()) +'/' + (new Date().getMonth() + 1) +'/' + (new Date().getFullYear())+ '.');
+			break;
+		case 7:
+		case 8:
+		case 9:
+			document.write('Đây là mùa Thu' +' '+ (new Date().getDate()) +'/' + (new Date().getMonth() + 1) +'/' + (new Date().getFullYear())+ '.');
+			break;
+		case 10:
+		case 11:
+		case 12:
+			document.write('Đây là mùa Đông' +' '+ (new Date().getDate()) +'/' + (new Date().getMonth() + 1) +'/' + (new Date().getFullYear())+ '.');
+			break;
+		default:
+	    	document.write( 'Đây là Lỗi');
+	    	break;
+	}	
+}
 
 
 
@@ -62,30 +62,40 @@ function score(x){
 //- Bài 3. Viết hàm translate() có tác dụng dịch từ "Hello" sang 5 thứ tiếng khác nhau (tự chọn)
 //với tham số truyền vào là mã quốc gia, sử dụng switch và mặc định dịch sang tiếng Việt.
 
-function translate(maQG) {
-	switch (maQG) {
+function translate(code) {
+	switch (code) {
 	  case "VN": 
+	  	document.write("Xin Chào");
+	  	break;
 	  case "JP":
+	  	document.write("こんにちは");
+	  	break;
 	  case "UK":
+	  	document.write("Hi");
+	  	break;
 	  case "US":
+	  	document.write("Hello");
+	  	break;
 	  case "UZ":
-	    document.write("Xin Chào")
+	    document.write("Salom");
 	  break;
 	  default:
-	    document.write("Lỗi")
+	    document.write("Xin Chào");
 	  break;
 	 }
 }
 
 // Bài 4: - Bài 4. Cho 1 mảng chỉ gồm các giá trị true và false. 
 // Hãy kiểm tra xem giá trị true xuất hiện lần đầu trong mảng ở vị trí nào.
-// Booleann(["false","false","false","true","true"])
+// checkArr([0,"",0,0,"false",90,"true"])
+// checkArr([0,"",0,"false",90,"true"])
 
-function boolean(arr){
+function checkArr(arr){
 	for (var i = 0; i < arr.length; i++) {
-		(i);
-		if (arr[i] == "true") {
-			break;
-		}
-	}	return (i);
-}
+			i;
+			if (Boolean(arr[i]) == true) {
+				break;
+			}
+		}return i;
+	}
+
