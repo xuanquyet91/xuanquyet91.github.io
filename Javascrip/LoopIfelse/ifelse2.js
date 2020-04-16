@@ -92,7 +92,6 @@ function translate(code) {
 
 function checkArr(arr){
 	for (var i = 0; i < arr.length; i++) {
-			i;
 			if (Boolean(arr[i]) == true) {
 				break;
 			}

@@ -72,7 +72,7 @@ function sortArr(arr){
 function surplus(arr){
 	var final = [];
 	for (var i=0; i < arr.length; i= i + 1){
-		console.log(final.push(arr[i]%2))
+		final.push(arr[i]%2);
 	}return final;
 }
 
