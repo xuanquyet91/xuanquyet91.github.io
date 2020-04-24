@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="dom.js"></script>
+</head>
+<body>
+	<div class="box">
+		<p id="p1">BN269 là nam, 23 tuổi, địa chỉ gia đình ở Hương Mai, Việt Yên, Bắc Giang</p>
+		<p id="p2">BN270 là nữ, 22 tuổi, địa chỉ gia đình ở Đông Thắng, Tiến Dũng, Yên Dũng, Bắc Giang.</p>
+		<p id="p3">Cả 2 trường hợp này đều là du học sinh nhập cảnh từ Nhật về sân bay Vân Đồn ngày 22/4 trên chuyến bay VN311, được cách ly tập trung tại Trường Quân sự tỉnh Thái Bình.</p>
+	</div>
+	<script>
+		function changeColor(){
+			p1.style.color = 'blue'
+			p2.style.color = 'yellow'
+			p3.style.color = 'red'}
+
+		function changeBgColor(color){
+			 document.body.style.background = color;}
+
+		function copyContent(paragraph1, paragraph2){
+			var paragraph1 = document.getElementById("p1");
+			var paragraph2 = document.getElementById("p2");
+			p1.innerHTML = "BN270 là nữ, 22 tuổi, địa chỉ gia đình ở Đông Thắng, Tiến Dũng, Yên Dũng, Bắc Giang.";}
+
+		function changeFontSize(x){
+			var x = document.getElementsByclass("box");
+			document.box.style.fontSize = x;
+		}
+
+	</script>
+</body>
+</html>
