@@ -24,17 +24,17 @@
 
 		function copyContent(paragraph1, paragraph2){
 			if (paragraph2 == p2  && paragraph1 == p1 ){
-					p1.innerHTML = "BN270 là nữ, 22 tuổi, địa chỉ gia đình ở Đông Thắng, Tiến Dũng, Yên Dũng, Bắc Giang.";
+					p1.innerHTML = document.getElementById('p2').textContent;
 			}else if(paragraph2 == p2 && paragraph1 == p3){
-					p3.innerHTML = "BN270 là nữ, 22 tuổi, địa chỉ gia đình ở Đông Thắng, Tiến Dũng, Yên Dũng, Bắc Giang.";
+					p3.innerHTML = document.getElementById('p2').textContent;
 			}else if(paragraph2 == p1 && paragraph1 == p2){
-					p2.innerHTML = "BN269 là nam, 23 tuổi, địa chỉ gia đình ở Hương Mai, Việt Yên, Bắc Giang.";
+					p2.innerHTML = document.getElementById('p1').textContent;
 			}else if(paragraph2 == p1 && paragraph1 == p3){
-					p3.innerHTML = "BN269 là nam, 23 tuổi, địa chỉ gia đình ở Hương Mai, Việt Yên, Bắc Giang.";
+					p3.innerHTML = document.getElementById('p1').textContent;
 			}else if(paragraph2 == p3 && paragraph1 == p1){
-					p1.innerHTML = "Cả 2 trường hợp này đều là du học sinh nhập cảnh từ Nhật về sân bay Vân Đồn ngày 22/4 trên chuyến bay VN311, được cách ly tập trung tại Trường Quân sự tỉnh Thái Bình.";
+					p1.innerHTML = document.getElementById('p3').textContent;
 			}else if(paragraph2 == p3 && paragraph1 == p2){
-					p2.innerHTML = "Cả 2 trường hợp này đều là du học sinh nhập cảnh từ Nhật về sân bay Vân Đồn ngày 22/4 trên chuyến bay VN311, được cách ly tập trung tại Trường Quân sự tỉnh Thái Bình.";	
+					p2.innerHTML = document.getElementById('p3').textContent;
 			}
 		}
 
@@ -45,99 +45,32 @@
 			document.body.style.fontSize = x+'px';
 		}
 //function increaseFontSize(paragraph): Tăng kích thước font chữ của đoạn văn mong muốn (tham số truyền vào là id đoạn văn hoặc thứ tự đoạn văn) lên 1 pixel so với kích thước hiện tại, kích thước tăng lên không được vượt quá 30 pixels (Sử dụng sau khi gọi hàm changeFontSize() hoặc dùng window.getComputedStyle).
-
+		
 		function increaseFontSize(paragraph){
-			if (paragraph == p2){	
-				var para = document.getElementById('p2');
-				var compStyles = window.getComputedStyle(para);
-				var x = compStyles.getPropertyValue('font-size');
-				var num = Number(x.slice(0,-2));
-				num += 1;
-				if (paragraph == p1 && num <= 30) {
-					document.getElementById('p1').style.fontSize = num + 'px'; 
-				}else if (paragraph == p2 && num <= 30) {
-					document.getElementById('p2').style.fontSize = num + 'px'; 
-				}else if (paragraph == p3 && num <= 30) {
-					document.getElementById('p3').style.fontSize = num + 'px'; 
+			var para = document.getElementById(paragraph);
+			var compStyles = window.getComputedStyle(para);
+			var x = compStyles.getPropertyValue('font-size');
+			var num = Number(x.slice(0,-2));
+			num -= 1;
+				if (num <= 30) {
+					document.getElementById(paragraph).style.fontSize = num + 'px';
 				}
-			}	
-			if (paragraph == p1){	
-				var para = document.getElementById('p1');
-				var compStyles = window.getComputedStyle(para);
-				var x = compStyles.getPropertyValue('font-size');
-				var num = Number(x.slice(0,-2));
-				num += 1;
-				if (paragraph == p1 && num <= 30) {
-					document.getElementById('p1').style.fontSize = num + 'px'; 
-				}else if (paragraph == p2 && num <= 30) {
-					document.getElementById('p2').style.fontSize = num + 'px'; 
-				}else if (paragraph == p3 && num <= 30) {
-					document.getElementById('p3').style.fontSize = num + 'px'; 
-				}
-			}
-			if (paragraph == p3){	
-				var para = document.getElementById('p3');
-				var compStyles = window.getComputedStyle(para);
-				var x = compStyles.getPropertyValue('font-size');
-				var num = Number(x.slice(0,-2));
-				num += 1;
-				if (paragraph == p1 && num <= 30) {
-					document.getElementById('p1').style.fontSize = num + 'px'; 
-				}else if (paragraph == p2 && num <= 30) {
-					document.getElementById('p2').style.fontSize = num + 'px'; 
-				}else if (paragraph == p3 && num <= 30) {
-					document.getElementById('p3').style.fontSize = num + 'px'; 
-				}
-			}
 		}
+		
 //function decreaseFontSize(paragraph): Giảm kích thước font chữ của đoạn văn mong muốn (tham số truyền vào là id đoạn văn hoặc thứ tự đoạn văn) xuống 1 pixels so với kích thước hiện tại, kích thước giảm xuống không vượt quá 10 pixels.
 
 		function decreaseFontSize(paragraph){
-				if (paragraph == p2){	
-				var para = document.getElementById('p2');
-				var compStyles = window.getComputedStyle(para);
-				var x = compStyles.getPropertyValue('font-size');
-				var num = Number(x.slice(0,-2));
-				num -= 1;
-				if (paragraph == p1 && num >= 10) {
-					document.getElementById('p1').style.fontSize = num + 'px'; 
-				}else if (paragraph == p2 && num >= 10) {
-					document.getElementById('p2').style.fontSize = num + 'px'; 
-				}else if (paragraph == p3 && num >= 10) {
-					document.getElementById('p3').style.fontSize = num + 'px'; 
+			// if (paragraph == p2){	
+			var para = document.getElementById(paragraph);
+			//console.log(para)
+			var compStyles = window.getComputedStyle(para);
+			var x = compStyles.getPropertyValue('font-size');
+			var num = Number(x.slice(0,-2));
+			num -= 1;
+				if (num >= 10) {
+					document.getElementById(paragraph).style.fontSize = num + 'px'; 
 				}
-			}	
-			if (paragraph == p1){	
-				var para = document.getElementById('p1');
-				var compStyles = window.getComputedStyle(para);
-				var x = compStyles.getPropertyValue('font-size');
-				var num = Number(x.slice(0,-2));
-				num -= 1;
-				if (paragraph == p1 && num >= 10) {
-					document.getElementById('p1').style.fontSize = num + 'px'; 
-				}else if (paragraph == p2 && num >= 10) {
-					document.getElementById('p2').style.fontSize = num + 'px'; 
-				}else if (paragraph == p3 && num >= 10) {
-					document.getElementById('p3').style.fontSize = num + 'px'; 
-				}
-			}
-			if (paragraph == p3){	
-				var para = document.getElementById('p3');
-				var compStyles = window.getComputedStyle(para);
-				var x = compStyles.getPropertyValue('font-size');
-				var num = Number(x.slice(0,-2));
-				num -= 1;
-				if (paragraph == p1 && num >= 10) {
-					document.getElementById('p1').style.fontSize = num + 'px'; 
-				}else if (paragraph == p2 && num >= 10) {
-					document.getElementById('p2').style.fontSize = num + 'px'; 
-				}else if (paragraph == p3 && num >= 10) {
-					document.getElementById('p3').style.fontSize = num + 'px'; 
-				}
-			}
 		}
-
-
 	</script>
 </body>
 </html>
