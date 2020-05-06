@@ -1,0 +1,42 @@
+html {
+	background-image: linear-gradient(to right top, #a1aae3, #b0afe6, #bdb5e8, #cabbeb, #d6c1ed, #d2c8f2, #d0cef5, #ced4f8, #c2daf6, #bedff0, #c1e2e9, #c9e3e2)
+}	
+body {
+    width: 1000px;
+    margin: auto;
+}
+#warp{
+	background-color: #C9E3E2;
+}
+h1 {
+	text-align: center;
+}
+#main_contain {
+	 list-style-type: none;
+}
+ul > b{
+    margin-bottom: 10px;
+    display: block;
+}
+ul > li{
+    list-style-type: none;
+	margin-left: 15px;
+    margin-bottom: 2px;
+}
+input[type="button"] {
+    width: 28%;
+    text-align: left;
+}
+#result{
+	text-align: center;
+}
+input.final {
+    width: 30%;
+    text-align: center;
+    padding: 5px;
+}
+input.remove {
+    width: 30%;
+    text-align: center;
+    padding: 5px;
+}
