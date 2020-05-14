@@ -1,5 +1,5 @@
 var cards = ['f1', 'f2', 'f3', 'f4', 'f5'];
-var arr = [];
+var current = null;
 
 function shuffle(array) {
 	var cards = array;
@@ -34,6 +34,26 @@ $(document).ready(function() {
 		$('.content').html(html);
 });
 
-function flip(str){
-  $(str).toggleClass('flipped');
+function flip(card){
+	console.log($(card).toggleClass('flipped'));
+	if (!current) {
+		current = $(card);
+	}else{
+		if (current.attr('data-name') != $(card).attr('data-name')) {
+			console.log('Khac');
+			setTimeout(function(){
+				current.toggleClass('flipped');
+				$(card).toggleClass('flipped');
+				current = null;
+				$('#cr-music').play();
+			},500);
+		}else{
+			console.log('Giong');
+			setTimeout(function(){
+				current.css('opacity','0');
+				$(card).css('opacity','0');
+				current = null;
+			},500);
+		}
+	}
 }
