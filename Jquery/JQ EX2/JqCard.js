@@ -1,18 +1,41 @@
 var cards = ['f1', 'f2', 'f3', 'f4', 'f5'];
 var current = null;
+var count = 0;
+var remainingtime = 20;
+
+function flip(card){
+	$(card).toggleClass('flipped');
+	if (!current) {
+		current = $(card);
+	}else{
+		if (current.attr('data-name') != $(card).attr('data-name')) {
+			console.log('Khac');
+			setTimeout(function(){
+				$(card).toggleClass('flipped');
+				current.toggleClass('flipped');
+				current = null;
+			},500);
+		}else{
+			console.log('Giong');
+			setTimeout(function(){
+				$(card).css('opacity','0');
+				current.css('opacity','0');
+				current = null;
+				count++;
+				if (count == 5) {
+	        	$(".modal.win").css({"display": "block"});
+				}
+			},300);
+		}
+	}
+}
 
 function shuffle(array) {
 	var cards = array;
 	var currentIndex = array.length, temporaryValue, randomIndex;
-	
-	// While there remain elements to shuffle...
 	while (0 !== currentIndex) {
-
-	// Pick a remaining element...
 	randomIndex = Math.floor(Math.random() * currentIndex);
 	currentIndex -= 1;
-
-	// And swap it with the current element.
 	temporaryValue = array[currentIndex];
 	array[currentIndex] = array[randomIndex];
 	array[randomIndex] = temporaryValue;
@@ -20,7 +43,9 @@ function shuffle(array) {
   return array;
 }	
 
-$(document).ready(function() {
+function startGame() {
+	$(".modal").css({"display": "none"});
+	$(".btn-reset").css({"opacity": "0"});
 	cards = cards.concat(cards);
 	cards = shuffle(cards);
 	var html = '';
@@ -31,29 +56,21 @@ $(document).ready(function() {
 		'<div class="back"><img src="'+ cards[i] + '.jpg"></div>' + 
 		'</div></div>';
 		};
-		$('.content').html(html);
-});
+	$('.content').html(html);
 
-function flip(card){
-	console.log($(card).toggleClass('flipped'));
-	if (!current) {
-		current = $(card);
-	}else{
-		if (current.attr('data-name') != $(card).attr('data-name')) {
-			console.log('Khac');
-			setTimeout(function(){
-				current.toggleClass('flipped');
-				$(card).toggleClass('flipped');
-				current = null;
-				$('#cr-music').play();
-			},500);
-		}else{
-			console.log('Giong');
-			setTimeout(function(){
-				current.css('opacity','0');
-				$(card).css('opacity','0');
-				current = null;
-			},500);
-		}
-	}
+    var run = setInterval(function () {
+        document.getElementById('down').value = remainingtime;    
+        remainingtime--;                 
+        if (remainingtime >-1) {      
+        	remainingtime;             
+        }else if (remainingtime == -1) {
+        	clearInterval(run);
+        	$(".modal.lose").css({"display": "block"});
+        	$(".btn-reset").css({"opacity": "1"});
+        }                  
+    }, 1000);
 }
+
+
+
+       

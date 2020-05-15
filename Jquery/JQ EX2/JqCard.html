@@ -9,111 +9,40 @@
 </head>
 <body>
 	<div class="warp">
-		<div class="content">
-			<div class="grid">
-				<div class="card" data-name='f1' onclick="flip(this)">
-					<div class="front">
-						<img src="card.jpg">
-					</div>
-					<div class="back">
-						<img src="f1.jpg">
-					</div>
-				</div>
-			</div>
-			<div class="grid">
-				<div class="card" data-name='f2' onclick="flip(this)">
-					<div class="front">
-						<img src="card.jpg">
-					</div>
-					<div class="back">
-						<img src="f2.jpg">
-					</div>
-				</div>
-			</div>
-			<div class="grid">
-				<div class="card" data-name='f3' onclick="flip(this)">
-					<div class="front">
-						<img src="card.jpg">
-					</div>
-					<div class="back">
-						<img src="f3.jpg">
-					</div>
-				</div>
-			</div>
-			<div class="grid">
-				<div class="card" data-name='f4' onclick="flip(this)">
-					<div class="front">
-						<img src="card.jpg">
-					</div>
-					<div class="back">
-						<img src="f4.jpg">
-					</div>
-				</div>
-			</div>
-			<div class="grid">
-				<div class="card" data-name='f5' onclick="flip(this)">
-					<div class="front">
-						<img src="card.jpg">
-					</div>
-					<div class="back">
-						<img src="f5.jpg">
-					</div>
-				</div>
-			</div>
-						<div class="grid">
-				<div class="card" data-name='f1' onclick="flip(this)">
-					<div class="front">
-						<img src="card.jpg">
-					</div>
-					<div class="back">
-						<img src="f1.jpg">
-					</div>
-				</div>
-			</div>
-			<div class="grid">
-				<div class="card" data-name='f2' onclick="flip(this)">
-					<div class="front">
-						<img src="card.jpg">
-					</div>
-					<div class="back">
-						<img src="f2.jpg">
-					</div>
-				</div>
-			</div>
-			<div class="grid">
-				<div class="card" data-name='f3' onclick="flip(this)">
-					<div class="front">
-						<img src="card.jpg">
-					</div>
-					<div class="back">
-						<img src="f3.jpg">
-					</div>
-				</div>
-			</div>
-			<div class="grid">
-				<div class="card" data-name='f4' onclick="flip(this)">
-					<div class="front">
-						<img src="card.jpg">
-					</div>
-					<div class="back">
-						<img src="f4.jpg">
-					</div>
-				</div>
-			</div>
-			<div class="grid">
-				<div class="card" data-name='f5' onclick="flip(this)">
-					<div class="front">
-						<img src="card.jpg">
-					</div>
-					<div class="back">
-						<img src="f5.jpg">
-					</div>
-				</div>
-			</div>
-		</div>
+        <div class="timer">
+	        <div class="progressbar" >
+	            <progress id="down" max="20" value="20"></progress>
+	        </div>
+        </div>
+		<div class="content"></div>
 	</div>
-<audio id="cr-music">
-    <source src="ting.mp3" type="audio/mpeg">
-</audio>
+
+	<div class="modal begin" style="display: block;">
+	    <div class="dialog">
+	        <h1>Memory card</h1>
+	        <h2>Choose play mode</h2>
+	        <button class="btn btn-start normal" onclick="startGame()">Normal</button>
+	        <button class="btn btn-start hard" onclick="startGame()">Hard</button>
+	    </div>
+	</div>
+
+	<div class="modal win" style="display: none;">
+	    <div class="dialog">
+	        <img src="win.png">
+	        <h1>You are win</h1>
+	    </div>
+	</div>
+
+    <div class="modal lose" style="display: none;">
+        <div class="dialog">
+            <img src="lose.png">
+            <h1>
+                Time over <br>
+                <button class="btn btn-reset" onclick="window.location.reload();">Play again</button>
+            </h1>
+        </div>
+    </div>
+    	
+
 </body>
 </html>
