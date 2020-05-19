@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="RegForm.css" type="text/css">
+    <script src="RegForm.js"></script>
+
+</head>
+<body>
+    <div id="warp">
+        <h1>Đăng Ký Thông Tin</h1>
+
+        <form action="result.html"  id="form-register">
+            <input type="text" name="name" id="name" placeholder="Họ Tên" /> 
+            <span class="error"></span><br>
+            <input type="text" name="email" id="email" placeholder="Email" /> 
+            <span class="error"></span><br>
+            <input type="password" name="password" id="password" placeholder="Mật Khẩu" /> 
+            <span class="error"></span><br>
+            <input type="text" name="phonenumber" id="phone" placeholder="Điện Thoại" /> 
+            <span class="error"></span><br>
+            <input type="text" name="address" id="address" placeholder="Địa Chỉ" /> 
+            <span class="error"></span><br>
+            <input type="radio" name="gender" id="male" value="male" /> <label for="male"> <b>Nam</b> </label>
+            <input type="radio" name="gender" id="female" value="female" /> <label for="female"> <b>Nữ</b> </label> <br>
+            <select id="day" name="day">
+                <option >Ngày</option>
+            </select>
+
+            <select id="month" name="month">
+                <option >Tháng</option>
+            </select>
+
+            <select id="year" name="year">
+            </select> <br>
+
+            <input type="submit" value="Login">
+        </form>
+    </div> 
+
+    <script>
+$('#form-register').on('submit', function(){
+    var isValid = true;
+    if ($('#name').val().trim() == '') {
+        $('#name').next('span').text('Nhập Họ Tên ở đây');
+        isValid = false;
+    } else if ($('#name').val().match(/(?!^[0-9]*$)(?!^[a-zA-Z]*$)^([a-zA-Z0-9]{6,15})$/) == null) {
+        $('#name').next('span').text('Nhập 6-15 ký tự, có ít nhất một số và một chữ, không có khoảng trắng.')
+        isValid = false;
+    } else if (($('#name').val().trim() != '') && ($('#name').val().match(/(?!^[0-9]*$)(?!^[a-zA-Z]*$)^([a-zA-Z0-9]{6,15})$/) != null) ) {
+         $('#name').next('span').text('');
+         return isValid;
+    }
+});
+
+
+$('#form-register').on('submit', function(){
+    var isValid = true;
+    if ($('#email').val().trim() == '') {
+        $('#email').next('span').text('Nhập Email ở đây');
+        isValid = false;
+    } else if ($('#email').val().match(/^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/) == null) {
+        $('#email').next('span').text('Nhập đủ thông tin Email')
+        isValid = false;
+    } else if ($('#email').val().match(($('#email').val().trim() != '') && (/^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/) != null)) {
+        $('#email').next('span').text('');
+        return isValid;
+    }
+});
+
+$('#form-register').on('submit', function(){
+    var isValid = true;
+    if ($('#password').val().trim() == '') {
+        $('#password').next('span').text('Nhập Mật Khẩu ở đây');
+        isValid = false;
+    } else if ($('#password').val().match(/^[a-zA-Z]\w{3,14}$/) == null) {
+        $('#password').next('span').text('Ký tự đầu tiên là chữ cái, từ 4-15 ký tự, được sử dụng số - chữ cái - và dấu gạch dưới.')
+        isValid = false;
+    } else if ($('#password').val().match(($('#password').val().trim() != '') && (/^[a-zA-Z]\w{3,14}$/) != null)) {
+        $('#password').next('span').text('');
+        return isValid;
+    }
+    isValid = false;
+});
+
+$('#form-register').on('submit', function(){
+    var isValid = true;
+    if ($('#phone').val().trim() == '') {
+        $('#phone').next('span').text('Nhập Số ở đây');
+        isValid = false;
+    } else if ($('#phone').val().match(/^[0-9]+$/) == null) {
+        $('#phone').next('span').text('phone không bao gồm chữ')
+        isValid = false;
+    } else if (($('#phone').val().trim() != '') && ($('#phone').val().match(/^[0-9]+$/) != null)) {
+        $('#phone').next('span').text('');
+        return isValid;
+    }
+});
+
+
+$('#form-register').on('submit', function(){
+    var isValid = true;
+    if ($('#address').val().trim() == '') {
+        $('#address').next('span').text('Nhập Địa Chỉ ở đây');
+        isValid = false;
+    }else if ($('#address').val().trim() != '') {
+        $('#address').next('span').text('');
+    }
+    return isValid;
+});
+
+
+    </script>
+</body>
+</html>
