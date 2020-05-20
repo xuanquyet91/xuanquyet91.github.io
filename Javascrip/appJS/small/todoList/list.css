@@ -1,0 +1,22 @@
+html, body{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background: #457fca;
+	color: #fff;
+	font-size: 18px;
+}
+.container{
+	width: 900px;
+	margin: 100px auto;
+}
+#todo-list li {
+	height: 30px;
+	line-height: 30px;
+	width: 50%;
+}
+#todo-list li:hover {
+	background-color: #fff;
+	color: #555; 
+}
