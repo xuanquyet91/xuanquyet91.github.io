@@ -1,11 +1,9 @@
 @media only screen and (max-width:500px ){
-	span {
+	#menu a span {
     display: inline-block;
     margin: 5px 70px;
+    font-size: 15px;
 	}	
-		img {
-	    max-width: 100%;
-	}
 }
 *{
 	box-sizing: border-box;
