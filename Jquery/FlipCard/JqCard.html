@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Memory Card</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width" initial-scale="1.0">
+  <link rel="stylesheet" type="text/css" href="JqCard.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+
+<body>
+
+  <div class="modal begin">
+    <div class="dialog">
+      <h1>Game Memory card</h1>
+
+      <button class="btn btn-start normal" onclick="startGame(1)">Normal</button>
+      <button class="btn btn-start hard" onclick="startGame(2)">Hard</button>
+    </div>
+  </div>
+
+  <div class="modal win">
+    <div class="dialog">
+      <img src="image/win.png" />
+      <h1>You are victory!!!</h1>
+      <button class="btn btn-reset" onclick="loadContent()">Reset</button>
+    </div>
+  </div>
+
+  <div class="modal lose">
+    <div class="dialog">
+      <img src="image/lose.png" />
+      <h1>Hết Giờ</h1>
+      <button class="btn btn-reset" onclick="loadContent()">Chơi Lại</button>
+    </div>
+  </div>
+
+  <div class="modal-backdrop"></div>
+
+  <div>
+    <div id="tuyet">
+      <!--<div class="timer">
+        <div class="progressbar">
+          <progress max="100" value="100"></progress>
+        </div>
+      </div> -->
+
+      <div id="progressive">
+        <div class="progress" id="shadow">
+          <div class="progress-bar progress-bar-danger six-sec-ease-in-out" role="progressbar" data-transitiongoal="100"></div>
+        </div>
+      </div>
+
+      <div class="wrap">
+      </div>
+    </div>
+  </div>
+
+  <audio id="sound-game">
+    <source src="sound/music.mp3" type="">
+  </audio>
+
+  <audio id="win-sound">
+  <source src="sound/win.mp3" type="">
+  </audio>
+  <audio id="lose-sound">
+  <source src="sound/lose.mp3" type="">
+  </audio>
+  <audio id="true-sound">
+  <source src="sound/true.mp3" type="">
+  </audio>
+  <audio id="10s-sound">
+  <source src="sound/doraemon.mp3" type="">
+  </audio>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="JqCard.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,245 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-y: scroll;
+  background: url("image/BG.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+#tuyet {
+  background: none;
+  font-family: Androgyne;
+  background-image: url('image/s1.png'), url('image/s2.png'), url('image/s3.png');
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index:1;
+  -webkit-animation: snow 10s linear infinite;
+  -moz-animation: snow 10s linear infinite;
+  -ms-animation: snow 10s linear infinite;
+  animation: snow 10s linear infinite;
+}
+
+@keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+}
+@-moz-keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 400px 1000px, 200px 400px, 100px 300px;}
+}
+@-webkit-keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+}
+@-ms-keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+} 
+
+.wrap {
+  position: relative;
+  margin: auto;
+  max-width: 1010px;
+  max-height: 550px;
+  height: 100%;
+  margin-top: 40px;
+}
+
+.grid {
+  float: left;
+  margin: 15px;
+}
+
+.card {
+  position: relative;
+}
+
+.card .back {
+  transform: rotateY(180deg);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.card.flipped .back {
+  transform: rotateY(0deg);
+}
+
+.card.flipped .front {
+  transform: rotateY(180deg);
+}
+
+.card:hover img {
+  transform: translateY(-1px);
+  box-shadow: 1px 1px 30px 0px rgba(0, 248, 255, 1);
+  cursor: pointer;
+}
+
+.card .front,
+.card .back {
+  transition: all 0.5s;
+  backface-visibility: hidden;
+}
+
+.card img {
+  border-radius: 10px;
+}
+
+.modal,
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+  display: none;
+}
+
+.modal-backdrop {
+  z-index: 900;
+  background-color: #000;
+  opacity: 0.5;
+}
+
+.modal .dialog {
+  border-radius: 5px;
+  margin: 10% auto;
+  padding: 10px;
+  width: 500px;
+  text-align: center;
+  background-color: #ffffff;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+  overflow: auto;
+}
+
+.btn {
+        margin-top: 20px;
+  font-size: 20px;
+  cursor: pointer;
+  color: #ffffff;
+  min-height: 50px;
+  border-radius: 40px;
+  min-width: 150px;
+  margin: 10px 10px 10px 10px;
+  vertical-align: middle;
+  transition: all .3s ease-out;
+  border: none;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.19), 0 2px 2px 0 rgba(0, 0, 0, 0.13);
+}
+
+.btn-reset {
+  background-color: #f57c00;
+}
+
+.btn-start.normal {
+  background-color: #1e88e5;
+}
+
+.btn-start.hard {
+  background-color: #e53935;
+}
+
+
+/*progress {
+border-radius: 5px;
+  height: 25px;
+  width: 900px;
+}
+.progressbar {
+  margin-top: 40px;
+  text-align: center;
+}*/
+
+#progressive {
+  margin-top: 50px;
+}
+
+#shadow {
+    width: 870px;
+    margin-left: 186px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.animate {
+  animation-name: example;
+  animation-duration: 13s;
+}
+
+@keyframes example {
+  0% {
+    background-color: #FFFFFF;
+  }
+  5% {
+    background-color: red;
+  }
+  10% {
+    background-color: #FFFFFF;
+  }
+  15% {
+    background-color: red;
+  }
+  20% {
+    background-color: #FFFFFF;
+  }
+  25% {
+    background-color: red;
+  }
+  30% {
+    background-color: #FFFFFF;
+  }
+  35% {
+    background-color: red;
+  }
+  40% {
+    background-color: #FFFFFF;
+  }
+  45% {
+    background-color: red;
+  }
+  50% {
+    background-color: #FFFFFF;
+  }
+  55% {
+    background-color: red;
+  }
+  60% {
+    background-color: #FFFFFF;
+  }
+  65% {
+    background-color: red;
+  }
+  70% {
+    background-color: #FFFFFF;
+  }
+  75% {
+    background-color: red;
+  }
+  80% {
+    background-color: #FFFFFF;
+  }
+  85% {
+    background-color: red;
+  }
+  90% {
+    background-color: #FFFFFF;
+  }
+  95% {
+    background-color: red;
+  }
+  100% {
+    background-color: #FFFFFF;
+  }
+}
