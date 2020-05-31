@@ -1,0 +1,129 @@
+@font-face {
+	font-family: 'playfair';
+	src: url('fonts/Playfair_Display/PlayfairDisplay-Regular');
+}
+@font-face {
+	font-family: 'Inconsolata';
+	src: url('fonts/Inconsolata/Inconsolata-Regular');
+}
+@font-face {
+	font-family: 'Ubuntu';
+	src: url('fonts/Ubuntu/Ubuntu-Regular');
+}
+
+body{
+	font-family: 'playfair';
+	font-size: 14px;
+	color: #626262;
+}
+header.container {
+	max-width: 1062px;
+}
+.navbar-brand {
+	font-family: 'Inconsolata';
+	font-size: 30px;
+	text-transform: uppercase;
+	color: #000000;
+	margin-left: -140px;
+}
+.navbar {
+	text-transform: uppercase;
+	margin: 49.5px 0px;
+}
+.bg-light {
+    background-color: #ffffff!important;
+    border-color: #ffffff;
+}
+li.nav-item {
+    margin-right: -24px;
+    padding-left: 124px;
+}
+section.container {
+	max-width: 898px;
+	margin: auto;
+}
+
+h3 {
+	text-transform: uppercase;
+	font-size: 14px;
+	font-family: 'Ubuntu';
+	color: #cc9999;
+}
+div#banner {
+    margin-bottom: 98px;
+}
+.description h2 {
+    margin: 29px 0px;
+    color: #666666;
+}
+
+.description p {
+    margin-bottom: 54px;
+}
+.description {
+	margin-bottom: 40px;
+}
+.col-md-6 div:nth-child(2) {
+    margin: 31px 0px;
+    color: #cc9999;
+    font-family: 'Ubuntu';
+    font-size: 14px;
+}
+.col-md-6 div:nth-child(3) {
+    color: #666666;
+    font-family: 'playfair';
+    font-size: 30px;
+}
+.col-md-6 div:nth-child(4) {
+    margin: 45px 0px 136px 0px;
+    color: #666666;
+    font-family: 'playfair';
+    font-size: 14px;
+}
+section.container-fluid, .container-lg, .container-md, .container-sm, .container-xl {
+	height: 288px;
+	margin: -8px 0px 103px 0px;
+	text-align: center;
+	background-color: #f0f0f0;
+}
+.container-fluid h2 {
+	font-size: 30px;
+	color: #333333;
+	padding: 73px 0px 88px 0px;
+}
+input {
+    border: 1px #f0f0f0;
+    width: 365px;
+    background-color: #f0f0f0;
+}
+.info button {
+	margin: 34px 0px 170px 345px;
+	background-color: #ffffff;
+	color: #666666;
+	width: 164px;
+	height: 60px;
+	font-size: 20px;
+}
+footer .row {
+	padding: 40px 68px 47px 150px;
+}
+
+.container-fluid, .container-lg, .container-md, .container-sm, .container-xl {
+	height: 99px;
+	background-color: #f0f0f0;
+}
+.col-md-6 a {
+	color: #000000;
+}
+footer .row .col-md-6{
+
+}
+#footer1 a {
+	padding-left: 10px; 
+}
+div#footer2 {
+    padding-left: 29%;
+}
+#footer2 i {
+	padding-left: 24px; 
+}
