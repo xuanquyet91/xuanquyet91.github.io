@@ -8,6 +8,7 @@
     <title>The Band</title>
     <link rel="icon" href="https://github.githubassets.com/favicons/favicon.png" type="image/gif" sizes="16x16">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
     <link rel="stylesheet" href="./assets/font/themify-icons/themify-icons.css">
 </head>
 
@@ -29,23 +30,27 @@
                     <a href="#contact">Contact</a>
                 </li>
                 <li>
-                    <a href="">
+                    <a href="#">
                         More
                         <i class="nav-arrow-down ti-angle-down"></i>
                     </a>
 
                     <ul class="subnav">
-                        <li><a href="">Merchandise</a></li>
+                        <li><a href="#">Merchandise</a></li>
                         <li>
-                            <a href="">Extras</a> </li>
+                            <a href="#">Extras</a> </li>
                         <li>
-                            <a href="">Media</a>
+                            <a href="#">Media</a>
                         </li>
                     </ul>
                 </li>
             </ul>
             <!-- end-nav  -->
-            <!-- begin search  -->
+            <!-- mobile menu btn  -->
+            <div class="mobile-menu-btn">
+                <i class=" ti-menu"></i>
+            </div>
+            <!-- search btn  -->
             <div class="search-btn">
                 <i class="search-icon ti-search"></i>
             </div>
@@ -73,15 +78,15 @@
                     id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 
                 <div class="row member-list">
-                    <div class="col col-third text-center">
+                    <div class="member-item col col-third text-center">
                         <p class="member-name">Name</p>
                         <img class="member-img" src="./assets/img/band/member.jpg" alt="name">
                     </div>
-                    <div class="col col-third text-center">
+                    <div class="member-item col col-third text-center">
                         <p class="member-name">Name</p>
                         <img class="member-img" src="./assets/img/band/member.jpg" alt="name">
                     </div>
-                    <div class="col col-third text-center">
+                    <div class="member-item col col-third text-center">
                         <p class="member-name">Name</p>
                         <img class="member-img" src="./assets/img/band/member.jpg" alt="name">
                     </div>
@@ -101,7 +106,7 @@
 
                     <!-- places -->
                     <div class="row places-list">
-                        <div class="col col-third">
+                        <div class="mt-16 s-col-full col col-third">
                             <img src="./assets/img/places/places.jpg" class="place-img" alt="New York">
                             <div class="place-body">
                                 <h3 class="place-heading">New York</h3>
@@ -110,7 +115,7 @@
                                 <button href="#" class="btn js-buy-tickets">Buy tickets</button>
                             </div>
                         </div>
-                        <div class="col col-third">
+                        <div class="mt-16 s-col-full col col-third">
                             <img src="./assets/img/places/places2.jpg" class="place-img" alt="New York">
                             <div class="place-body">
                                 <h3 class="place-heading">New York</h3>
@@ -119,7 +124,7 @@
                                 <button href="#" class="btn js-buy-tickets">Buy tickets</button>
                             </div>
                         </div>
-                        <div class="col col-third">
+                        <div class="mt-16 s-col-full col col-third">
                             <img src="./assets/img/places/places3.jpg" class="place-img" alt="New York">
                             <div class="place-body">
                                 <h3 class="place-heading">New York</h3>
@@ -139,19 +144,19 @@
                 <p class="section-sub-heading">Fan? Drop a note!</p>
 
                 <div class="row contact-content contact-info">
-                    <div class="col col-half">
+                    <div class="col col-half s-col-full">
                         <p><i class="ti-location-pin"></i>Chicago, US</p>
                         <p><i class="ti-mobile"></i>Phone: +00 151515</p>
                         <p><i class="ti-email"></i> Email: mail@mail.com</p>
                     </div>
 
-                    <div class="col col-half contact-form">
+                    <div class="col col-half s-col-full contact-form">
                         <form action="">
                             <div class="row">
-                                <div class="col col-half">
+                                <div class="col col-half s-col-full s-mt-16 ">
                                     <input class="form-control" required type="text" name="Name" placeholder="Name" id="">
                                 </div>
-                                <div class="col col-half">
+                                <div class="col col-half s-col-full s-mt-16 ">
                                     <input class="form-control" required type="email" name="Email" placeholder="Email" id="">
                                 </div>
 

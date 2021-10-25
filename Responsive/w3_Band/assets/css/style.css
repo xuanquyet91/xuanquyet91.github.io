@@ -158,20 +158,34 @@ html {
     font-size: 12px;
 }
 
+#header .mobile-menu-btn,
 #header .search-btn {
     float: right;
     cursor: pointer;
 }
 
-#header .search-btn:hover {
-    background-color: red;
-}
-
+.mobile-menu-btn .ti-menu,
 .search-btn .search-icon {
     line-height: 46px;
     color: aliceblue;
     font-size: 21px;
     padding: 0 21px;
+}
+
+#header .mobile-menu-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+}
+
+#header .mobile-menu-btn:hover {
+    color: #757575;
+    background-color: #ccc;
+}
+
+#header .search-btn:hover {
+    background-color: red;
 }
 
 
@@ -186,8 +200,8 @@ html {
 
 #slider .text-content {
     position: absolute;
-    /* bottom: 48px; */
     color: white;
+    bottom: 48px;
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
@@ -196,11 +210,12 @@ html {
 #slider .text-heading {
     font-weight: 500;
     font-size: 24px;
+    /* padding-bottom: 10px; */
 }
 
 #slider .text-description {
     font-size: 15px;
-    margin-top: 25px;
+    margin-top: 20px;
 }
 
 #content {}
@@ -210,6 +225,9 @@ html {
     padding: 64px 0 112px;
     margin-left: auto;
     margin-right: auto;
+    max-width: 100%;
+    padding-left: 16px;
+    padding-right: 16px;
 }
 
 #content .section-heading {
@@ -293,7 +311,7 @@ html {
 /* Places */
 
 .places-list {
-    margin-top: 32px;
+    margin-top: 16px;
 }
 
 .place-img {
@@ -353,7 +371,7 @@ html {
 
 .modal-container {
     max-width: calc(100% - 12px);
-    position: absolute;
+    position: relative;
     width: 900px;
     min-height: 200px;
     background-color: white;
