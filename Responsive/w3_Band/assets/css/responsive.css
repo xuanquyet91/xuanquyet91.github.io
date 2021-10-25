@@ -1,16 +1,21 @@
-/* PC  */
+/* PC-1024px  */
 
-@media(min-width:1024px) {}
-
-
-/* Tablet */
-
-@media(min-width:740px) and(max-width:1023px) {}
+@media(min-width:64em) {}
 
 
-/* Mobile  */
+/* Tablet & Mobile - 1023px  */
 
-@media(max-width:740px) {
+@media(max-width:63.9375em) {}
+
+
+/* Tablet- 740px */
+
+@media(min-width:46.25em) and(max-width:63.9375em) {}
+
+
+/* Mobile-739px  */
+
+@media(max-width:46.1875em) {
     #header {
         overflow: hidden;
     }
@@ -49,5 +54,8 @@
     }
     .s-mt-16 {
         margin-top: 16px;
+    }
+    input.modal-input {
+        border: 1px solid;
     }
 }
