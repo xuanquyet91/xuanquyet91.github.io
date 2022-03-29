@@ -1,0 +1,46 @@
+.App{
+  .navbar{
+    width: 1360px;
+    height: 40px;
+    background-color: 
+    #282828;
+    &--container{
+      width: $width-css-pc;
+      margin: auto;
+      display: flex;
+      svg{
+        padding-right: 10px;
+        margin-top: 6px;
+      }
+      span{
+        display: flex;
+        color: white;
+        justify-content: center;
+        align-items: center;
+        height: 42px;
+        cursor: pointer;
+      }
+      // &--ul:hover{
+      //   &--nav{
+      //     display: block;
+      //   }
+      // }
+      &--ul{
+        width: 110px;
+        margin-left: 10px;
+      }
+      &--nav{
+        background-color: #666666;
+        padding: 6px 0;
+        margin-top: -2px;
+        display: none;
+      }
+      &--sub{
+        font-size: 15px;
+        color: white;
+        padding: 3px 0px 5px 10px;
+        display: flex;
+      }
+    }
+  }
+}

@@ -1,0 +1,28 @@
+.header {
+    background-color: $primary-blue;
+    height: 80px;
+    &__screen{
+      padding-top: 30px;
+      margin: auto;
+      padding-left: 26%;
+      &--calc, 
+      &--quote, 
+      &--todo{
+        background-color: beige;
+        outline: none;
+        border: none;
+        border-radius: 7px;
+        width: 200px;
+        height: 25px;
+        margin-right: 10px;
+        color: brown;
+        font-weight: 700;
+        cursor: pointer ;
+        font-size: 15px;
+      }
+      button:hover{
+          color: #fff;
+          background-color: rgb(56, 51, 51);
+      }
+    }
+  } 

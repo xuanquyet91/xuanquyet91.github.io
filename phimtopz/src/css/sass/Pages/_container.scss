@@ -1,0 +1,42 @@
+.App{
+  .container{
+    width: $width-css-pc;
+    margin: auto;
+    display:grid;
+    padding: 20px 0;
+    grid-template:
+    'left left right '
+    'left left right '
+    'left left right '
+    'left left right ';
+    .container__left{
+      display: grid;
+      grid-area: left;
+      width: 700px;
+      .container__left__poster{
+        width: 700px;
+        height: 290px;
+        img{
+          width: 700px;
+          height: 290px;
+          object-fit: cover;
+        }
+      }
+      .container__left__content{
+        margin: 20px 0;
+      }
+    }
+    .container__right{
+      grid-area: right;
+      width: 300px;
+      &__topicTop{
+        img{
+          width: 291px; 
+          height: 90px;
+          object-fit: cover;
+          margin-left: 7px;
+        }
+      }
+    }
+  }
+}

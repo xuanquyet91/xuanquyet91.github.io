@@ -1,0 +1,118 @@
+.App{
+  .topic__content{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding-left: 10px;
+    width: 300px;
+
+    &__top{
+      .caption{
+        display: flex;
+        justify-content: center;
+        border-bottom: 1px dashed #f06402;
+        padding-bottom: 10px;
+        h2,svg{
+          color:#f06402;
+          font-size: 24px;
+          font-weight: 700;
+        }
+      }
+      span.desc{
+        display: block;
+        color: $color-primary-white;
+        padding: 20px 0 50px 0;
+      }
+    }
+    &__center{
+      .caption{
+        display: flex;
+        justify-content: center;
+        border-bottom: 1px dashed #f06402;
+        padding-bottom: 10px;
+        h2,svg{
+          color:#f06402;
+          font-size: 24px;
+          font-weight: 700;
+        }
+      }
+      .content{
+        &__router{
+          display: flex;
+          p{
+            display: flex;
+            background-color: #f06402;
+            color: white;
+            padding: 4px 7px;
+            margin: 10px 11px;
+            border-radius:12px 0px 12px 0px
+          }
+        }
+        &__list{
+          display: flex;
+          flex-direction: column;
+          margin-top: 25px;
+          margin-bottom: 30px;
+          &__right{
+            display: flex;
+            border-bottom: 1px solid #aaa;
+            margin-bottom: 10px;
+              img{
+                width: 64px;
+                height: 64px;
+                margin: 0 10px 10px 0;
+                border-radius: 5px;
+              }
+              h2{
+                color: #c2aa8d;
+                font-weight: 700;
+              }
+              h2:hover{
+                color:#ffff00;
+              }
+              p{
+                color: #ccc;
+                font-size: 12px;
+                padding: 10px 0 3px;
+              }
+              Span{
+                color: #aaa;
+                font-size: 12px;
+              }
+          }
+        }
+      }
+    }
+    &__bottom{
+      &__tags{
+        .caption{
+          display: flex;
+          justify-content: center;
+          border-bottom: 1px dashed #f06402;
+          padding-bottom: 10px;
+          h2,svg{
+            color:#f06402;
+            font-size: 24px;
+            font-weight: 700;
+          }
+        }
+        .taglist{
+          background: rgb(58, 58, 58);
+          color: $color-primary-white;
+          display: flex;
+          flex-wrap: wrap;
+          margin-top: 10px;
+          p{
+            display: flex;
+            background-color: #f06402;
+            color: white;
+            padding: 4px 7px;
+            margin: 10px 11px;
+            border-radius:10px 0px 10px 0px;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+  
+}

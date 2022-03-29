@@ -1,0 +1,60 @@
+.App{
+  .container__left__content__listItems{
+    width: 700px;
+    .title{
+      display: flex;
+    justify-content: space-between;
+      .title__left{
+        color:#f06402;
+        font-size: 20px;
+        padding-top: 20px;
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+        border-bottom: solid 1px #f06402;
+      }
+      .title__right{
+        display: flex;
+        color: #f06402;
+        padding-top: 20px;
+        svg, span{
+          padding-top: 2px;
+          cursor: pointer;
+        }
+      }
+    }
+    .listItems{
+      display: grid;
+      grid-template-columns: repeat(4, 25%);
+      grid-column-gap: 2px;
+      margin: 10px 0;
+
+      &__detail{
+        display: flex;
+        flex-direction: column;
+        background-color: #212c3a;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        padding: 10px 0 10px 8px;
+        img{
+          width: 161px;
+          height: 242px;
+          border-radius: 10px;
+        }
+        p {
+          margin: 12px 5px;
+          color: #c7d136;
+          font-family: 'Poppins';
+          cursor: pointer;
+        }
+        span{
+          margin-left: 5px;
+          color: #cccccc;
+          margin-bottom: 5px;
+          cursor: pointer;
+        }
+
+      }
+    }
+
+  }
+}

@@ -1,0 +1,29 @@
+.App{
+  .footer{
+    width: $width-css-pc;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+    border-top: 1px solid #aaa;
+    img{
+      width: 146px;
+      height: 26px;
+      margin-bottom: 20px;
+    }
+    p{
+      padding-bottom: 15px;
+      color: #999999;
+      text-align: center;
+    }
+    span{
+      padding-bottom: 15px;
+      color: #999999;
+    }
+    a{
+      text-decoration: none;
+      color:$background;
+    }
+  }
+}
