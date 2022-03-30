@@ -1,0 +1,113 @@
+.product {
+  width: 700px;
+  padding: 30px 10px;
+  display: flex;
+  flex-direction: column;
+  &__content {
+    display: flex;
+    flex-direction: row;
+    &__left {
+      height: 364px;
+      width: 264px;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+      .btn {
+        position: absolute;
+        bottom: 105px;
+        display: flex;
+        background-color: #1c0706a1;
+        padding: 13px;
+      }
+      button {
+        border: none;
+        border-radius: 5px;
+        padding: 10px 21px;
+        margin-right: 10px;
+        color: white;
+        background-color: #2c757a;
+      }
+    }
+    .product__content__right {
+      padding: 0px 20px 10px;
+      font-family: 'Poppins', sans-serif;
+      line-height: 1.5;
+      p {
+        color: #999999;
+      }
+      span {
+        color: white;
+      }
+      h1 {
+        color: #f06402;
+        font-size: 25px;
+        font-weight: 600;
+      }
+      .social{
+        button {
+          color: white;
+          background-color: #1366c5e0;
+          border: none;
+          border-radius: 4px;
+          padding: 3px 8px;
+          margin-right: 10px;
+          cursor: pointer;
+        }
+      }
+      .rate{
+          display: flex;
+          margin-top: 12px;
+        p{
+          background-color: #404040;
+          border-radius: 10px;
+          padding: 11px;
+          font-size: 23px;
+          color: #ffe000;
+          font-weight: 600;
+        }
+        .star{
+        display: flex;
+        flex-direction: column;
+        padding: 6px;
+        svg{
+            color: #f57508;
+            font-size: 20px;
+        }  
+      }
+      }
+    }
+  }
+  &__desc{
+    margin: 20px 0px;
+    .title{
+      display: flex;
+      h1,svg {
+        padding-right: 10px;
+        color: #f06402;
+        font-size: 25px;
+        font-weight: 600;
+        margin-bottom: 15px;
+      }
+    }
+    span{
+    color: $color-primary-white;
+    display: block;
+    font-size: 17px;
+    padding-bottom: 5px;  
+    }
+    p {
+      color: #999999;
+      line-height: 1.5;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+}
+
+
+
+

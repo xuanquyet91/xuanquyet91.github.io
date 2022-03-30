@@ -8,7 +8,7 @@ const Navbar = () => {
 
   return (
     <div className='navbar'>
-      <Link to="/Products" className="link-item">
+      <Link to="/Productslist" className="link-item">
         <div className='navbar--container'>
             <AiOutlineHome style={{fontSize:'25px', color:'white'}} />
             {title.map((item,index)=> (
