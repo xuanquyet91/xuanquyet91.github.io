@@ -1,10 +1,23 @@
-import React from 'react'
-import { AiOutlineSearch,AiOutlineMail } from 'react-icons/ai';
-import { FiFacebook } from 'react-icons/fi';
+import React, { useState } from 'react'
+import { AiOutlineLogin,AiOutlineUser } from 'react-icons/ai';
 import { Link } from 'react-router-dom';
+import { sliderItems } from '../data';
 
 
 const Header = () => {
+  const [query, setQuery]= useState('');
+  const keys= ['title'];
+
+  console.log(query);
+
+  const search =(sliderItems) =>{
+    return sliderItems.filter(item=>
+      keys.some((key)=> 
+        item[key].toLowerCase().includes(query)
+      )
+      );
+  }
+  console.log(search(sliderItems));
   return (
   <div className="header">
     <div className="header__left">
@@ -13,17 +26,30 @@ const Header = () => {
         </Link>
     </div>
     <div className="header__center">
-      <input type="text" placeholder="Search..." className="header__center__input" />
-      <AiOutlineSearch/>
+      <div className='header__center__search'>
+        <input type="text" placeholder="Search..." 
+        onChange= {e=> setQuery(e.target.value)}
+        className="header__center__search__input" />
+        <ul >
+            {search(sliderItems).map((item,index)=> (
+              <li key={index}>{item.title}</li>
+            ))}
+        </ul>
+      </div>
+      {/* <AiOutlineSearch/> */}
     </div>
     <div className="header__right">
       <div className="header__right__info">
-        <AiOutlineMail/>
-        <span>Liên Hệ</span>
+        <AiOutlineLogin/>
+        <Link to='/Login' className="link-item">
+          <span>Sign In</span>
+        </Link>
       </div>
       <div className="header__right__fanpage">
-        <FiFacebook/>
-        <span>Fanpage</span>
+        <AiOutlineUser/>
+        <Link to='/Register' className="link-item">
+          <span>Register</span>
+        </Link>
       </div>
     </div>
   </div>

@@ -20,6 +20,11 @@
         height: 42px;
         cursor: pointer;
       }
+      span:hover + .navbar--container--nav{
+        opacity: 1;
+        z-index: 100;
+        display: grid;
+      }
       // &--ul:hover{
       //   &--nav{
       //     display: block;
@@ -34,12 +39,15 @@
         padding: 6px 0;
         margin-top: -2px;
         display: none;
-      }
-      &--sub{
-        font-size: 15px;
-        color: white;
-        padding: 3px 0px 5px 10px;
-        display: flex;
+        z-index: 10;
+        opacity: 0;
+        .navbar--container--sub{
+          font-size: 15px;
+          color: white;
+          padding: 3px 0px 5px 10px;
+          // display: flex;
+          z-index: 10;
+        }
       }
     }
   }

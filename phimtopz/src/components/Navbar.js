@@ -8,12 +8,15 @@ const Navbar = () => {
 
   return (
     <div className='navbar'>
-      <Link to="/Productslist" className="link-item">
+      {/* <Link to="/Productslist" className="link-item"> */}
         <div className='navbar--container'>
             <AiOutlineHome style={{fontSize:'25px', color:'white'}} />
             {title.map((item,index)=> (
               <ul key={index} className='navbar--container--ul'> 
-                <li><span>{item}</span>
+                <li>
+                  <Link to="/Productslist" className="link-item">
+                  <span>{item}</span>
+                  </Link>
                   <ul className='navbar--container--nav'>
                     {category.map((itemSub,index) => (
                       <li key={index} className='navbar--container--sub'>{itemSub}</li>
@@ -23,7 +26,7 @@ const Navbar = () => {
               </ul>
             ))}
         </div>
-      </Link>
+      {/* </Link> */}
     </div>
   )
 }

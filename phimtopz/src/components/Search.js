@@ -28,7 +28,7 @@ const Search = () => {
           {listFilter.map((item,index)=>(
             <select name={item} key={index}>
               {listItem.map((elm, index)=> (
-               <option key={index}> {console.log(index)}{elm}</option>
+               <option key={index}>{elm}</option>
               )
               )}
             </select>

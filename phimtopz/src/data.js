@@ -42,7 +42,7 @@ export const sliderItems = [
   {
     id: 2,
     img: "https://phimtopz.com/upload/images/2014/2/pokemon-tham-tu-pikachu-thumbnail.jpg",
-    title: "Vườn Sao Băng (Bản Thái)",
+    title: "Khúc Ái Tình Hóa Bi Ai",
     desc: "Thuyết Minh (2022)",
     episode: "Episode 2",
     view:"1,242 lượt xem"
@@ -50,7 +50,7 @@ export const sliderItems = [
   {
     id: 3,
     img: "https://phimtopz.com/upload/images/2022/02/anh-co-phai-dan-ong-khong-thumbnail.jpg",
-    title: "Vườn Sao Băng (Bản Thái)",
+    title: "Người Cha",
     desc: "Thuyết Minh (2022)",
     episode: "Episode 2",
     view:"1,242 lượt xem"
@@ -58,7 +58,7 @@ export const sliderItems = [
   {
     id: 4,
     img: "https://phimtopz.com/upload/images/2012/5/sat-thu-john-wick-3-thumbnail.jpg",
-    title: "Vườn Sao Băng (Bản Thái)",
+    title: "Thiếu Nữ Và Quý Ông",
     desc: "Thuyết Minh (2022)",
     episode: "Episode 2",
     view:"1,242 lượt xem"
@@ -66,7 +66,7 @@ export const sliderItems = [
   {
     id: 5,
     img: "https://phimtopz.com/upload/images/2022/01/tu-xuyen-phan-1-thumbnail.jpg",
-    title: "Vườn Sao Băng (Bản Thái)",
+    title: "Khát Vọng",
     desc: "Thuyết Minh (2022)",
     episode: "Episode 2",
     view:"1,242 lượt xem"
@@ -74,7 +74,7 @@ export const sliderItems = [
   {
     id: 6,
     img: "https://phimtopz.com/upload/images/2022/03/vuon-sao-bang-ban-thai-thumbnail.jpg",
-    title: "Vườn Sao Băng (Bản Thái)",
+    title: "Hẹn Hò Chốn Công Sở",
     desc: "Thuyết Minh (2022)",
     episode: "Episode 2",
     view:"1,242 lượt xem"
@@ -82,7 +82,7 @@ export const sliderItems = [
   {
     id: 7,
     img: "https://phimtopz.com/upload/images/2022/03/vuon-sao-bang-ban-thai-thumbnail.jpg",
-    title: "Vườn Sao Băng (Bản Thái)",
+    title: "Thiên Thần Lạc Lối)",
     desc: "Thuyết Minh (2022)",
     episode: "Episode 2",
     view:"1,242 lượt xem"
@@ -90,7 +90,7 @@ export const sliderItems = [
   {
     id: 8,
     img: "https://phimtopz.com/upload/images/2022/03/vuon-sao-bang-ban-thai-thumbnail.jpg",
-    title: "Vườn Sao Băng (Bản Thái)",
+    title: "Quản Trị Cuộc Đời",
     desc: "Thuyết Minh (2022)",
     episode: "Episode 2",
     view:"1,242 lượt xem"
@@ -98,7 +98,7 @@ export const sliderItems = [
   {
     id: 9,
     img: "https://phimtopz.com/upload/images/2022/03/vuon-sao-bang-ban-thai-thumbnail.jpg",
-    title: "Vườn Sao Băng (Bản Thái)",
+    title: "Mối Tình Biên Giới",
     desc: "Thuyết Minh (2022)",
     episode: "Episode 2",
     view:"1,242 lượt xem"
@@ -106,7 +106,7 @@ export const sliderItems = [
   {
     id: 10,
     img: "https://phimtopz.com/upload/images/2022/03/vuon-sao-bang-ban-thai-thumbnail.jpg",
-    title: "Vườn Sao Băng (Bản Thái)",
+    title: "Trò Trốn Tìm",
     desc: "Thuyết Minh (2022)",
     episode: "Episode 2",
     view:"1,242 lượt xem"
@@ -114,7 +114,7 @@ export const sliderItems = [
   {
     id:11,
     img: "https://phimtopz.com/upload/images/2022/02/du-bao-tinh-yeu-va-thoi-tiet-thumbnail.jpg",
-    title: "Vườn Sao Băng (Bản Thái)",
+    title: "Đường Đến Ngôi Sao",
     desc: "Thuyết Minh (2022)",
     episode: "Episode 2",
     view:"1,242 lượt xem"
