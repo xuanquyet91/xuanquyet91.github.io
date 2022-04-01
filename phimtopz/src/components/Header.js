@@ -1,10 +1,12 @@
 import React, { useState } from 'react'
 import { AiOutlineLogin,AiOutlineUser } from 'react-icons/ai';
+import { useAuth0 } from '@auth0/auth0-react';
 import { Link } from 'react-router-dom';
 import { sliderItems } from '../data';
 
 
 const Header = () => {
+  const { user,logout, isAuthenticated } = useAuth0();
   const [query, setQuery]= useState('');
   const keys= ['title'];
 
@@ -40,16 +42,34 @@ const Header = () => {
     </div>
     <div className="header__right">
       <div className="header__right__info">
-        <AiOutlineLogin/>
-        <Link to='/Login' className="link-item">
-          <span>Sign In</span>
-        </Link>
+        {!isAuthenticated && (
+         <> 
+          <AiOutlineLogin/>
+          <Link to='/Login' className="link-item">
+            <span>Sign In</span>
+          </Link>
+        </>
+        )}
+        {isAuthenticated && (
+          <>
+          <Link to="/Admin" className="link-item">
+          <p>{user.email}</p>
+          </Link>
+          <button onClick={() => logout()} className="log-out">
+          Log Out
+          </button> 
+          {/* <JSONPretty data={user} /> */}
+          </>
+        )}
       </div>
       <div className="header__right__fanpage">
+      {!isAuthenticated && (
+         <> 
         <AiOutlineUser/>
         <Link to='/Register' className="link-item">
           <span>Register</span>
         </Link>
+        </>)}
       </div>
     </div>
   </div>
