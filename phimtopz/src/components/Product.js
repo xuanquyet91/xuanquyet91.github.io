@@ -1,8 +1,13 @@
-import React from 'react'
+import React, { useState } from 'react'
 import {AiFillStar} from 'react-icons/ai'
 import {BsFillBookmarkStarFill} from 'react-icons/bs'
 
 const Product = () => {
+  const [collapse,setCollapse] = useState(true)
+  const handleCollapse = ()=>{
+    return setCollapse(!collapse)
+  }
+
   return (
     <div className='product'>
       <div className='product__content'>
@@ -54,7 +59,12 @@ const Product = () => {
         đồng thời khiến cho mọi sát thủ tồn tại trên đời đều muốn nhắm vào cái đầu của John. 
         Cả phần phim sẽ là cuộc trốn chạy đẫm máu của John khỏi những kẻ đứng đầu hệ thống ngầm này.</p>
       </div>
-      <img src='https://phimtopz.com/upload/images/2000/1/sat-thu-john-wick-3-cover.jpg' alt=''/>
+      <div className='product__img'>
+        {collapse?false: <img src='https://phimtopz.com/upload/images/2000/1/sat-thu-john-wick-3-cover.jpg' alt=''/>}
+        <div className={collapse? "panel-collapse": "panel-close"}>
+        <button onClick={handleCollapse}>{collapse? "Xem Thêm": "Thu Gọn"}</button>
+        </div>
+      </div>
     </div>
   )
 }

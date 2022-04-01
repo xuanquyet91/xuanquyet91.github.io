@@ -7,7 +7,7 @@ import {BsArrowBarLeft} from 'react-icons/bs';
 
 
 function Login() {
-
+  
     return (
       <div className="login">
         <div className="login__container" >
@@ -28,7 +28,9 @@ function Login() {
                   <Link to="/" className="link-item">
                     <BsArrowBarLeft/>
                   </Link>
-                  <span href="#">Register Now.</span>
+                  <Link to='/Register' className="link-item">
+                    <span href="#">Register Now.</span>
+                  </Link>
                 </div>
             </form>
           </div>

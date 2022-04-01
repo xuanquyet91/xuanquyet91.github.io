@@ -11,10 +11,21 @@
   background-size: cover;
   background-position: center;
   font-family: 'Poppins', sans-serif;
+  position: relative;
   form{
-      background-color: white;
+      position: absolute;
+      background-color: white; 
       padding: 0px 60px;
       border-radius: 10px;
+      svg{
+        position: absolute;
+        right: 2px;
+        font-size: 30px;
+        opacity: 0.8;
+        cursor: pointer;
+        top: 2px;
+        color: #4d014d;
+      }
       h1{
         color: #4d014d;
         text-align: center;

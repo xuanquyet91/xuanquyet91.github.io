@@ -8,7 +8,7 @@ const Header = () => {
   const [query, setQuery]= useState('');
   const keys= ['title'];
 
-  console.log(query);
+  // console.log(query);
 
   const search =(sliderItems) =>{
     return sliderItems.filter(item=>
@@ -17,7 +17,7 @@ const Header = () => {
       )
       );
   }
-  console.log(search(sliderItems));
+  // console.log(search(sliderItems));
   return (
   <div className="header">
     <div className="header__left">

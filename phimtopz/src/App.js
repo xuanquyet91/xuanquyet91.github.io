@@ -1,14 +1,28 @@
 import React from "react";
+// import React,{ useEffect, useState }  from "react";
 import { BrowserRouter,Route, Routes } from 'react-router-dom';
 import { routes } from './router';
 import './css/main.scss';
-// import Home from './pages/Home';
-// import Productslist from './pages/Productslist';
-// import Layout from './layouts'
-// import Productdetail from './pages/Productdetail';
+// import productApi from './api/productApi';
 
 
 function App() {
+  // const [productList, setProductList] = useState([]);
+
+  // useEffect(() => {
+  // const fetchProductList = async () => {
+  //   try {
+  //     const params = { _page: 1, _limit: 10 };
+  //     const response = await productApi.getAll(params);
+  //     console.log('Fetch products successfully: ', response);
+  //     setProductList(response.data);
+  //   } catch (error) {
+  //     console.log('Failed to fetch product list: ', error);
+  //   }
+  // }
+  // fetchProductList();
+  // }, []);
+
   return (
     <div className="App" >
       <BrowserRouter>
@@ -24,13 +38,6 @@ function App() {
                 }
               )}
           </Routes>
-          {/* <Routes>
-            <Route element={<Layout/>} >
-              <Route path="/" element={<Home/>} />
-              <Route path="/Products" element={<Productslist/>} />
-              <Route path="/Detail" element={<Productdetail/>} />
-            </Route>
-          </Routes> */}
         </>  
       </BrowserRouter>  
     </div>

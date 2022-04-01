@@ -1,0 +1,122 @@
+// .App{
+//   background-color: $color-primary-white !important;
+// }
+.setAccount{
+  width: $width-PC;
+  margin: auto;
+  &-title{
+      background-color: #e9ecef;
+      padding: 40px 0;
+      text-transform: uppercase;
+      h2{
+          font-size: 22px;
+          text-align: center;
+          font-weight: bold;
+      }
+  }
+  .searchForm-Account{
+      .form-input{
+          padding: 20px 10px;
+          margin-bottom: 10px;
+          border-bottom: 1px solid #e9ecef;
+          input{
+              width: 200px;
+              padding: 8px 10px;
+              border-radius: 2px;
+              border: 1px solid #e9ecef;
+              font-size: 13px;
+          }
+          button{
+              padding: 8px 10px;
+              border-radius: 2px;
+              font-size: 13px;
+              background-color: #17a2b8;
+              color: $color-primary-white;
+              // font-weight: 600;
+              outline: none;
+              border: none;
+              cursor: pointer;
+          }
+      }
+      .form-group{
+          display: grid;
+          grid-template-columns: 3fr 1fr;
+          padding: 5px;
+          .table-title{
+              .btn-group{
+                  .edit{
+                      color: $color-primary-white;
+                      background-color: #ffc107;
+                      border: none;
+                      padding: 8px 15px;
+                      border-radius: 2px;
+                      cursor: pointer;
+
+                  }
+                  .delete{
+                      color:$color-primary-white;
+                      background-color: #dc3545;
+                      border: none;
+                      padding: 8px 15px;
+                      border-radius: 2px;
+                      cursor: pointer;
+
+                  }
+              }
+              th{
+                  text-align: start;
+                  font-weight: bold;
+                  padding: 10px 0 20px ;
+                  border-bottom: 1px solid #e9ecef;
+                  text-transform: uppercase;
+              }
+              td{
+                  padding: 10px 5px  ;
+                  border-bottom: 1px solid #e9ecef;
+                  line-height: 23px;;
+              }
+              tr{
+                  display: grid;
+                  grid-template-columns: 80px 230px 200px 200px 200px;
+              }
+          }
+          .card-content{
+              border: 1px solid #e9ecef;
+              .card-header{
+                  background-color: #e9ecef;
+                  padding: 15px;
+                  text-align: center;
+                  font-weight: 600;
+              }
+              .card-body{
+                  padding: 15px;
+                  p{
+                      color: $primary-blue;
+                      margin: 20px 0 10px;
+                  }
+                  input,.custom-select{
+                      padding: 10px 5px;
+                      width: 270px;
+                      border: 1px solid #e9ecef;
+                      border-radius: 3px;
+                      outline: $price;
+                  }
+                  .custom-select{
+                      width: 282px;
+                  }
+                  button{
+                      width: 282px;
+                      margin: 20px 0;
+                      border: none;
+                      color: $color-primary-white;
+                      background-color: $background;
+                      padding: 10px;
+                      font-weight: 600;
+                      font-size: 14px;
+                      cursor: pointer;
+                  }
+              }
+          }
+      }
+  }
+}

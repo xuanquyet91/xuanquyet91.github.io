@@ -1,5 +1,7 @@
 import { useState } from "react";
 import FormInput from "./FormInput";
+import {CgClose} from "react-icons/cg"
+import {Link} from "react-router-dom"
 
 const Register = () => {
   const [values, setValues] = useState({
@@ -72,6 +74,9 @@ const Register = () => {
   return (
     <div className="register">
       <form onSubmit={handleSubmit}>
+        <Link to='/' className='link-item'>
+          <CgClose/>
+        </Link>
         <h1>Register</h1>
         {inputs.map((input) => (
           <FormInput

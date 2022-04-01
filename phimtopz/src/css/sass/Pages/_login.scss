@@ -33,11 +33,12 @@
                 font-weight: bold;
                 font-size: 28px;
                 color: #4d014d;
-                margin-top: -40px;
+                // margin-top: -40px;
                 padding-bottom: 10px;
               }
               span {
                   font-size: 12px;
+                  padding: 10px 0;
               }
               a {
                   color: #333;
@@ -65,9 +66,24 @@
                 text-transform: uppercase;
                 transition: transform 80ms ease-in;
                 cursor: pointer;
+                margin-top: 10px;
+                margin-bottom: 20px;
               }
-              &____bottom{
+              .login__container__form__bottom{
                 display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 250px;
+                margin-bottom: -15px;
+                svg{
+                    color: $color-button;
+                    margin-bottom: -8px;
+                }
+                span{
+                    color: $color-button;
+                    font-weight: 500;
+                    font-size: 13px;
+                }
               }
               .social-container {
                   margin: 20px 0;

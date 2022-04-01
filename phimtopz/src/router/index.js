@@ -4,7 +4,9 @@ import Productdetail from "../pages/Productdetail";
 import Register from "../components/Register";
 import Login from "../components/Login";
 import  MainLayout  from "../layouts/Main/index";
-import LoginLayout from "../layouts/Login/index"
+import LoginLayout from "../layouts/Login/index";
+import Admin from "../pages/Admin";
+
 
 export const routes = [
     {
@@ -34,6 +36,12 @@ export const routes = [
     {
       Element: Login,
       path: "/Login",
+      Layout: LoginLayout,
+      // Protected: false,
+    },
+    {
+      Element: Admin,
+      path: "/Admin",
       Layout: LoginLayout,
       // Protected: false,
     }

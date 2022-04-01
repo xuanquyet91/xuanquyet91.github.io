@@ -7,7 +7,7 @@ import Topic from './Topic';
 
 
 const Container = () => {
-  console.log(sliderItems);
+  // console.log(sliderItems);
   const responsive = {
     superLargeDesktop: {
       // the naming can be any, depends on you.
