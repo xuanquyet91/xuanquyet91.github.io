@@ -17,31 +17,31 @@ export const routes = [
     },
     {
       Element: Productslist,
-      path: "/Productslist",
+      path: "/productslist",
       Layout: MainLayout,
       // Protected: false,
     },
     {
       Element: Productdetail,
-      path: "/Productdetail",
+      path: "/productdetail",
       Layout: MainLayout,
       // Protected: false,
     },
     {
       Element: Register,
-      path: "/Register",
+      path: "/register",
       Layout: LoginLayout,
       // Protected: false,
     },
     {
       Element: Login,
-      path: "/Login",
+      path: "/login",
       Layout: LoginLayout,
       // Protected: false,
     },
     {
       Element: Admin,
-      path: "/Admin",
+      path: "/admin",
       Layout: LoginLayout,
       // Protected: false,
     }

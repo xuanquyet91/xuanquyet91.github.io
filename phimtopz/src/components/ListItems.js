@@ -14,7 +14,7 @@ const ListItems = () => {
         <span>xem tất cả</span> 
         <IoMdArrowDropright/></div>
       </div>
-      <Link to='/Productdetail' className='link-item'>
+      <Link to='/productdetail' className='link-item'>
         <div className='listItems'>
           {sliderItems.map((item)=>(
             <div key={item.id} className='listItems__detail'>

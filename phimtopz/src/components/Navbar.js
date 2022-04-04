@@ -14,7 +14,7 @@ const Navbar = () => {
             {title.map((item,index)=> (
               <ul key={index} className='navbar--container--ul'> 
                 <li>
-                  <Link to="/Productslist" className="link-item">
+                  <Link to="/productslist" className="link-item">
                   <span>{item}</span>
                   </Link>
                   <ul className='navbar--container--nav'>

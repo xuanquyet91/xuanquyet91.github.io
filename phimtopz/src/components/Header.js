@@ -41,7 +41,7 @@ const Header = () => {
       {/* <AiOutlineSearch/> */}
     </div>
     <div className="header__right">
-      <div className="header__right__info">
+       <div className="header__right__info signIn__show">
         {!isAuthenticated && (
          <> 
           <AiOutlineLogin/>

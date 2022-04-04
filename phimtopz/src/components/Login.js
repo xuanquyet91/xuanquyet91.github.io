@@ -33,7 +33,7 @@ function Login() {
                   <Link to="/" className="link-item">
                     <BsArrowBarLeft/>
                   </Link>
-                  <Link to='/Register' className="link-item">
+                  <Link to='/register' className="link-item">
                     <span href="#">Register Now.</span>
                   </Link>
                 </div>

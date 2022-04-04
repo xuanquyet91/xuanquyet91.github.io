@@ -1,6 +1,6 @@
 .App {
     width: 1360px;
-    background-color: $background-PC;
+    // background-color: $background-PC;
     font-family: 'Poppins', sans-serif;
     line-height: 1.4;
 }
@@ -81,10 +81,24 @@
     };
     &__right{
         display: flex;
+        .signIn__show{
+            display: flex;
+            flex-direction: column;
+            p{
+                color:$color-primary-white;
+                font-size: 12px;
+            }
+            .log-out{
+            width: 70px;
+            font-size: 12px;
+            margin-top: 5px;
+            }
+        }
         &__info{
             padding-right: 20px;
             cursor: pointer;
             display: flex;
+
             svg{
                 color: $color-primary-white;
             }
