@@ -7,21 +7,6 @@ import { useAuth0 } from '@auth0/auth0-react';
 
 
 function App() {
-  // const [productList, setProductList] = useState([]);
-
-  // useEffect(() => {
-  // const fetchProductList = async () => {
-  //   try {
-  //     const params = { _page: 1, _limit: 10 };
-  //     const response = await productApi.getAll(params);
-  //     console.log('Fetch products successfully: ', response);
-  //     setProductList(response.data);
-  //   } catch (error) {
-  //     console.log('Failed to fetch product list: ', error);
-  //   }
-  // }
-  // fetchProductList();
-  // }, []);
 
   const { isLoading } = useAuth0();
   if (isLoading) return <div>Loading...</div>

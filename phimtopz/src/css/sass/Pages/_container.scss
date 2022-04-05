@@ -1,4 +1,8 @@
-.App{
+.main__layout{
+  width: 1360px;
+    background-color: $background-PC;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.4;
   .container{
     width: $width-css-pc;
     margin: auto;

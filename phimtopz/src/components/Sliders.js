@@ -1,11 +1,11 @@
-import React from "react";
+import React from 'react'
+import { BsListUl } from 'react-icons/bs';
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import { sliderItems } from '../data'
-import {BsListUl} from  'react-icons/bs';
+import { Link } from 'react-router-dom';
 
-const Sliders = () => {
-  // console.log(sliderItems);
+const Sliders = ({productList}) => {
+
   const responsive = {
     superLargeDesktop: {
       // the naming can be any, depends on you.
@@ -26,21 +26,27 @@ const Sliders = () => {
     }
   };
   return (
-    <div className='slider'>
-      <div className='slider__title'>
-          <BsListUl/>
-          <span>NEW ESPOSIDE</span>
-      </div>
-      <div className='slider__body' >
-        <Carousel responsive={responsive}>
-            {sliderItems.map((item)=>(
-              <div key={item.id} className='slider__body__item'>
-                <img src={item.img} alt="" />
-                <p>{item.title}</p> 
-                <span>{item.episode}</span> 
-              </div>
-            ))}
-        </Carousel>
+    <div className="main__layout">
+      <div className='slider'>
+        <div className='slider__title'>
+            <BsListUl/>
+            <span>NEW ESPOSIDE</span>
+        </div>
+        <div className='slider__body' >
+        <Link to='/productdetail' className='link-item'>
+          <Carousel responsive={responsive}>
+              {productList.map((item)=>(
+                <div 
+                key={item.id} 
+                className='slider__body__item'>
+                  <img src={item.img} alt="" />
+                  <p>{item.name}</p> 
+                  <span>{item.type}</span> 
+                </div>
+              ))}
+          </Carousel>
+          </Link>
+        </div>
       </div>
     </div>
   )

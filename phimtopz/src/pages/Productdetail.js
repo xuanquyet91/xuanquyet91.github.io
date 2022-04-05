@@ -6,12 +6,14 @@ import Topic from '../components/Topic'
 const Productdetail = () => {
   return (
     <>
-    <div className='grid-layout' style={{width:'1020px',margin:'auto',display:'flex'}}>
-      <div>
-        <Product/>
-        <ListItems/>
+    <div className='main__layout'>
+      <div className='grid-layout' style={{width:'1020px',margin:'auto',display:'flex'}}>
+        <div>
+          <Product/>
+          <ListItems/>
+        </div>
+      <Topic/>
       </div>
-    <Topic/>
     </div>
     </>
   )
