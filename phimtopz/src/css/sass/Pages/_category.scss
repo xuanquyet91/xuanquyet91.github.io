@@ -3,7 +3,7 @@
     background-color: $background-PC;
     font-family: 'Poppins', sans-serif;
     line-height: 1.4;
-  .container{
+  .category{
     width: $width-css-pc;
     margin: auto;
     display:grid;
@@ -13,11 +13,11 @@
     'left left right '
     'left left right '
     'left left right ';
-    .container__left{
+    .category__left{
       display: grid;
       grid-area: left;
       width: 700px;
-      .container__left__poster{
+      .category__left__poster{
         width: 700px;
         height: 290px;
         img{
@@ -26,11 +26,11 @@
           object-fit: cover;
         }
       }
-      .container__left__content{
+      .category__left__content{
         margin: 20px 0;
       }
     }
-    .container__right{
+    .category__right{
       grid-area: right;
       width: 300px;
       &__topicTop{

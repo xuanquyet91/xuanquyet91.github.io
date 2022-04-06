@@ -10,7 +10,9 @@ const Navbar = () => {
     <div className='navbar'>
       {/* <Link to="/Productslist" className="link-item"> */}
         <div className='navbar--container'>
+          <Link to="/" className="link-item"> 
             <AiOutlineHome style={{fontSize:'25px', color:'white'}} />
+          </Link>
             {title.map((item,index)=> (
               <ul key={index} className='navbar--container--ul'> 
                 <li>

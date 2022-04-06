@@ -21,14 +21,13 @@ const Search = () => {
             <p>Cập nhật </p>
             <span className="right"></span>
           </div>
-          {/* <p>Danh Sách</p>
-          <p>Phim Âm Nhạc</p> */}
         </div>
         <div className='search__bottom'>
           <div className='search__bottom__filter'>
             {listFilter.map((item,index)=>(
               <select name={item} key={index}>
-                {listItem.map((elm, index)=> (
+                {/* {console.log([item,...listItem])} */}
+                {[item,...listItem].map((elm, index)=> (
                 <option key={index}>{elm}</option>
                 )
                 )}

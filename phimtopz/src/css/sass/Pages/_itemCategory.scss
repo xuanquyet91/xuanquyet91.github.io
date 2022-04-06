@@ -1,0 +1,33 @@
+.ItemCategory{
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  grid-column-gap: 2px;
+  margin: 10px 0;
+
+  &__detail{
+    display: flex;
+    flex-direction: column;
+    background-color: #212c3a;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    padding: 10px 0 10px 8px;
+    img{
+      width: 161px;
+      height: 242px;
+      border-radius: 10px;
+    }
+    p {
+      margin: 12px 5px;
+      color: #c7d136;
+      font-family: 'Poppins';
+      cursor: pointer;
+    }
+    span{
+      margin-left: 5px;
+      color: #cccccc;
+      margin-bottom: 5px;
+      cursor: pointer;
+    }
+
+  }
+}

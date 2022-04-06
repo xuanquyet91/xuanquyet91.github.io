@@ -15,10 +15,6 @@
         }
     };
     &__center{
-        // &__search:focus ul{
-        //     background-color: $background;
-        //     opacity: 1;
-        // }
         &__search{
             position: relative;
             width: 372px;
@@ -82,10 +78,17 @@
                 color:$color-primary-white;
                 font-size: 12px;
             }
-            .log-out{
-            width: 70px;
-            font-size: 12px;
-            margin-top: 5px;
+            .log-out, .admin-setting{
+                width: 70px;
+                font-size: 12px;
+                margin-top: 5px;
+                cursor: pointer;
+                background-color: bisque;
+                border: none;
+                color: #520f0f;
+                padding: 4px 6px;
+                border-radius: 5px;
+                font-weight: 700;
             }
         }
         &__info{

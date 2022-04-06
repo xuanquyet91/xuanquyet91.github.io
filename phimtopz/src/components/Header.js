@@ -42,7 +42,7 @@ const Header = () => {
         {/* <AiOutlineSearch/> */}
       </div>
       <div className="header__right">
-        <div className="header__right__info signIn__show">
+        <div className={!isAuthenticated? "header__right__info":"signIn__show"}>
           {!isAuthenticated && (
           <> 
             <AiOutlineLogin/>
@@ -53,12 +53,17 @@ const Header = () => {
           )}
           {isAuthenticated && (
             <>
-            <Link to="/Admin" className="link-item">
             <p>{user.email}</p>
-            </Link>
-            <button onClick={() => logout()} className="log-out">
-            Log Out
-            </button> 
+            <div>
+              <button onClick={() => logout()} className="log-out">
+              Log Out
+              </button> 
+              <Link to="/Admin" className="link-item">
+                <button className="admin-setting" style={{marginLeft:'10px'}}>
+                Admin
+                </button>
+              </Link>
+            </div>
             {/* <JSONPretty data={user} /> */}
             </>
           )}

@@ -3,8 +3,9 @@ import { BsListUl } from 'react-icons/bs';
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { Link } from 'react-router-dom';
+import ItemSlider from './ItemSlider';
 
-const Sliders = ({productList}) => {
+const Slider = ({productList}) => {
 
   const responsive = {
     superLargeDesktop: {
@@ -33,23 +34,24 @@ const Sliders = ({productList}) => {
             <span>NEW ESPOSIDE</span>
         </div>
         <div className='slider__body' >
-        <Link to='/productdetail' className='link-item'>
           <Carousel responsive={responsive}>
               {productList.map((item)=>(
                 <div 
-                key={item.id} 
-                className='slider__body__item'>
-                  <img src={item.img} alt="" />
-                  <p>{item.name}</p> 
-                  <span>{item.type}</span> 
-                </div>
+                  key={item.id} 
+                  className='slider__body__item'>
+                  <Link to='/productdetail' className='link-item'>
+                      {/* <img src={item.img} alt="" />
+                      <p>{item.name}</p> 
+                      <span>{item.type}</span>  */}
+                      <ItemSlider item={item}/>
+                  </Link>
+                  </div>
               ))}
           </Carousel>
-          </Link>
         </div>
       </div>
     </div>
   )
 }
 
-export default Sliders
+export default Slider

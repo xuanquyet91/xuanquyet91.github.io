@@ -2,8 +2,6 @@ import React from 'react'
 
 
 const UsersAdmin = ({data,currentItems}) => {
-  // console.log(data);
-  // console.log(currentItems);
   return (
     <>
       {currentItems  && currentItems.map((item)=> (

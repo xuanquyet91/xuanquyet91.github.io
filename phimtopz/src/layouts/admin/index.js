@@ -1,13 +1,14 @@
 import React from 'react'
 import { Outlet } from 'react-router-dom'
 
-const LoginLayout = () => {
+const AdminLayout = () => {
   // const itemsPerPage = 15;
   return (
     <>
-      <Outlet/>
+      {/* <Outlet context={itemsPerPage}/> */}
+      <Outlet />
     </>
   )
 }
 
-export default LoginLayout
+export default AdminLayout

@@ -5,12 +5,13 @@ import Navbar from '../../components/Navbar'
 import {  Outlet } from 'react-router-dom';
 
 const MainLayout = () => {
+  const itemsPerPage = 8;
   
   return (
    <>
     <Header/>
     <Navbar/>
-    <Outlet />
+    <Outlet context={itemsPerPage}/>
     <Footer/>
    </>
   )
