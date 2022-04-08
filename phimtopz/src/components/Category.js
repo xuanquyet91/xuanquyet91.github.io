@@ -39,8 +39,7 @@ const Category = ({productList}) => {
           </div>
           <div className='category__left__content'>
               <ListCategory productList={productList}/>
-              {/* <ListCategory productList={productList}/> 
-              <ListCategory productList={productList}/>  */}
+
           </div>
         </div>
         <div className='category__right'>
