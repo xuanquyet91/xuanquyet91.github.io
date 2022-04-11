@@ -9,6 +9,7 @@ import Login from "../pages/login/Login";
 import Admin from "../pages/admin/Admin";
 import CategoryAdmin from "../pages/admin/CategoryAdmin"
 import UsersAdmin from "../pages/admin/UsersAdmin"
+import TagsAdmin from "../pages/admin/TagsAdmin";
 
 export const routes = [
     {
@@ -49,6 +50,11 @@ export const routes = [
     {
       Element: UsersAdmin,
       path: "/admin/user-admin",
+      Layout: AdminLayout,
+    },
+    {
+      Element: TagsAdmin,
+      path: "/admin/tag-admin",
       Layout: AdminLayout,
     },
   ];
