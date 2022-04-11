@@ -2,28 +2,28 @@ export const tagList = ['Anime','One piece','Gintama','Boruto','Hoạt hình7 vi
 
 export const sliderImg = [
   {
-    id: 1,
+    id: "1",
     img: "https://phimtopz.com/upload/images/2004/6/biet-doi-sieu-anh-hung-4-hoi-ket-avengers-endgame-cover.jpg",
     title: "Vườn Sao Băng (Bản Thái)",
     desc: "Thuyết Minh (2022)",
     episode: "Episode 2",
   },
   {
-    id: 2,
+    id: "2",
     img: "https://phimtopz.com/upload/images/2017/6/hai-phuong-cover.jpg",
     title: "Vườn Sao Băng (Bản Thái)",
     desc: "Thuyết Minh (2022)",
     episode: "Episode 2",
   },
   {
-    id: 3,
+    id: "3",
     img: "https://phimtopz.com/upload/images/2017/3/pokemon-tham-tu-pikachu-cover.jpg",
     title: "Vườn Sao Băng (Bản Thái)",
     desc: "Thuyết Minh (2022)",
     episode: "Episode 2",
   },
   {
-    id: 4,
+    id: "4",
     img: "https://phimtopz.com/upload/images/2000/1/sat-thu-john-wick-3-cover.jpg",
     title: "Vườn Sao Băng (Bản Thái)",
     desc: "Thuyết Minh (2022)",

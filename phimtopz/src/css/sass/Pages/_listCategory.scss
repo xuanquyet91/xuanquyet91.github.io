@@ -1,4 +1,4 @@
-.container__left__content__listItems{
+.container__left__listCategory{
     width: 700px;
     .title{
       display: flex;
@@ -18,10 +18,11 @@
         svg, span{
           padding-top: 2px;
           cursor: pointer;
+          color: #f06402;
         }
       }
     }
-    .listItems{
+    .category{
       display: grid;
       grid-template-columns: repeat(4, 25%);
       grid-column-gap: 2px;

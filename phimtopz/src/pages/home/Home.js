@@ -1,7 +1,7 @@
 import React,{useState,useEffect} from 'react'
-import productApi from '../api/productApi'
-import Category from '../components/Category'
-import Slider from '../components/Slider'
+import productApi from '../../api/productApi'
+import Container from './Container'
+import Slider from '../../pages/home/Slider'
 
 const Home = () => {
   const [productList, setProductList] = useState([]);
@@ -23,7 +23,7 @@ const Home = () => {
   return (
     <>
       <Slider productList={productList}/>
-      <Category productList={productList}/>
+      <Container productList={productList}/>
     </>
   )
 }

@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom';
-// import UsersAdmin from "../components/UsersAdmin";
+// import UsersAdmin from "../admin/UsersAdmin";
 import {GiReturnArrow} from 'react-icons/gi'
 import Accordion from '@mui/material/Accordion';
 import AccordionSummary from '@mui/material/AccordionSummary';
@@ -9,124 +9,49 @@ import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 import Box from '@mui/material/Box';
+import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
 import Modal from '@mui/material/Modal';
 
-import { useForm } from "react-hook-form";
-import { Table, Tag, Space } from 'antd';
-import 'antd/dist/antd.css';
-import {movie} from '../dataBackup'
+// import {DataGrid} from '@mui/x-data-grid';
+
+import { CKEditor } from "@ckeditor/ckeditor5-react";
+import ClassicEditor from "@ckeditor/ckeditor5-build-classic";
+import CategoryAdmin from './CategoryAdmin';
 
 const style = {
     position: 'absolute',
     top: '50%',
     left: '50%',
     transform: 'translate(-50%, -50%)',
-    width: 400,
+    width: 800,
     bgcolor: 'background.paper',
-    border: '2px solid #000',
+    border: '1px solid #000',
     boxShadow: 24,
     p: 4,
   };
-
-  // const {  Table, Tag, Space  } = antd;
 const Admin = ( ) => {
-    const { register, handleSubmit } = useForm();
-    const [dataForm, setDataForm] = useState("");
+ 
+    const [text, setText] = useState("");
     //
     const [open, setOpen] = React.useState(false);
     const handleOpen = () => setOpen(true);
     const handleClose = () => setOpen(false);
-    //
     // const columns = [
     //     { field: 'id', headerName: 'ID',type:'number', width: 60 },
-    //     { field: 'name', headerName: 'Name', width: 200 },
+    //     { field: 'name', headerName: 'Name'},
     //     { field: 'type', headerName: 'Type', width: 110 },
     //     { field: 'nation', headerName: 'Nation',width: 110,},
-    //     { field: 'directors', headerName: 'Director', width: 130 },
+    //     { field: 'directors', headerName: 'Director'},
     //     { field: 'view', headerName: 'View',type:'number', width: 90 },
     //     { field: 'year', headerName: 'Year',type:'number', width: 90 },
-    //     { field: 'edit', headerName: 'Edit', width: 30 },
-    //     { field: 'delete', headerName: 'Delete', width: 30 },
     //   ];
-    const columns = [
-        {
-          title: 'Name',
-          dataIndex: 'name',
-          key: 'name',
-          render: text => <a>{text}</a>,
-        },
-        {
-          title: 'Age',
-          dataIndex: 'age',
-          key: 'age',
-        },
-        {
-          title: 'Address',
-          dataIndex: 'address',
-          key: 'address',
-        },
-        {
-          title: 'Action',
-          key: 'action',
-          render: (text, record) => (
-            <Space size="middle">
-              <a>Invite {record.name}</a>
-              <a>Delete</a>
-            </Space>
-          ),
-        },
-        {
-          title: 'Tags',
-          key: 'tags',
-          dataIndex: 'tags',
-          render: tags => (
-            <>
-              {tags.map(tag => {
-                let color = tag.length > 5 ? 'geekblue' : 'green';
-                if (tag === 'loser') {
-                  color = 'volcano';
-                }
-                return (
-                  <Tag color={color} key={tag}>
-                    {tag.toUpperCase()}
-                  </Tag>
-                );
-              })}
-            </>
-          ),
-        },
-        
-      ];
-      
-      const data = [
-        {
-          key: '1',
-          name: 'John Brown',
-          age: 32,
-          address: 'New York No. 1 Lake Park',
-          tags: ['nice', 'developer'],
-        },
-        {
-          key: '2',
-          name: 'Jim Green',
-          age: 42,
-          address: 'London No. 1 Lake Park',
-          tags: ['loser'],
-        },
-        {
-          key: '3',
-          name: 'Joe Black',
-          age: 32,
-          address: 'Sidney No. 1 Lake Park',
-          tags: ['cool', 'teacher'],
-        },
-      ];
+
   return (
     <div className="admin">
         <div className="admin__title">
             <Link to='/' className='link-item'>
-                <img src='https://phimtopz.com/Theme/images/logo_ptz.png?v=1649311521'/>
+                <img alt='true' src='https://phimtopz.com/Theme/images/logo_ptz.png?v=1649311521'/>
             </Link>
             <h2 className="display-3">Administrator</h2>
             <Link to='/' className='link-item'>
@@ -151,22 +76,34 @@ const Admin = ( ) => {
                 aria-labelledby="modal-modal-title"
                 aria-describedby="modal-modal-description"
             >
-                <Box sx={style}>
-                <form className='admin__addData__form' onSubmit={handleSubmit((dataForm) => setDataForm(JSON.stringify(dataForm)))}>
-                    {/* <Header /> */}
-                    <label>type</label>
-                    <input {...register("type")} placeholder="Type" />
-                    <label>nation</label>
-                    <input {...register("nation")} placeholder="Nation" />
-                    <label>directors</label>
-                    <input {...register("directors")} placeholder="Director" />
-                    <label>view</label>
-                    <input {...register("view")} placeholder="View" />
-                    <label>year</label>
-                    <input {...register("year")} placeholder="Year" />
-                    <p>{dataForm}</p>
-                    <input type="submit" value='SEND' />
-                </form>
+                <Box sx={style} component="form"
+                    noValidate
+                    autoComplete="off"
+                    >
+                    <TextField id="outlined-basic" label="ID" variant="outlined" />
+                    <TextField id="outlined-basic" label="Name" variant="outlined" />
+                    <TextField id="outlined-basic" label="Director" variant="outlined" />
+                    <TextField id="outlined-basic" label="View" variant="outlined" />
+                    <TextField id="outlined-basic" label="Year" variant="outlined" />
+                    <TextField id="outlined-basic" label="Nation" variant="outlined" />
+                    <div className="editor">
+                        <CKEditor
+                        editor={ClassicEditor}
+                        id="header"
+                        data="<p></p>"
+                        onReady={(editor) => {
+                            // You can store the "editor" and use when it is needed.
+                            console.log("Editor is ready to use!", editor);
+                        }}
+                        onChange={(event, editor) => {
+                            const data = editor.getData();
+                            setText(data);
+                        }}
+                        />
+                    </div>
+                <div>
+                    <p>{text}</p>
+                </div>
                 </Box>
             </Modal>
         </div>
@@ -195,7 +132,7 @@ const Admin = ( ) => {
                     <Typography>Users</Typography>
                     </AccordionSummary>
                     <AccordionDetails>
-                        <Typography>Horror</Typography>
+                        <Typography>Account</Typography>
                     </AccordionDetails>
                 </Accordion>  
                 <Accordion>
@@ -207,15 +144,22 @@ const Admin = ( ) => {
                     <Typography>Tags name</Typography>
                     </AccordionSummary>
                     <AccordionDetails>
-                        <Typography>Horror</Typography>
+                        <Typography>Tags</Typography>
                     </AccordionDetails>
                 </Accordion>
             </div>
             <div className='admin__dashboard__table' >
-                <Table columns={columns} dataSource={data}/>
+                <CategoryAdmin />
+                {/* <DataGrid
+                    rows={movie}
+                    columns={columns}
+                    pageSize={6}
+                    rowsPerPageOptions={[5]}
+                    checkboxSelection
+                /> */}
+
             </div>
         </div>
-        
     </div>
   )
 }

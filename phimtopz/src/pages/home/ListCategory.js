@@ -1,7 +1,7 @@
 import React from 'react'
 import {IoMdArrowDropright} from 'react-icons/io'
 import { Link } from 'react-router-dom'
-
+import Category from './Category'
 
 const ListCategory = ({productList}) => {
   const captionCategory = [
@@ -13,29 +13,20 @@ const ListCategory = ({productList}) => {
   return (
     <>
     {captionCategory.map((item,index)=> (
-      <div className='container__left__content__listItems' key={index}>
+      <div className='container__left__listCategory' key={index}>
         <div className='title'>
           <div className='title__left'>
             <span>{item.name}</span>
           </div>
           <div className='title__right'>
-          <span>xem tất cả</span> 
+          <Link to='/productslist' className='link-item'>
+            <span>xem tất cả</span> 
+          </Link>
           <IoMdArrowDropright/></div>
         </div>
-        <Link to='/productdetail' className='link-item'>
-          <div className='listItems'>
-            {productList?.map((ele)=>(
-              ele.type === item.type ? 
-                <div key={ele.id} className='listItems__detail'>
-                  <img src={ele.img} alt="" />
-                  <p>{ele.name}</p> 
-                  <span>{ele.type}</span> 
-                </div>
-                 : <div key={ele.id}></div>
-                )
-            )}
-          </div>
-        </Link>
+          <Category 
+          item={item}
+          productList={productList}/>
       </div>
     ))}
   </>

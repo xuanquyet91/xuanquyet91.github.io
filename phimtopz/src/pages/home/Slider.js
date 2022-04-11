@@ -2,11 +2,11 @@ import React from 'react'
 import { BsListUl } from 'react-icons/bs';
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import { Link } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import ItemSlider from './ItemSlider';
 
 const Slider = ({productList}) => {
-
+  const newDataSlider = productList.slice(0,8)
   const responsive = {
     superLargeDesktop: {
       // the naming can be any, depends on you.
@@ -26,6 +26,7 @@ const Slider = ({productList}) => {
       items: 1
     }
   };
+
   return (
     <div className="main__layout">
       <div className='slider'>
@@ -35,15 +36,12 @@ const Slider = ({productList}) => {
         </div>
         <div className='slider__body' >
           <Carousel responsive={responsive}>
-              {productList.map((item)=>(
-                <div 
-                  key={item.id} 
+              {newDataSlider.map((item)=>(
+                <div  key={item.id} 
                   className='slider__body__item'>
-                  <Link to='/productdetail' className='link-item'>
-                      {/* <img src={item.img} alt="" />
-                      <p>{item.name}</p> 
-                      <span>{item.type}</span>  */}
-                      <ItemSlider item={item}/>
+                  <Link to={`/productdetail/${item.id}`} className='link-item'>
+                      <ItemSlider 
+                      item={item}/>
                   </Link>
                   </div>
               ))}

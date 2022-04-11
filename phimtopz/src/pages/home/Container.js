@@ -1,12 +1,13 @@
 import React from 'react'
 import Carousel from 'react-multi-carousel';
 import "react-multi-carousel/lib/styles.css";
-import { sliderImg } from '../data';
+import Topic from '../../components/Topic';
+import { sliderImg } from '../../data';
 import ListCategory from './ListCategory';
-import Topic from './Topic';
 
 
-const Category = ({productList}) => {
+
+const Container = ({productList}) => {
   const responsive = {
     superLargeDesktop: {
       // the naming can be any, depends on you.
@@ -28,22 +29,21 @@ const Category = ({productList}) => {
   };
   return (
     <div className='main__layout'>
-      <div className='category'>
-        <div className='category__left'>
-          <div className='category__left__poster'>
+      <div className='container'>
+        <div className='container__left'>
+          <div className='container__left__poster'>
             <Carousel responsive={responsive}>
               {sliderImg.map((item)=>(
                 <img src={item.img} key={item.id} alt=''/>
               ))}
             </Carousel>
           </div>
-          <div className='category__left__content'>
+          <div className='container__left__listCategory'>
               <ListCategory productList={productList}/>
-
           </div>
         </div>
-        <div className='category__right'>
-          <div className='category__right__topicTop'>
+        <div className='container__right'>
+          <div className='container__right__topicTop'>
             <img src='https://kenh14cdn.com/thumb_w/640/2019/12/17/fast-furious-141000x625-1576517551701988605530-crop-1576517569941241743899.jpg' alt=''/>
             <img src='https://i.imgur.com/Yl1FFPE.jpeg' alt=''/>
           </div>
@@ -54,4 +54,4 @@ const Category = ({productList}) => {
   )
 }
 
-export default Category
+export default Container

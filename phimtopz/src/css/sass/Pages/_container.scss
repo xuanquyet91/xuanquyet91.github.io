@@ -3,7 +3,7 @@
     background-color: $background-PC;
     font-family: 'Poppins', sans-serif;
     line-height: 1.4;
-  .category{
+  .container{
     width: $width-css-pc;
     margin: auto;
     display:grid;
@@ -13,11 +13,11 @@
     'left left right '
     'left left right '
     'left left right ';
-    .category__left{
+    .container__left{
       display: grid;
       grid-area: left;
       width: 700px;
-      .category__left__poster{
+      .container__left__poster{
         width: 700px;
         height: 290px;
         img{
@@ -26,11 +26,11 @@
           object-fit: cover;
         }
       }
-      .category__left__content{
+      .container__left__listCategory{
         margin: 20px 0;
       }
     }
-    .category__right{
+    .container__right{
       grid-area: right;
       width: 300px;
       &__topicTop{

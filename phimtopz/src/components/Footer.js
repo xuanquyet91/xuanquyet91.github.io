@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <div className='main__layout'>
       <div className='footer'>
-        <img src='	https://phimtopz.com/Theme/images/logo_ptz.png?v=1648536669' alt=''/>
+        <img src='	https://phimtopz.com/Theme/images/logo_ptz.png?v=1648536669' alt='true'/>
         <p>
         Disclaimer: copyrights and trademarks for the movies and tv series, 
         and other promotional materials are held by their respective owners 

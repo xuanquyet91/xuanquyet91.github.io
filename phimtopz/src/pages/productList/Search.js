@@ -3,7 +3,7 @@ import React from 'react'
 
 const Search = () => {
   const listFilter= ['Sắp xếp','Loại', 'Thể Loại', 'Quốc Gia', 'Năm']
-  const listItem= ['Mới Cập Nhật','Năm xuất bản', 'Phổ Biến', 'Năm']
+  const listItem= ['ACTION','HORROR', 'FANTASY']
 
   return (
     <div className='main__layout'>
@@ -26,7 +26,6 @@ const Search = () => {
           <div className='search__bottom__filter'>
             {listFilter.map((item,index)=>(
               <select name={item} key={index}>
-                {/* {console.log([item,...listItem])} */}
                 {[item,...listItem].map((elm, index)=> (
                 <option key={index}>{elm}</option>
                 )
