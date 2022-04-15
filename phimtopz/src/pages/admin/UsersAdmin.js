@@ -1,12 +1,11 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import {DataGrid} from '@mui/x-data-grid';
-import {movie} from "../../dataBackup"
 
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
 import Modal from '@mui/material/Modal';
-import { useOutletContext } from 'react-router-dom';
+import userApi from '../../api/userApi'
 
 import { CKEditor } from "@ckeditor/ckeditor5-react";
 import ClassicEditor from "@ckeditor/ckeditor5-build-classic";
@@ -23,7 +22,23 @@ const style = {
   p: 4,
 };
 const UsersAdmin = () => {
-  const userList= useOutletContext()
+  // fetch API
+  const [userList, setUserList] = useState([]);
+ 
+  useEffect(() => {
+  const fetchProductList = async () => {
+    try {
+      // const params = { _page: 1, _limit: 10 };
+      const responseUser = await userApi.getAll();
+      console.log('Fetch products successfully: ', responseUser);
+      setUserList(responseUser)
+      
+    } catch (error) {
+      console.log('Failed to fetch product list: ', error);
+    }
+  }
+  fetchProductList();
+  }, []);
   const [text, setText] = useState("");
   //
   const [open, setOpen] = React.useState(false);
@@ -36,10 +51,21 @@ const UsersAdmin = () => {
     { field: 'email', headerName: 'Email', width: 200 },
     { field: 'gender', headerName: 'Gender',width: 110,},
   ];
+  console.log(userList);
   return (
     <>
-      <div className='admin__addData'>
-        <Button onClick={handleOpen} variant="contained">ADD CATEGORY</Button>
+      <div className='admin__dashboard__table__handleData'>
+        <div className="admin__dashboard__table__handleData__search">
+          <div className="admin__dashboard__table__handleData__search__input">
+              <input type="text" 
+              name="true"
+              className="form-control" 
+              aria-describedby="helpId" 
+              placeholder="Keywords..." />
+              <button>Search</button>
+          </div>
+          <Button onClick={handleOpen} variant="contained">ADD USER</Button>
+        </div>
         <Modal
             open={open}
             onClose={handleClose}

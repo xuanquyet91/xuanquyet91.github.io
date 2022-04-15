@@ -14,16 +14,6 @@ const HeaderAdmin = () => {
               <GiReturnArrow/>
           </Link>
       </div> 
-      <div className="admin__searchForm">
-          <div className="admin__searchForm__input">
-              <input type="text" 
-              name="true"
-              className="form-control" 
-              aria-describedby="helpId" 
-              placeholder="Keywords..." />
-              <button>Search</button>
-          </div>
-      </div>
     </>
   )
 }

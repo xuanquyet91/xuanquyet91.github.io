@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 const Item = ({productList}) => {
-
+  // console.log('abc',typeMovie);
   return (
     <div className='Item'>
       {productList?.map((item)=>(

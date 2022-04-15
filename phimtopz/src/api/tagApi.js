@@ -1,9 +1,9 @@
 import axiosClient from "./axiosClient";
 
 // api/productApi.js
-const userApi = {
+const tagApi = {
   getAll: (params) => {
-    const url = '/user';
+    const url = '/tag';
     return axiosClient.get(url, { params });
   },
   // getId: (id) => {
@@ -13,4 +13,4 @@ const userApi = {
 }
 
   
-export default userApi;
+export default tagApi;

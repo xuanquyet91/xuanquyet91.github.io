@@ -4,7 +4,13 @@ import React from 'react'
 const Search = () => {
   const listFilter= ['Sắp xếp','Loại', 'Thể Loại', 'Quốc Gia', 'Năm']
   const listItem= ['ACTION','HORROR', 'FANTASY']
-
+  const handlertest =(ele)=> {
+    // return ele
+    console.log(ele);
+  }
+  // const handleClickFilter = (ele)=>{
+  // }
+  
   return (
     <div className='main__layout'>
       <div className='search'>
@@ -25,16 +31,23 @@ const Search = () => {
         <div className='search__bottom'>
           <div className='search__bottom__filter'>
             {listFilter.map((item,index)=>(
-              <select name={item} key={index}>
+              <select method="get"
+              onChange={(e)=> handlertest(e.target.value)}
+              name={item} key={index}>
                 {[item,...listItem].map((elm, index)=> (
-                <option key={index}>{elm}</option>
+                <option  
+                value={elm} key={index}>
+                  {elm}
+                </option>
                 )
                 )}
               </select>
             ))}
           </div>
           <div className='search__bottom__button'>
-            <button>Lọc Phim</button>
+            <button
+            //  onClick={(ele)=> handleClickFilter(ele)}
+            >Lọc Phim</button>
           </div>
         </div>
       </div>

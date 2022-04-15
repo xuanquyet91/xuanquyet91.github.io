@@ -68,10 +68,12 @@
         color: white;
         font-weight: bold;
         text-transform: uppercase;
+        cursor: pointer;
       }
       .btn button:first-child{
         background-color: #5cb85c;
       }
+      
       .btn button:nth-child(2){
         background-color: #c9302c;
       }

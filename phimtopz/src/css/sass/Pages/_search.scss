@@ -4,32 +4,39 @@
   padding: 10px 10px 10px 10px;
   &__top {
     display: flex;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     background-color: #202020;
     color: #cccccc;
     width: 300px;
     height: 25px;
     &__arrow { 
       position: absolute;
-      background: #363636;
+      // background: #363636;
       top: 145px;
+      display: flex;
       p {
         padding: 2px 10px;
         line-height: 1.5;
         color: #cccccc;
+        font-style: oblique;
       }
-      .right {
-        position: absolute;
-        width: 0px;
-        height: 0px;
-        line-height: 0px;
-        border-bottom: 10px solid #363636;
-        border-left: 14px solid #202020;
-        border-right: 14px solid #202020;
-        left: 70.5px;
-        top: 8.5px;
-        transform: rotate(90deg);
-      } 
+      svg.right{
+        width: 20px;
+        height: 28px;
+        background: #202020;
+      }
+      // .right {
+      //   position: absolute;
+      //   width: 0px;
+      //   height: 0px;
+      //   line-height: 0px;
+      //   border-bottom: 10px solid #363636;
+      //   border-left: 14px solid #202020;
+      //   border-right: 14px solid #202020;
+      //   left: 70.5px;
+      //   top: 8.5px;
+      //   transform: rotate(90deg);
+      // } 
     } 
     &__arrow:nth-child(2) {
       left: 263px;

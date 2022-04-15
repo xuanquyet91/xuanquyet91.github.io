@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import {AiFillStar} from 'react-icons/ai'
 import {BsFillBookmarkStarFill} from 'react-icons/bs'
-import { useParams } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
 
 const Product = ({productList}) => {
   const {productId} = useParams()
@@ -18,19 +18,21 @@ const Product = ({productList}) => {
             <img src={productItem?.img} alt=''/>
             <div className='btn'>
               <button>Thêm vào tủ</button>
-              <button>Xem phim</button>
+              <Link to="/watch-movie">
+                <button style={{'backgroundColor': '#c9302c'}}>Xem phim</button>
+              </Link>
             </div>
           </div>
           <div className='product__content__right'>
             <h1>{productItem?.name}</h1>
-            <p>Đang phát:<span>{productItem?.channel}</span></p>
-            <p>Đạo diễn: <span>{productItem?.directors}</span></p>
-            <p>Đạo diễn: <span>{productItem?.actor}</span></p>
-            <p>Thể loại: <span>{productItem?.type}</span></p>
-            <p>Quốc gia: <span>{productItem?.nation}</span></p>
-            <p>Thời lượng: <span>{productItem?.time}</span></p>
-            <p>Lượt xem: <span>{productItem?.view}</span> </p>
-            <p>Năm xuất bản: <span> {productItem?.year}</span></p>
+            <p>Channel:<span>{productItem?.channel}</span></p>
+            <p>Director: <span>{productItem?.directors}</span></p>
+            <p>Actor: <span>{productItem?.actor}</span></p>
+            <p>Type: <span>{productItem?.type}</span></p>
+            <p>Nation: <span>{productItem?.nation}</span></p>
+            <p>Time: <span>{productItem?.time}</span></p>
+            <p>View: <span>{productItem?.view}</span> </p>
+            <p>Year: <span> {productItem?.year}</span></p>
             <div className='social'>
               <button>Thích 156</button>
               <button>Chia sẻ</button>

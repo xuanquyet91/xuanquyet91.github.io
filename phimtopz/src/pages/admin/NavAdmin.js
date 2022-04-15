@@ -8,7 +8,31 @@ import { Link } from 'react-router-dom';
 
 const NavAdmin = () => {
   return (
-    <div className='admin__dashboard__nav'>
+    <div className='admin__dashboard__nav'> 
+      <Accordion>
+          <AccordionSummary
+          // expandIcon={<ExpandMoreIcon />}
+          aria-controls="panel1a-content"
+          id="panel1a-header"
+          >
+          <Link to="/admin/user-admin" className='link-item'>
+            <Typography>Users</Typography>
+          </Link>
+          </AccordionSummary>
+          {/* <AccordionDetails>
+              <Typography>Account</Typography>
+          </AccordionDetails> */}
+      </Accordion>  
+      <Accordion>
+          <AccordionSummary
+          aria-controls="panel1a-content"
+          id="panel1a-header"
+          >
+          <Link to="/admin/tag-admin" className='link-item'>
+            <Typography>Tags</Typography>
+          </Link>
+          </AccordionSummary>
+      </Accordion>
       <Accordion>
           <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
@@ -16,7 +40,7 @@ const NavAdmin = () => {
           id="panel1a-header"
           >
           <Link to="/admin/category-admin" className='link-item'>
-            <Typography>Category</Typography>
+            <Typography>Movies</Typography>
           </Link>
           </AccordionSummary>
           <AccordionDetails>
@@ -25,34 +49,6 @@ const NavAdmin = () => {
               <Typography>Fantasy</Typography>
           </AccordionDetails>
       </Accordion>  
-      <Accordion>
-          <AccordionSummary
-          expandIcon={<ExpandMoreIcon />}
-          aria-controls="panel1a-content"
-          id="panel1a-header"
-          >
-          <Link to="/admin/user-admin" className='link-item'>
-            <Typography>Users</Typography>
-          </Link>
-          </AccordionSummary>
-          <AccordionDetails>
-              <Typography>Account</Typography>
-          </AccordionDetails>
-      </Accordion>  
-      <Accordion>
-          <AccordionSummary
-          expandIcon={<ExpandMoreIcon />}
-          aria-controls="panel1a-content"
-          id="panel1a-header"
-          >
-          <Link to="/admin/tag-admin" className='link-item'>
-            <Typography>Tags name</Typography>
-          </Link>
-          </AccordionSummary>
-          <AccordionDetails>
-              <Typography>Tags</Typography>
-          </AccordionDetails>
-      </Accordion>
   </div>
   )
 }

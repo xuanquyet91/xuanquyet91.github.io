@@ -1,6 +1,6 @@
-import React, { useState } from 'react'
-import {DataGrid} from '@mui/x-data-grid';
-import { useOutletContext } from 'react-router-dom';
+import React, { useEffect, useState } from 'react'
+import axios from "axios";
+// import {DataGrid} from '@mui/x-data-grid';
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
@@ -8,6 +8,15 @@ import Modal from '@mui/material/Modal';
 
 import { CKEditor } from "@ckeditor/ckeditor5-react";
 import ClassicEditor from "@ckeditor/ckeditor5-build-classic";
+import productApi from '../../api/productApi';
+
+import Table from '@mui/material/Table';
+import TableBody from '@mui/material/TableBody';
+import TableCell from '@mui/material/TableCell';
+import TableContainer from '@mui/material/TableContainer';
+import TableHead from '@mui/material/TableHead';
+import TableRow from '@mui/material/TableRow';
+import Paper from '@mui/material/Paper';
 
 const style = {
   position: 'absolute',
@@ -20,28 +29,99 @@ const style = {
   boxShadow: 24,
   p: 4,
 };
-
 const CategoryAdmin = () => {
-  const productList= useOutletContext()
-  // console.log(productList);
+  
+  const [productList, setProductList] = useState([]);
+  // fetch API
+  useEffect(() => {
+  const fetchProductList = async () => {
+    try {
+      const response = await productApi.getAll();
+      setProductList(response)
+    } catch (error) {
+      console.log('Failed to fetch product list: ', error);
+    }
+  }
+  fetchProductList();
+  }, []);
   const [text, setText] = useState("");
   //
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
-  const columns = [
-    { field: 'id', headerName: 'ID',type:'number', width: 60 },
-    { field: 'name', headerName: 'Name'},
-    { field: 'type', headerName: 'Type', width: 110 },
-    { field: 'nation', headerName: 'Nation',width: 110,},
-    { field: 'directors', headerName: 'Director'},
-    { field: 'view', headerName: 'View',type:'number', width: 90 },
-    { field: 'year', headerName: 'Year',type:'number', width: 90 },
-  ];
+  //
+  const [query, setQuery]= useState('');
+  const keys= ['name'];
+  //
+  const [name,setName] = useState('');
+  const [channel,setChannel] = useState('');
+  const [nation,setNation] = useState('');
+  const [time,setTime] = useState('');
+  const [view,setView] = useState('');
+  const [type,setType] = useState('');
+  const [actor,setActor] = useState('');
+  const [directors,setDirectors] = useState('');
+  const [year,setYear] = useState('');
+  const addMovie = {
+    name: name,
+    channel: channel,
+    nation: nation,
+    time: time,
+    view: view,
+    type: type,
+    actor: actor,
+    directors: directors,
+    year: year,
+  }
+  console.log(addMovie);
+  // thêm phim trên mockup Api
+  const handleAdd = () => {
+    axios
+      .post(`https://624bab2444505084bc54160d.mockapi.io/movie`, addMovie)
+      .then((response) => {
+        console.log("add succcess!",response);
+      });
+
+  }
+  // Xóa phim trên mockup Api
+  const handleDelete = (id) => {
+    axios
+      .delete(
+        `https://624bab2444505084bc54160d.mockapi.io/movie/${id}`
+      )
+      .then(() => {
+        console.log("delete succcess!");
+      });
+    const interval = setInterval(() => {
+      window.location.reload();
+    }, 1000);
+    return () => clearInterval(interval);
+  }
+  // tìm kiếm danh sách phim theo tên
+  const search =(productList) =>{
+    return productList.filter(item=>
+      keys.some((key)=> 
+        item[key].toLowerCase().includes(query)
+      )
+      );
+  }
   return (
     <>
-      <div className='admin__addData'>
-        <Button onClick={handleOpen} variant="contained">ADD CATEGORY</Button>
+      <div className='admin__dashboard__table__handleData'>
+        <div className="admin__dashboard__table__handleData__search">
+          <div className="admin__dashboard__table__handleData__search__input">
+              <input type="text" 
+              onChange= {e=> setQuery(e.target.value)}
+              name="true"
+              className="form-control" 
+              aria-describedby="helpId" 
+              placeholder="Keywords..." />
+              <button 
+              // onClick={handleChange}
+              >Search</button>
+          </div>
+          <Button key="submit" onClick={handleOpen} variant="contained">ADD MOVIE</Button>
+        </div>
         <Modal
             open={open}
             onClose={handleClose}
@@ -51,13 +131,17 @@ const CategoryAdmin = () => {
             <Box sx={style} component="form"
               noValidate
               autoComplete="off"
+              className='admin__dashboard__table__handleData__search--submit'
               >
-              <TextField id="outlined-basic" label="ID" variant="outlined" />
-              <TextField id="outlined-basic" label="Name" variant="outlined" />
-              <TextField id="outlined-basic" label="Director" variant="outlined" />
-              <TextField id="outlined-basic" label="View" variant="outlined" />
-              <TextField id="outlined-basic" label="Year" variant="outlined" />
-              <TextField id="outlined-basic" label="Nation" variant="outlined" />
+              <TextField id="outlined-basic" onChange={(e) => setName(e.target.value)} label="Name" variant="outlined" />
+              <TextField id="outlined-basic" onChange={(e) => setChannel(e.target.value)} label="Channel" variant="outlined" />
+              <TextField id="outlined-basic" onChange={(e) => setDirectors(e.target.value)} label="Director" variant="outlined" />
+              <TextField id="outlined-basic" onChange={(e) => setActor(e.target.value)} label="Actor" variant="outlined" />
+              <TextField id="outlined-basic" onChange={(e) => setType(e.target.value)} label="Type" variant="outlined" />
+              <TextField id="outlined-basic" onChange={(e) => setNation(e.target.value)} label="Nation" variant="outlined" />
+              <TextField id="outlined-basic" onChange={(e) => setTime(e.target.value)} label="Time" variant="outlined" />
+              <TextField id="outlined-basic" onChange={(e) => setView(e.target.value)} label="View" variant="outlined" />
+              <TextField id="outlined-basic" onChange={(e) => setYear(e.target.value)} label="Year" variant="outlined" />
               <div className="editor">
                   <CKEditor
                   editor={ClassicEditor}
@@ -73,19 +157,47 @@ const CategoryAdmin = () => {
                   }}
                   />
                 </div>
+              <button onClick={handleAdd}>SUBMIT</button>
             <div>
                 <p>{text}</p>
             </div>
             </Box>
         </Modal>
-    </div>
-      <DataGrid
-        rows={productList}
-        columns={columns}
-        pageSize={6}
-        rowsPerPageOptions={[5]}
-        checkboxSelection
-      /> 
+      </div>
+      <TableContainer component={Paper}>
+      <Table sx={{ minWidth: 650 }} aria-label="simple table">
+        <TableHead>
+          <TableRow style={{backgroundColor:'#dae0e5'}}>
+            <TableCell align="left ">#</TableCell>
+            <TableCell align="left">NAME</TableCell>
+            <TableCell align="left">DIRECTOR</TableCell>
+            <TableCell align="left">CHANNEL</TableCell>
+            <TableCell align="left">TIME</TableCell>
+            <TableCell align="center">ACTION</TableCell>
+          </TableRow>
+        </TableHead>
+        <TableBody>
+          {search(productList)?.map((row,index) => (
+            <TableRow
+              key={index}
+              sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
+            >
+              <TableCell align="left">{index+1}</TableCell>
+              <TableCell align="left" sx={{ maxWidth: 150 }}>{row.name}</TableCell>
+              <TableCell align="left" sx={{ maxWidth: 150 }}>{row.directors}</TableCell>
+              <TableCell align="left">{row.channel}</TableCell>
+              <TableCell align="left">{row.time}</TableCell>
+              <TableCell align="center">
+                <button style={{backgroundColor:'#f1bc31',color:'white'}}>Edit</button>
+                <button 
+                onClick={()=>handleDelete(row.id)}
+                style={{backgroundColor:'#f0134d',color:'white'}}>Delete</button>
+              </TableCell>
+            </TableRow>
+          ))}
+        </TableBody>
+      </Table>
+    </TableContainer> 
     </>
   )
 }

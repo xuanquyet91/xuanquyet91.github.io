@@ -1,6 +1,5 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import {DataGrid} from '@mui/x-data-grid';
-import {movie} from "../../dataBackup"
 
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
@@ -9,6 +8,7 @@ import Modal from '@mui/material/Modal';
 
 import { CKEditor } from "@ckeditor/ckeditor5-react";
 import ClassicEditor from "@ckeditor/ckeditor5-build-classic";
+import tagApi from '../../api/tagApi';
 
 const style = {
   position: 'absolute',
@@ -23,6 +23,23 @@ const style = {
 };
 
 const TagsAdmin = () => {
+  // fetch API
+  const [tagList, setTagList] = useState([]);
+ 
+  useEffect(() => {
+  const fetchProductList = async () => {
+    try {
+      // const params = { _page: 1, _limit: 10 };
+      const responseTag = await tagApi.getAll();
+      console.log('Fetch products successfully: ', responseTag);
+      setTagList(responseTag)
+      
+    } catch (error) {
+      console.log('Failed to fetch product list: ', error);
+    }
+  }
+  fetchProductList();
+  }, []);
   const [text, setText] = useState("");
   //
   const [open, setOpen] = React.useState(false);
@@ -30,17 +47,23 @@ const TagsAdmin = () => {
   const handleClose = () => setOpen(false);
   const columns = [
     { field: 'id', headerName: 'ID',type:'number', width: 60 },
-    { field: 'name', headerName: 'Name'},
-    { field: 'type', headerName: 'Type', width: 110 },
-    { field: 'nation', headerName: 'Nation',width: 110,},
-    { field: 'directors', headerName: 'Director'},
-    { field: 'view', headerName: 'View',type:'number', width: 90 },
-    { field: 'year', headerName: 'Year',type:'number', width: 90 },
+    { field: 'tag', headerName: 'TAG'},
+
   ];
   return (
     <>
-      <div className='admin__addData'>
-        <Button onClick={handleOpen} variant="contained">ADD CATEGORY</Button>
+      <div className='admin__dashboard__table__handleData'>
+        <div className="admin__dashboard__table__handleData__search">
+          <div className="admin__dashboard__table__handleData__search__input">
+              <input type="text" 
+              name="true"
+              className="form-control" 
+              aria-describedby="helpId" 
+              placeholder="Keywords..." />
+              <button>Search</button>
+          </div>
+          <Button onClick={handleOpen} variant="contained">ADD TAG</Button>
+        </div>
         <Modal
             open={open}
             onClose={handleClose}
@@ -79,7 +102,7 @@ const TagsAdmin = () => {
         </Modal>
     </div>
       <DataGrid
-        rows={movie}
+        rows={tagList}
         columns={columns}
         pageSize={6}
         rowsPerPageOptions={[5]}

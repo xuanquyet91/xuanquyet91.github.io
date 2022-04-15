@@ -224,7 +224,9 @@ table {
   height: 26px;
   cursor: pointer;
 }
-
+.css-1vgudob-MuiAutocomplete-root .MuiOutlinedInput-root .MuiAutocomplete-input{
+  color: white !important;
+}
 .header__center__input {
   padding-left: 20px;
   width: 372px;
@@ -419,7 +421,10 @@ table {
   display: -ms-grid;
   display: grid;
   padding: 20px 0;
-  grid-template: 'left left right ' 'left left right ' 'left left right ' 'left left right ';
+  grid-template: 'left left right '
+ 'left left right '
+ 'left left right '
+ 'left left right ';
 }
 
 .App .container .container__left {

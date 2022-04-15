@@ -6,22 +6,25 @@ import {Link} from 'react-router-dom'
 
 const Topic = () => {
   const [productList, setProductList] = useState([]);
+  const [typeList, setTypeList] = useState('HORROR');
   useEffect(() => {
     // console.log('acs');
   const fetchProductList = async () => {
     try {
-      // const params = { _page: 1, _limit: 10 };
-      const response = await productApi.getAll();
-      // console.log('Fetch products successfully: ', response);
-      setProductList(response)
 
+      const response = await productApi.getAll();
+      setProductList(response)
     } catch (error) {
       console.log('Failed to fetch product list: ', error);
     }
   }
   fetchProductList();
   }, []);
-
+  const switchType = (ele)=>{
+    // console.log(ele);
+    setTypeList(ele)
+    console.log('type: ',typeList);
+  }
   return (
       <div className='topic__content'>
         <div className='topic__content__top'>
@@ -40,12 +43,21 @@ const Topic = () => {
           </div>
           <div className='content'>
             <div className='content__router'>
-              <p>Phim Lẻ</p>
-              <p>Phim Bộ</p>
-              <p>Hoạt Hình</p>
+              <p 
+              value='ACTION'
+              onClick={(e)=> switchType(e.target.innerText)}
+              >ACTION</p>
+              <p
+              value='HORROR'
+              onClick={(e)=> switchType(e.target.innerText)}
+              >HORROR</p>
+              <p
+              value='FANTASY'
+              onClick={(e)=> switchType(e.target.innerText)}>FANTASY</p>
             </div>
             <div className='content__list'>
-              {(productList.slice(0,10)).map((item)=>(
+              {(productList).map((item)=>(
+                typeList === item.type ? 
                 <Link key={item.id} to={`/productdetail/${item.id}`} className='link-item'>
                   <div  className='content__list__right'>
                     <img src={item.img} alt=''/>
@@ -56,6 +68,7 @@ const Topic = () => {
                     </div>
                   </div>
                 </Link>
+                : <div key={item.id}></div>
               ))}
             </div>
           </div>

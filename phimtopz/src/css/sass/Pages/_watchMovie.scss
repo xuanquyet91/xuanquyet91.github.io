@@ -1,0 +1,184 @@
+.main__layout{
+    width: 1360px;
+    background-color: $background-PC;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.4;
+  .watchMovie{
+    width: $width-css-pc;
+    margin: auto;
+    background-color: $background-PC;
+    &__play{
+      &__top{
+        display: flex;
+        flex-direction: column;
+        &-Title{
+          border: 1px solid #908b30;
+          width: 1018px;
+          text-align: center;
+          padding: 12px 0;
+          color: #f7ee03;
+          line-height: 1.4;
+          background: #363636;
+          font-size: 14px;
+          p.title {
+            display: block;
+            width: 500px;
+            margin: auto;
+          }
+        }
+        &-Note{
+          margin-bottom: 5px;
+          background: #8e3636;
+          color: #fff;
+          padding: 7px;
+          border: 1px solid #9e4e4e;
+          text-transform: uppercase;
+          font-size: 13px;
+          p.note{
+            margin-left: 0px;
+            width: 1020px;
+          }
+        }
+      }
+      iframe{}
+      &__bottom{
+        &__option{
+          display: flex;
+          justify-content: space-between;
+          padding-bottom: 20px;
+          padding-top: 5px;
+          button{
+            color: #fff601;
+            background: #444;
+            padding: 7px 10px 5px;
+            border-radius: 2px;
+            font-size: 12px;
+            font-weight: bold;
+            border: none;
+          }
+          .option__right{
+            button{
+              background-color: #365899;
+              margin-left: 5px;
+              color: $color-primary-white;
+            }
+            svg {
+              font-size: 20px;
+              margin: -5px;
+            }
+          }
+
+        }
+        &__sever{
+          display: flex;
+          color: #fff601;
+          padding-left: 5px;
+          font-size: 14px;
+          background: #333;
+          align-items: center;
+          border-radius: 7px;
+          padding-bottom: 15px;
+          padding-top: 15px;
+          p{
+            margin-right: 10px;
+            display: block;
+          }
+          svg{
+            padding-right: 5px;
+          }
+          button:nth-child(2){
+            background-color: #318531 ;
+          }
+          button:nth-child(3){
+            background-color: #d43f3a;;
+          }
+          button{
+            margin-left: 5px;
+            // background-color: #5cb85c;
+            outline: none;
+            border: none;
+            border-radius: 4px;
+            color: white;
+            font-size: 12px;
+            padding: 4px 8px;
+            cursor: pointer;
+
+          }
+        }
+        &__caption{
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding: 15px 8px;
+          background-color: #6a6666a1;
+          margin-top: 10px;
+          border-radius: 5px;
+          margin-bottom: 12px;
+          .caption{
+            span{
+            color: aliceblue;
+            font-size: 14px;
+            font-style: italic;
+            font-weight: 200;
+            }
+            h1{
+              color: #f57508;
+              font-size: 20px;
+              font-weight: bold;
+              text-transform: uppercase;
+              padding-bottom: 6px
+              ;
+            }
+          }
+          .rate{
+            display: flex;
+            margin-top: 12px;
+            p{
+              background-color: #404040;
+              border-radius: 10px;
+              padding: 11px;
+              font-size: 23px;
+              color: #ffe000;
+              font-weight: 600;
+            }
+            .star{
+            display: flex;
+            flex-direction: column;
+            padding: 6px;
+            svg{
+                color: #f57508;
+                font-size: 20px;
+              }  
+            span{
+              color: aliceblue;
+              font-size: 14px;
+              font-style: italic;
+              font-weight: 200;
+            }
+            }
+          }
+        }
+        &__severAuto{
+          background-color:#0e141b;
+          padding: 15px;
+          button{
+            font-weight: 600;
+            color: #fff;
+            background-color: #345881af;
+            padding: 9px 15px;
+            border: none;
+            border-radius: 6px;
+            font-size: 17px;
+            cursor: pointer;
+            margin-right: 15px;
+            margin-bottom: 15px;
+          }
+          button:hover{
+            background-color: #ffb850;
+            color: #000;
+          }
+        }
+      }
+    }
+  }
+}

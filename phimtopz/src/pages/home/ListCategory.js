@@ -19,7 +19,7 @@ const ListCategory = ({productList}) => {
             <span>{item.name}</span>
           </div>
           <div className='title__right'>
-          <Link to='/productslist' className='link-item'>
+          <Link to={`/productslist/${item.type.toLowerCase()}`} className='link-item'>
             <span>xem tất cả</span> 
           </Link>
           <IoMdArrowDropright/></div>

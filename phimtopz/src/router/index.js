@@ -10,6 +10,7 @@ import Admin from "../pages/admin/Admin";
 import CategoryAdmin from "../pages/admin/CategoryAdmin"
 import UsersAdmin from "../pages/admin/UsersAdmin"
 import TagsAdmin from "../pages/admin/TagsAdmin";
+import WatchMovie from "../pages/watchMovie/WatchMovie";
 
 export const routes = [
     {
@@ -23,8 +24,18 @@ export const routes = [
       Layout: MainLayout,
     },
     {
+      Element: Productslist,
+      path: "/productslist/:typeMovie",
+      Layout: MainLayout,
+    },
+    {
       Element: Productdetail,
       path: "/productdetail/:productId",
+      Layout: MainLayout,
+    },
+    {
+      Element: WatchMovie,
+      path: "/watch-movie",
       Layout: MainLayout,
     },
     {
