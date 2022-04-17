@@ -35,7 +35,7 @@ export const routes = [
     },
     {
       Element: WatchMovie,
-      path: "/watch-movie",
+      path: "/watch-movie/:Episode",
       Layout: MainLayout,
     },
     {

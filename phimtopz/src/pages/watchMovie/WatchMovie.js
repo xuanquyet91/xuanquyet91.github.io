@@ -4,11 +4,16 @@ import Item from '../../components/Item'
 import {CgDanger} from 'react-icons/cg'
 import { BsServer } from 'react-icons/bs';
 import { AiFillStar } from 'react-icons/ai';
+import { useParams } from 'react-router-dom';
 // import { getWatchMovie } from './WatchMovie.sevice';
 
 const WatchMovie = () => {
   const [productList, setProductList] = useState([]);
- 
+  const [isSelect,setIsSelect] = useState(true)
+  const {Episode} = useParams()
+  // const productEpisode = productList.find(prod => prod.id === Episode)
+  const partButton = productList[Episode-1].link;
+  console.log(partButton);
   useEffect(() => {
   const fetchProductList = async () => {
     try {
@@ -24,12 +29,16 @@ const WatchMovie = () => {
   fetchProductList();
   }, []);
 
+  // call api 
   // getData = async (params) => {
   //   const res = await getWatchMovie(params);
   //   if(res.status === '200') {
   //     set
   //   }
   // }
+  const handlerSelect= (isSelect)=>{
+    setIsSelect(!isSelect)
+  }
 
   return (
     <div className='main__layout'>
@@ -83,27 +92,12 @@ const WatchMovie = () => {
               </div>
             </div>
             <div className='watchMovie__play__bottom__severAuto'>
-              <button>1</button>
-              <button>1</button>
-              <button>1</button>
-              <button>1</button>
-              <button>1</button>
-              <button>1</button>
-              <button>1</button>
-              <button>1</button>
-              <button>1</button>
-              <button>1</button>
-              <button>1</button>
-              <button>1</button>
-              <button>1</button>
-              <button>1</button>
-              <button>1</button>
-              <button>1</button>
-              <button>1</button>
-              <button>1</button>
-              <button>1</button>
-              <button>1</button>
-              <button>1</button>
+              {partButton?.map((item,index)=> (
+                <button key={index}
+                className={isSelect?'selected':'non-selected'}
+                onClick={()=>handlerSelect(isSelect)} 
+                >{item.part}</button>
+              ))}
             </div>
           </div>
         </div>

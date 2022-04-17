@@ -11,6 +11,26 @@ export const movie = [
 	 "actor": "Kim Young Min, Lee Yoo Ri, Lim Hyun Gyung, Song Chang Ui",
 	 "directors": "Shin Yong Hwi",
 	 "year": "2022",
+	 "episode": "10",
+	 "series":"yes",
+	 "link":[
+     {
+    "part":"1",
+    "src":"https://youtu.be/tgbNymZ7vqY"
+    },
+    {
+    "part":"2",
+    "src":"https://youtu.be/tgbNymZ7vqY"
+    },
+    {
+    "part":"3",
+    "src":"https://youtu.be/tgbNymZ7vqY"
+    },
+    {
+    "part":"4",
+    "src":"https://youtu.be/tgbNymZ7vqY"
+    }
+    ],
 	 "id": "1"
 	},
 	{
@@ -25,6 +45,9 @@ export const movie = [
 	 "actor": " Ben Affleck, Al Madrigal, Janina Gavankar",
 	 "directors": "Gavin O'Connor",
 	 "year": "2022",
+	 "episode": "11",
+	 "series":"yes",
+	 "link":"https://youtu.be/tgbNymZ7vqY",
 	 "id": "2"
 	},
 	{
@@ -39,6 +62,9 @@ export const movie = [
 	 "actor": " Chris Pine, Gillian Jacobs, Sander Thomas",
 	 "directors": "Tarik Saleh",
 	 "year": "2021",
+	 "episode": "11",
+	 "series":"yes",
+	 "link":"https://youtu.be/tgbNymZ7vqY",
 	 "id": "3"
 	},
 	{
@@ -53,6 +79,9 @@ export const movie = [
 	 "actor": "Karen Gillan, Iris Apatow, Pedro Pascal",
 	 "directors": "Judd Apatow",
 	 "year": "2020",
+	 "episode": "11",
+	 "series":"yes",
+	 "link":"https://youtu.be/tgbNymZ7vqY",
 	 "id": "4"
 	},
 	{
@@ -67,6 +96,9 @@ export const movie = [
 	 "actor": "Karim El Hakim, May Calamawy, Oscar Isaac",
 	 "directors": "Mohamed Diab",
 	 "year": "2021",
+	 "episode": "11",
+	 "series":"yes",
+	 "link":"https://youtu.be/tgbNymZ7vqY",
 	 "id": "5"
 	},
 	{
@@ -81,6 +113,9 @@ export const movie = [
 	 "actor": "Sascha Harman, Fintan Shevlin, Duncan Henderson",
 	 "directors": "Simon Drake",
 	 "year": "2022",
+	 "episode": "11",
+	 "series":"yes",
+	 "link":"https://youtu.be/tgbNymZ7vqY",
 	 "id": "6"
 	},
 	{
@@ -95,6 +130,9 @@ export const movie = [
 	 "actor": "Greg Nicotero",
 	 "directors": "Alanna Masterson",
 	 "year": "2016",
+	 "episode": "11",
+	 "series":"yes",
+	 "link":"https://youtu.be/tgbNymZ7vqY",
 	 "id": "7"
 	},
 	{
@@ -109,6 +147,9 @@ export const movie = [
 	 "actor": "Colin Bates, Sierra McCormick, Makenzie Vega",
 	 "directors": "Anthony Del Negro",
 	 "year": "2022",
+	 "episode": "11",
+	 "series":"yes",
+	 "link":"https://youtu.be/tgbNymZ7vqY",
 	 "id": "8"
 	},
 	{
@@ -123,6 +164,9 @@ export const movie = [
 	 "actor": "Cole Hauser, Mel Gibson, Charlie Weber",
 	 "directors": "Mark Neveldine",
 	 "year": "2022",
+	 "episode": "11",
+	 "series":"yes",
+	 "link":"https://youtu.be/tgbNymZ7vqY",
 	 "id": "9"
 	},
 	{
@@ -137,6 +181,9 @@ export const movie = [
 	 "actor": "Charlie Murphy, Kate Kennedy, Pablo Schreiber",
 	 "directors": "Kyle Killen",
 	 "year": "2022",
+	 "episode": "11",
+	 "series":"yes",
+	 "link":"https://youtu.be/tgbNymZ7vqY",
 	 "id": "10"
 	},
 	{
@@ -151,6 +198,9 @@ export const movie = [
 	 "actor": "Adjoa Andoh, Julie Andrews, Lorraine Ashbourne",
 	 "directors": "Chris Van Dusen",
 	 "year": "2022",
+	 "episode": "11",
+	 "series":"yes",
+	 "link":"https://youtu.be/tgbNymZ7vqY",
 	 "id": "11"
 	},
 	{
@@ -165,6 +215,9 @@ export const movie = [
 	 "actor": "Lily Collins, Jesse Plemons",
 	 "directors": "Charlie McDowell",
 	 "year": "2022",
+	 "episode": "11",
+	 "series":"yes",
+	 "link":"https://youtu.be/tgbNymZ7vqY",
 	 "id": "12"
 	},
 	{
@@ -179,6 +232,9 @@ export const movie = [
 	 "actor": "Thom Hallum, Billy Blair, Stacey A Sheffield.",
 	 "directors": "Brett Bentman",
 	 "year": "2022",
+	 "episode": "11",
+	 "series":"yes",
+	 "link":"https://youtu.be/tgbNymZ7vqY",
 	 "id": "13"
 	},
 	{
@@ -193,6 +249,9 @@ export const movie = [
 	 "actor": "Ben Affleck, Ana de Armas, Tracy Letts",
 	 "directors": "Adrian Lyne",
 	 "year": "2021",
+	 "episode": "11",
+	 "series":"yes",
+	 "link":"https://youtu.be/tgbNymZ7vqY",
 	 "id": "14"
 	},
 	{
@@ -207,6 +266,9 @@ export const movie = [
 	 "actor": "Michael B. Jordan, Chanté Adams, Jalon Christian",
 	 "directors": "Denzel Washington",
 	 "year": "2022",
+	 "episode": "11",
+	 "series":"yes",
+	 "link":"https://youtu.be/tgbNymZ7vqY",
 	 "id": "15"
 	},
 	{
@@ -221,6 +283,9 @@ export const movie = [
 	 "actor": "Channing Tatum, Ryder McLaughlin, Aavi Haas",
 	 "directors": "Channing Tatum, Reid Carolin",
 	 "year": "2022",
+	 "episode": "11",
+	 "series":"yes",
+	 "link":"https://youtu.be/tgbNymZ7vqY",
 	 "id": "16"
 	},
 	{
@@ -235,6 +300,9 @@ export const movie = [
 	 "actor": "Kim Young Min, Lee Yoo Ri, Lim Hyun Gyung, Song Chang Ui",
 	 "directors": "Shin Yong Hwi",
 	 "year": "2022",
+	 "episode": "11",
+	 "series":"yes",
+	 "link":"https://youtu.be/tgbNymZ7vqY",
 	 "id": "17"
 	},
 	{
@@ -249,6 +317,9 @@ export const movie = [
 	 "actor": " Ben Affleck, Al Madrigal, Janina Gavankar",
 	 "directors": "Gavin O'Connor",
 	 "year": "2022",
+	 "episode": "11",
+	 "series":"yes",
+	 "link":"https://youtu.be/tgbNymZ7vqY",
 	 "id": "18"
 	},
 	{
@@ -263,6 +334,9 @@ export const movie = [
 	 "actor": " Chris Pine, Gillian Jacobs, Sander Thomas",
 	 "directors": "Tarik Saleh",
 	 "year": "2021",
+	 "episode": "11",
+	 "series":"yes",
+	 "link":"https://youtu.be/tgbNymZ7vqY",
 	 "id": "19"
 	},
 	{
@@ -277,6 +351,9 @@ export const movie = [
 	 "actor": "Karen Gillan, Iris Apatow, Pedro Pascal",
 	 "directors": "Judd Apatow",
 	 "year": "2020",
+	 "episode": "11",
+	 "series":"yes",
+	 "link":"https://youtu.be/tgbNymZ7vqY",
 	 "id": "20"
 	},
 	{
@@ -291,6 +368,9 @@ export const movie = [
 	 "actor": "Karim El Hakim, May Calamawy, Oscar Isaac",
 	 "directors": "Mohamed Diab",
 	 "year": "2021",
+	 "episode": "11",
+	 "series":"yes",
+	 "link":"https://youtu.be/tgbNymZ7vqY",
 	 "id": "21"
 	},
 	{
@@ -305,6 +385,9 @@ export const movie = [
 	 "actor": "Sascha Harman, Fintan Shevlin, Duncan Henderson",
 	 "directors": "Simon Drake",
 	 "year": "2022",
+	 "episode": "11",
+	 "series":"yes",
+	 "link":"https://youtu.be/tgbNymZ7vqY",
 	 "id": "22"
 	},
 	{
@@ -319,6 +402,9 @@ export const movie = [
 	 "actor": "Greg Nicotero",
 	 "directors": "Alanna Masterson, Andrew Lincoln, Chandler Riggs",
 	 "year": "2016",
+	 "episode": "11",
+	 "series":"yes",
+	 "link":"https://youtu.be/tgbNymZ7vqY",
 	 "id": "23"
 	},
 	{
@@ -333,6 +419,9 @@ export const movie = [
 	 "actor": "Colin Bates, Sierra McCormick, Makenzie Vega",
 	 "directors": "Anthony Del Negro",
 	 "year": "2022",
+	 "episode": "11",
+	 "series":"yes",
+	 "link":"https://youtu.be/tgbNymZ7vqY",
 	 "id": "24"
 	},
 	{
@@ -347,6 +436,9 @@ export const movie = [
 	 "actor": "Cole Hauser, Mel Gibson, Charlie Weber",
 	 "directors": "Mark Neveldine",
 	 "year": "2022",
+	 "episode": "11",
+	 "series":"yes",
+	 "link":"https://youtu.be/tgbNymZ7vqY",
 	 "id": "25"
 	},
 	{
@@ -361,6 +453,9 @@ export const movie = [
 	 "actor": "Charlie Murphy, Kate Kennedy, Pablo Schreiber",
 	 "directors": "Kyle Killen",
 	 "year": "2022",
+	 "episode": "11",
+	 "series":"yes",
+	 "link":"https://youtu.be/tgbNymZ7vqY",
 	 "id": "26"
 	},
 	{
@@ -375,6 +470,9 @@ export const movie = [
 	 "actor": "Adjoa Andoh, Julie Andrews, Lorraine Ashbourne",
 	 "directors": "Chris Van Dusen",
 	 "year": "2022",
+	 "episode": "11",
+	 "series":"yes",
+	 "link":"https://youtu.be/tgbNymZ7vqY",
 	 "id": "27"
 	},
 	{
@@ -389,6 +487,9 @@ export const movie = [
 	 "actor": "Lily Collins, Jesse Plemons",
 	 "directors": "Charlie McDowell",
 	 "year": "2022",
+	 "episode": "11",
+	 "series":"yes",
+	 "link":"https://youtu.be/tgbNymZ7vqY",
 	 "id": "28"
 	},
 	{
@@ -403,6 +504,9 @@ export const movie = [
 	 "actor": "Thom Hallum, Billy Blair, Stacey A Sheffield.",
 	 "directors": "Brett Bentman",
 	 "year": "2022",
+	 "episode": "11",
+	 "series":"yes",
+	 "link":"https://youtu.be/tgbNymZ7vqY",
 	 "id": "29"
 	},
 	{
@@ -417,6 +521,9 @@ export const movie = [
 	 "actor": "Ben Affleck, Ana de Armas, Tracy Letts",
 	 "directors": "Adrian Lyne",
 	 "year": "2021",
+	 "episode": "11",
+	 "series":"yes",
+	 "link":"https://youtu.be/tgbNymZ7vqY",
 	 "id": "30"
 	},
 	{
@@ -431,6 +538,9 @@ export const movie = [
 	 "actor": "Michael B. Jordan, Chanté Adams, Jalon Christian",
 	 "directors": "Denzel Washington",
 	 "year": "2022",
+	 "episode": "11",
+	 "series":"yes",
+	 "link":"https://youtu.be/tgbNymZ7vqY",
 	 "id": "31"
 	},
 	{
@@ -445,6 +555,9 @@ export const movie = [
 	 "actor": "Channing Tatum, Ryder McLaughlin, Aavi Haas",
 	 "directors": "Channing Tatum, Reid Carolin",
 	 "year": "2022",
+	 "episode": "11",
+	 "series":"yes",
+	 "link":"https://youtu.be/tgbNymZ7vqY",
 	 "id": "32"
 	}
  ]

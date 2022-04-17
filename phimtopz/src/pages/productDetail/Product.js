@@ -6,6 +6,7 @@ import { Link, useParams } from 'react-router-dom'
 const Product = ({productList}) => {
   const {productId} = useParams()
   const productItem = productList.find(prod => prod.id === productId)
+  console.log(productList,productItem,productId);
   const [collapse,setCollapse] = useState(true)
   const handleCollapse = ()=>{
     return setCollapse(!collapse)
@@ -18,7 +19,7 @@ const Product = ({productList}) => {
             <img src={productItem?.img} alt=''/>
             <div className='btn'>
               <button>Thêm vào tủ</button>
-              <Link to="/watch-movie">
+              <Link to={`/watch-movie/${productItem?.id}`}>
                 <button style={{'backgroundColor': '#c9302c'}}>Xem phim</button>
               </Link>
             </div>

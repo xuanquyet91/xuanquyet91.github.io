@@ -82,9 +82,9 @@ const Productslist = () => {
           className="grid-layout"
           style={{ width: "1020px", margin: "auto", display: "flex" }}
         >
-          <Link to={`/productdetail/${editType}`} className="link-item">
+          {/* <Link to={`/productdetail/${editType}`} className="link-item"> */}
             <ItemProductList productList={productList} editType={editType} />
-          </Link>
+          {/* </Link> */}
           {/* {()=> handleClickFilter()} */}
           <Topic />
         </div>
