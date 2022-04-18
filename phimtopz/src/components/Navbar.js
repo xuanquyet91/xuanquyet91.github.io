@@ -46,7 +46,7 @@ const Navbar = () => {
                   <Link
                     key={index}
                     to={`/productslist/${itemSub.toLowerCase()}`}
-                    className="link-item-hover"
+                    className="link-item"
                   >
                     <li
                       // onClick={()=> handlerId(itemSub)}

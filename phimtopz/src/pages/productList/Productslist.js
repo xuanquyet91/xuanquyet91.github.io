@@ -5,11 +5,14 @@ import Topic from "../../components/Topic";
 import { Link, useParams } from "react-router-dom";
 import ItemProductList from "./ItemProductList";
 import { MdPlayArrow } from "react-icons/md";
+// import { IdContext } from "./ItemProductList";
 
 const Productslist = () => {
+  // const idProduct = useContext(IdContext);
+  // console.log(idProduct);
   const [productList, setProductList] = useState([]);
   const { typeMovie } = useParams();
-  const listFilter = ["Sắp xếp", "Quốc Gia", "Năm","Tag"];
+  const listFilter = ["Sắp xếp", "Quốc Gia", "Năm", "Tag"];
   const listItem = ["ACTION", "HORROR", "FANTASY"];
   const [editType, setEditType] = useState(typeMovie.toUpperCase());
   const [editChange, setEditChange] = useState();
@@ -61,13 +64,11 @@ const Productslist = () => {
                   name={item}
                   key={index}
                 >
-                  {[item, ...listItem].map(
-                    (elm, index) => (
-                      <option value={elm} key={index}>
-                        {elm}
-                      </option>
-                    )
-                  )}
+                  {[item, ...listItem].map((elm, index) => (
+                    <option value={elm} key={index}>
+                      {elm}
+                    </option>
+                  ))}
                 </select>
               ))}
             </div>
@@ -82,8 +83,8 @@ const Productslist = () => {
           className="grid-layout"
           style={{ width: "1020px", margin: "auto", display: "flex" }}
         >
-          {/* <Link to={`/productdetail/${editType}`} className="link-item"> */}
-            <ItemProductList productList={productList} editType={editType} />
+          {/* <Link to={`/productdetail/${idProduct}`} className="link-item"> */}
+          <ItemProductList productList={productList} editType={editType} />
           {/* </Link> */}
           {/* {()=> handleClickFilter()} */}
           <Topic />

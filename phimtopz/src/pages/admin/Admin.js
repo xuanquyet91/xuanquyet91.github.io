@@ -1,13 +1,12 @@
-import React from 'react'
-import CategoryAdmin from './CategoryAdmin';
+import React from "react";
+import CategoryAdmin from "./categories/CategoryAdmin";
 
-const Admin = ( ) => {
-
+const Admin = () => {
   return (
     <>
-        <CategoryAdmin />
+      <CategoryAdmin />
     </>
-  )
-}
+  );
+};
 
-export default Admin
+export default Admin;

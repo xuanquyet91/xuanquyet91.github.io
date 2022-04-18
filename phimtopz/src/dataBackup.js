@@ -1,7 +1,7 @@
 export const movie = [
 	{
 	 "desc": "Trò Trốn Tìm – Kênh VTV3 (2022) Phim Trò Trốn Tìm | Kênh VTV3 2022 thuyet minh tron bo hd xoay quanh câu chuyện kể về định mệnh, khát vọng và những bí mật giữa hai người phụ nữ: một là nữ thừa kế tập đoàn mỹ phẩm lớn nhất Hàn Quốc và một là người sống thay cuộc đời của nữ thừa kế này. Nữ thừa kế ấy tên là Min Chae Rin, giám đốc điều hành của một công ty mỹ phẩm. Là một người lạc quan và đầy nhiệt huyết, thế nhưng Min Chae Rin cũng đang phải đấu tranh chống lại số mệnh bất hạnh của mình.",
-	 "name": "Trò Trốn Tìm",
+	 "name": "Hide and Seek",
 	 "img": "https://phimtopz.com/upload/images/2022/03/tro-tron-tim-thumbnail.jpg",
 	 "channel": "channel 1",
 	 "nation": "Hàn Quốc",
@@ -29,7 +29,23 @@ export const movie = [
     {
     "part":"4",
     "src":"https://youtu.be/tgbNymZ7vqY"
-    }
+    },
+		{
+		"part":"5",
+		"src":"https://youtu.be/tgbNymZ7vqY"
+		},
+		{
+		"part":"6",
+		"src":"https://youtu.be/tgbNymZ7vqY"
+		},
+		{
+		"part":"7",
+		"src":"https://youtu.be/tgbNymZ7vqY"
+		},
+		{
+		"part":"8",
+		"src":"https://youtu.be/tgbNymZ7vqY"
+		}
     ],
 	 "id": "1"
 	},
@@ -47,12 +63,45 @@ export const movie = [
 	 "year": "2022",
 	 "episode": "11",
 	 "series":"yes",
-	 "link":"https://youtu.be/tgbNymZ7vqY",
+	 "link":[
+     {
+    "part":"1",
+    "src":"https://youtu.be/tgbNymZ7vqY"
+    },
+    {
+    "part":"2",
+    "src":"https://youtu.be/tgbNymZ7vqY"
+    },
+    {
+    "part":"3",
+    "src":"https://youtu.be/tgbNymZ7vqY"
+    },
+    {
+    "part":"4",
+    "src":"https://youtu.be/tgbNymZ7vqY"
+    },
+		{
+		"part":"5",
+		"src":"https://youtu.be/tgbNymZ7vqY"
+		},
+		{
+		"part":"6",
+		"src":"https://youtu.be/tgbNymZ7vqY"
+		},
+		{
+		"part":"7",
+		"src":"https://youtu.be/tgbNymZ7vqY"
+		},
+		{
+		"part":"8",
+		"src":"https://youtu.be/tgbNymZ7vqY"
+		}
+    ],
 	 "id": "2"
 	},
 	{
 	 "desc": "Sát Thủ Bất Đắc Dĩ – The Contractor (2022) Phim Sát Thủ Bất Đắc Dĩ | The Contractor 2022 vietsub thuyet minh full hd xoay quanh câu chuyện kể về Pine vào vai trung sĩ lực lượng đặc biệt James Harper, một đặc vụ ưu tú với đầu gối bị chấn thương, anh đã giải ngũ khỏi quân đội Hoa Kỳ và chứng kiến các hoá đơn chồng chất với người vợ Briann. Đó là khi người bạn cùng đội cũ của anh ấy là người bạn tốt Mike đưa ra một lời cầu hôn. Mike đã thực hiện các hoạt động ngoài sổ sách cho một cựu chiến binh tên là Rusty Jennings. Tiền bạc rủng rỉnh, công việc nhanh chóng, giúp cho James có mục đích trở lại trong khi chu cấp cho gia đình. Như Mike đã nói rằng cuối cùng thì tất cả chúng ta cũng chỉ là lính đánh thuê, cho đoạn mở đầu của the Contractor một số chất liệu kích thích quan trọng mà phần còn lại không đáp ứng được. Thật dễ dàng để nghĩ về lần cuối cùng Pine & Foster đóng vai chính trong một bộ phim truyền hình xoay quanh sự dối trá của Giấc mơ Mỹ.",
-	 "name": "Sát Thủ Bất Đắc Dĩ",
+	 "name": "The Unwilling Assassin",
 	 "img": "https://phimtopz.com/upload/images/2022/04/sat-thu-bat-dac-di-thumbnail.jpg",
 	 "channel": "channel 3",
 	 "nation": "USA",
@@ -64,7 +113,40 @@ export const movie = [
 	 "year": "2021",
 	 "episode": "11",
 	 "series":"yes",
-	 "link":"https://youtu.be/tgbNymZ7vqY",
+	 "link":[
+     {
+    "part":"1",
+    "src":"https://youtu.be/tgbNymZ7vqY"
+    },
+    {
+    "part":"2",
+    "src":"https://youtu.be/tgbNymZ7vqY"
+    },
+    {
+    "part":"3",
+    "src":"https://youtu.be/tgbNymZ7vqY"
+    },
+    {
+    "part":"4",
+    "src":"https://youtu.be/tgbNymZ7vqY"
+    },
+		{
+		"part":"5",
+		"src":"https://youtu.be/tgbNymZ7vqY"
+		},
+		{
+		"part":"6",
+		"src":"https://youtu.be/tgbNymZ7vqY"
+		},
+		{
+		"part":"7",
+		"src":"https://youtu.be/tgbNymZ7vqY"
+		},
+		{
+		"part":"8",
+		"src":"https://youtu.be/tgbNymZ7vqY"
+		}
+    ],
 	 "id": "3"
 	},
 	{
@@ -81,7 +163,40 @@ export const movie = [
 	 "year": "2020",
 	 "episode": "11",
 	 "series":"yes",
-	 "link":"https://youtu.be/tgbNymZ7vqY",
+	 "link":[
+     {
+    "part":"1",
+    "src":"https://youtu.be/tgbNymZ7vqY"
+    },
+    {
+    "part":"2",
+    "src":"https://youtu.be/tgbNymZ7vqY"
+    },
+    {
+    "part":"3",
+    "src":"https://youtu.be/tgbNymZ7vqY"
+    },
+    {
+    "part":"4",
+    "src":"https://youtu.be/tgbNymZ7vqY"
+    },
+		{
+		"part":"5",
+		"src":"https://youtu.be/tgbNymZ7vqY"
+		},
+		{
+		"part":"6",
+		"src":"https://youtu.be/tgbNymZ7vqY"
+		},
+		{
+		"part":"7",
+		"src":"https://youtu.be/tgbNymZ7vqY"
+		},
+		{
+		"part":"8",
+		"src":"https://youtu.be/tgbNymZ7vqY"
+		}
+    ],
 	 "id": "4"
 	},
 	{
@@ -98,7 +213,40 @@ export const movie = [
 	 "year": "2021",
 	 "episode": "11",
 	 "series":"yes",
-	 "link":"https://youtu.be/tgbNymZ7vqY",
+	 "link":[
+     {
+    "part":"1",
+    "src":"https://youtu.be/tgbNymZ7vqY"
+    },
+    {
+    "part":"2",
+    "src":"https://youtu.be/tgbNymZ7vqY"
+    },
+    {
+    "part":"3",
+    "src":"https://youtu.be/tgbNymZ7vqY"
+    },
+    {
+    "part":"4",
+    "src":"https://youtu.be/tgbNymZ7vqY"
+    },
+		{
+		"part":"5",
+		"src":"https://youtu.be/tgbNymZ7vqY"
+		},
+		{
+		"part":"6",
+		"src":"https://youtu.be/tgbNymZ7vqY"
+		},
+		{
+		"part":"7",
+		"src":"https://youtu.be/tgbNymZ7vqY"
+		},
+		{
+		"part":"8",
+		"src":"https://youtu.be/tgbNymZ7vqY"
+		}
+    ],
 	 "id": "5"
 	},
 	{
@@ -115,7 +263,40 @@ export const movie = [
 	 "year": "2022",
 	 "episode": "11",
 	 "series":"yes",
-	 "link":"https://youtu.be/tgbNymZ7vqY",
+	 "link":[
+     {
+    "part":"1",
+    "src":"https://youtu.be/tgbNymZ7vqY"
+    },
+    {
+    "part":"2",
+    "src":"https://youtu.be/tgbNymZ7vqY"
+    },
+    {
+    "part":"3",
+    "src":"https://youtu.be/tgbNymZ7vqY"
+    },
+    {
+    "part":"4",
+    "src":"https://youtu.be/tgbNymZ7vqY"
+    },
+		{
+		"part":"5",
+		"src":"https://youtu.be/tgbNymZ7vqY"
+		},
+		{
+		"part":"6",
+		"src":"https://youtu.be/tgbNymZ7vqY"
+		},
+		{
+		"part":"7",
+		"src":"https://youtu.be/tgbNymZ7vqY"
+		},
+		{
+		"part":"8",
+		"src":"https://youtu.be/tgbNymZ7vqY"
+		}
+    ],
 	 "id": "6"
 	},
 	{
@@ -132,7 +313,40 @@ export const movie = [
 	 "year": "2016",
 	 "episode": "11",
 	 "series":"yes",
-	 "link":"https://youtu.be/tgbNymZ7vqY",
+	 "link":[
+     {
+    "part":"1",
+    "src":"https://youtu.be/tgbNymZ7vqY"
+    },
+    {
+    "part":"2",
+    "src":"https://youtu.be/tgbNymZ7vqY"
+    },
+    {
+    "part":"3",
+    "src":"https://youtu.be/tgbNymZ7vqY"
+    },
+    {
+    "part":"4",
+    "src":"https://youtu.be/tgbNymZ7vqY"
+    },
+		{
+		"part":"5",
+		"src":"https://youtu.be/tgbNymZ7vqY"
+		},
+		{
+		"part":"6",
+		"src":"https://youtu.be/tgbNymZ7vqY"
+		},
+		{
+		"part":"7",
+		"src":"https://youtu.be/tgbNymZ7vqY"
+		},
+		{
+		"part":"8",
+		"src":"https://youtu.be/tgbNymZ7vqY"
+		}
+    ],
 	 "id": "7"
 	},
 	{
@@ -149,7 +363,40 @@ export const movie = [
 	 "year": "2022",
 	 "episode": "11",
 	 "series":"yes",
-	 "link":"https://youtu.be/tgbNymZ7vqY",
+	 "link":[
+     {
+    "part":"1",
+    "src":"https://youtu.be/tgbNymZ7vqY"
+    },
+    {
+    "part":"2",
+    "src":"https://youtu.be/tgbNymZ7vqY"
+    },
+    {
+    "part":"3",
+    "src":"https://youtu.be/tgbNymZ7vqY"
+    },
+    {
+    "part":"4",
+    "src":"https://youtu.be/tgbNymZ7vqY"
+    },
+		{
+		"part":"5",
+		"src":"https://youtu.be/tgbNymZ7vqY"
+		},
+		{
+		"part":"6",
+		"src":"https://youtu.be/tgbNymZ7vqY"
+		},
+		{
+		"part":"7",
+		"src":"https://youtu.be/tgbNymZ7vqY"
+		},
+		{
+		"part":"8",
+		"src":"https://youtu.be/tgbNymZ7vqY"
+		}
+    ],
 	 "id": "8"
 	},
 	{
@@ -166,7 +413,40 @@ export const movie = [
 	 "year": "2022",
 	 "episode": "11",
 	 "series":"yes",
-	 "link":"https://youtu.be/tgbNymZ7vqY",
+	 "link":[
+     {
+    "part":"1",
+    "src":"https://youtu.be/tgbNymZ7vqY"
+    },
+    {
+    "part":"2",
+    "src":"https://youtu.be/tgbNymZ7vqY"
+    },
+    {
+    "part":"3",
+    "src":"https://youtu.be/tgbNymZ7vqY"
+    },
+    {
+    "part":"4",
+    "src":"https://youtu.be/tgbNymZ7vqY"
+    },
+		{
+		"part":"5",
+		"src":"https://youtu.be/tgbNymZ7vqY"
+		},
+		{
+		"part":"6",
+		"src":"https://youtu.be/tgbNymZ7vqY"
+		},
+		{
+		"part":"7",
+		"src":"https://youtu.be/tgbNymZ7vqY"
+		},
+		{
+		"part":"8",
+		"src":"https://youtu.be/tgbNymZ7vqY"
+		}
+    ],
 	 "id": "9"
 	},
 	{
@@ -183,7 +463,40 @@ export const movie = [
 	 "year": "2022",
 	 "episode": "11",
 	 "series":"yes",
-	 "link":"https://youtu.be/tgbNymZ7vqY",
+	 "link":[
+     {
+    "part":"1",
+    "src":"https://youtu.be/tgbNymZ7vqY"
+    },
+    {
+    "part":"2",
+    "src":"https://youtu.be/tgbNymZ7vqY"
+    },
+    {
+    "part":"3",
+    "src":"https://youtu.be/tgbNymZ7vqY"
+    },
+    {
+    "part":"4",
+    "src":"https://youtu.be/tgbNymZ7vqY"
+    },
+		{
+		"part":"5",
+		"src":"https://youtu.be/tgbNymZ7vqY"
+		},
+		{
+		"part":"6",
+		"src":"https://youtu.be/tgbNymZ7vqY"
+		},
+		{
+		"part":"7",
+		"src":"https://youtu.be/tgbNymZ7vqY"
+		},
+		{
+		"part":"8",
+		"src":"https://youtu.be/tgbNymZ7vqY"
+		}
+    ],
 	 "id": "10"
 	},
 	{
@@ -200,7 +513,40 @@ export const movie = [
 	 "year": "2022",
 	 "episode": "11",
 	 "series":"yes",
-	 "link":"https://youtu.be/tgbNymZ7vqY",
+	 "link":[
+     {
+    "part":"1",
+    "src":"https://youtu.be/tgbNymZ7vqY"
+    },
+    {
+    "part":"2",
+    "src":"https://youtu.be/tgbNymZ7vqY"
+    },
+    {
+    "part":"3",
+    "src":"https://youtu.be/tgbNymZ7vqY"
+    },
+    {
+    "part":"4",
+    "src":"https://youtu.be/tgbNymZ7vqY"
+    },
+		{
+		"part":"5",
+		"src":"https://youtu.be/tgbNymZ7vqY"
+		},
+		{
+		"part":"6",
+		"src":"https://youtu.be/tgbNymZ7vqY"
+		},
+		{
+		"part":"7",
+		"src":"https://youtu.be/tgbNymZ7vqY"
+		},
+		{
+		"part":"8",
+		"src":"https://youtu.be/tgbNymZ7vqY"
+		}
+    ],
 	 "id": "11"
 	},
 	{
@@ -217,7 +563,40 @@ export const movie = [
 	 "year": "2022",
 	 "episode": "11",
 	 "series":"yes",
-	 "link":"https://youtu.be/tgbNymZ7vqY",
+	 "link":[
+     {
+    "part":"1",
+    "src":"https://youtu.be/tgbNymZ7vqY"
+    },
+    {
+    "part":"2",
+    "src":"https://youtu.be/tgbNymZ7vqY"
+    },
+    {
+    "part":"3",
+    "src":"https://youtu.be/tgbNymZ7vqY"
+    },
+    {
+    "part":"4",
+    "src":"https://youtu.be/tgbNymZ7vqY"
+    },
+		{
+		"part":"5",
+		"src":"https://youtu.be/tgbNymZ7vqY"
+		},
+		{
+		"part":"6",
+		"src":"https://youtu.be/tgbNymZ7vqY"
+		},
+		{
+		"part":"7",
+		"src":"https://youtu.be/tgbNymZ7vqY"
+		},
+		{
+		"part":"8",
+		"src":"https://youtu.be/tgbNymZ7vqY"
+		}
+    ],
 	 "id": "12"
 	},
 	{
@@ -234,7 +613,40 @@ export const movie = [
 	 "year": "2022",
 	 "episode": "11",
 	 "series":"yes",
-	 "link":"https://youtu.be/tgbNymZ7vqY",
+	 "link":[
+     {
+    "part":"1",
+    "src":"https://youtu.be/tgbNymZ7vqY"
+    },
+    {
+    "part":"2",
+    "src":"https://youtu.be/tgbNymZ7vqY"
+    },
+    {
+    "part":"3",
+    "src":"https://youtu.be/tgbNymZ7vqY"
+    },
+    {
+    "part":"4",
+    "src":"https://youtu.be/tgbNymZ7vqY"
+    },
+		{
+		"part":"5",
+		"src":"https://youtu.be/tgbNymZ7vqY"
+		},
+		{
+		"part":"6",
+		"src":"https://youtu.be/tgbNymZ7vqY"
+		},
+		{
+		"part":"7",
+		"src":"https://youtu.be/tgbNymZ7vqY"
+		},
+		{
+		"part":"8",
+		"src":"https://youtu.be/tgbNymZ7vqY"
+		}
+    ],
 	 "id": "13"
 	},
 	{
@@ -251,7 +663,40 @@ export const movie = [
 	 "year": "2021",
 	 "episode": "11",
 	 "series":"yes",
-	 "link":"https://youtu.be/tgbNymZ7vqY",
+	 "link":[
+     {
+    "part":"1",
+    "src":"https://youtu.be/tgbNymZ7vqY"
+    },
+    {
+    "part":"2",
+    "src":"https://youtu.be/tgbNymZ7vqY"
+    },
+    {
+    "part":"3",
+    "src":"https://youtu.be/tgbNymZ7vqY"
+    },
+    {
+    "part":"4",
+    "src":"https://youtu.be/tgbNymZ7vqY"
+    },
+		{
+		"part":"5",
+		"src":"https://youtu.be/tgbNymZ7vqY"
+		},
+		{
+		"part":"6",
+		"src":"https://youtu.be/tgbNymZ7vqY"
+		},
+		{
+		"part":"7",
+		"src":"https://youtu.be/tgbNymZ7vqY"
+		},
+		{
+		"part":"8",
+		"src":"https://youtu.be/tgbNymZ7vqY"
+		}
+    ],
 	 "id": "14"
 	},
 	{
@@ -268,7 +713,40 @@ export const movie = [
 	 "year": "2022",
 	 "episode": "11",
 	 "series":"yes",
-	 "link":"https://youtu.be/tgbNymZ7vqY",
+	 "link":[
+     {
+    "part":"1",
+    "src":"https://youtu.be/tgbNymZ7vqY"
+    },
+    {
+    "part":"2",
+    "src":"https://youtu.be/tgbNymZ7vqY"
+    },
+    {
+    "part":"3",
+    "src":"https://youtu.be/tgbNymZ7vqY"
+    },
+    {
+    "part":"4",
+    "src":"https://youtu.be/tgbNymZ7vqY"
+    },
+		{
+		"part":"5",
+		"src":"https://youtu.be/tgbNymZ7vqY"
+		},
+		{
+		"part":"6",
+		"src":"https://youtu.be/tgbNymZ7vqY"
+		},
+		{
+		"part":"7",
+		"src":"https://youtu.be/tgbNymZ7vqY"
+		},
+		{
+		"part":"8",
+		"src":"https://youtu.be/tgbNymZ7vqY"
+		}
+    ],
 	 "id": "15"
 	},
 	{
@@ -285,12 +763,45 @@ export const movie = [
 	 "year": "2022",
 	 "episode": "11",
 	 "series":"yes",
-	 "link":"https://youtu.be/tgbNymZ7vqY",
+	 "link":[
+     {
+    "part":"1",
+    "src":"https://youtu.be/tgbNymZ7vqY"
+    },
+    {
+    "part":"2",
+    "src":"https://youtu.be/tgbNymZ7vqY"
+    },
+    {
+    "part":"3",
+    "src":"https://youtu.be/tgbNymZ7vqY"
+    },
+    {
+    "part":"4",
+    "src":"https://youtu.be/tgbNymZ7vqY"
+    },
+		{
+		"part":"5",
+		"src":"https://youtu.be/tgbNymZ7vqY"
+		},
+		{
+		"part":"6",
+		"src":"https://youtu.be/tgbNymZ7vqY"
+		},
+		{
+		"part":"7",
+		"src":"https://youtu.be/tgbNymZ7vqY"
+		},
+		{
+		"part":"8",
+		"src":"https://youtu.be/tgbNymZ7vqY"
+		}
+    ],
 	 "id": "16"
 	},
 	{
 	 "desc": "Trò Trốn Tìm – Kênh VTV3 (2022) Phim Trò Trốn Tìm | Kênh VTV3 2022 thuyet minh tron bo hd xoay quanh câu chuyện kể về định mệnh, khát vọng và những bí mật giữa hai người phụ nữ: một là nữ thừa kế tập đoàn mỹ phẩm lớn nhất Hàn Quốc và một là người sống thay cuộc đời của nữ thừa kế này. Nữ thừa kế ấy tên là Min Chae Rin, giám đốc điều hành của một công ty mỹ phẩm. Là một người lạc quan và đầy nhiệt huyết, thế nhưng Min Chae Rin cũng đang phải đấu tranh chống lại số mệnh bất hạnh của mình.",
-	 "name": "Trò Trốn Tìm",
+	 "name": "Hide and Seek",
 	 "img": "https://phimtopz.com/upload/images/2022/03/tro-tron-tim-thumbnail.jpg",
 	 "channel": "channel 22",
 	 "nation": "Hàn Quốc",
@@ -302,7 +813,40 @@ export const movie = [
 	 "year": "2022",
 	 "episode": "11",
 	 "series":"yes",
-	 "link":"https://youtu.be/tgbNymZ7vqY",
+	 "link":[
+     {
+    "part":"1",
+    "src":"https://youtu.be/tgbNymZ7vqY"
+    },
+    {
+    "part":"2",
+    "src":"https://youtu.be/tgbNymZ7vqY"
+    },
+    {
+    "part":"3",
+    "src":"https://youtu.be/tgbNymZ7vqY"
+    },
+    {
+    "part":"4",
+    "src":"https://youtu.be/tgbNymZ7vqY"
+    },
+		{
+		"part":"5",
+		"src":"https://youtu.be/tgbNymZ7vqY"
+		},
+		{
+		"part":"6",
+		"src":"https://youtu.be/tgbNymZ7vqY"
+		},
+		{
+		"part":"7",
+		"src":"https://youtu.be/tgbNymZ7vqY"
+		},
+		{
+		"part":"8",
+		"src":"https://youtu.be/tgbNymZ7vqY"
+		}
+    ],
 	 "id": "17"
 	},
 	{
@@ -319,12 +863,45 @@ export const movie = [
 	 "year": "2022",
 	 "episode": "11",
 	 "series":"yes",
-	 "link":"https://youtu.be/tgbNymZ7vqY",
+	 "link":[
+     {
+    "part":"1",
+    "src":"https://youtu.be/tgbNymZ7vqY"
+    },
+    {
+    "part":"2",
+    "src":"https://youtu.be/tgbNymZ7vqY"
+    },
+    {
+    "part":"3",
+    "src":"https://youtu.be/tgbNymZ7vqY"
+    },
+    {
+    "part":"4",
+    "src":"https://youtu.be/tgbNymZ7vqY"
+    },
+		{
+		"part":"5",
+		"src":"https://youtu.be/tgbNymZ7vqY"
+		},
+		{
+		"part":"6",
+		"src":"https://youtu.be/tgbNymZ7vqY"
+		},
+		{
+		"part":"7",
+		"src":"https://youtu.be/tgbNymZ7vqY"
+		},
+		{
+		"part":"8",
+		"src":"https://youtu.be/tgbNymZ7vqY"
+		}
+    ],
 	 "id": "18"
 	},
 	{
 	 "desc": "Sát Thủ Bất Đắc Dĩ – The Contractor (2022) Phim Sát Thủ Bất Đắc Dĩ | The Contractor 2022 vietsub thuyet minh full hd xoay quanh câu chuyện kể về Pine vào vai trung sĩ lực lượng đặc biệt James Harper, một đặc vụ ưu tú với đầu gối bị chấn thương, anh đã giải ngũ khỏi quân đội Hoa Kỳ và chứng kiến các hoá đơn chồng chất với người vợ Briann. Đó là khi người bạn cùng đội cũ của anh ấy là người bạn tốt Mike đưa ra một lời cầu hôn. Mike đã thực hiện các hoạt động ngoài sổ sách cho một cựu chiến binh tên là Rusty Jennings. Tiền bạc rủng rỉnh, công việc nhanh chóng, giúp cho James có mục đích trở lại trong khi chu cấp cho gia đình. Như Mike đã nói rằng cuối cùng thì tất cả chúng ta cũng chỉ là lính đánh thuê, cho đoạn mở đầu của the Contractor một số chất liệu kích thích quan trọng mà phần còn lại không đáp ứng được. Thật dễ dàng để nghĩ về lần cuối cùng Pine & Foster đóng vai chính trong một bộ phim truyền hình xoay quanh sự dối trá của Giấc mơ Mỹ.",
-	 "name": "Sát Thủ Bất Đắc Dĩ",
+	 "name": "The Unwilling Assassin",
 	 "img": "https://phimtopz.com/upload/images/2022/04/sat-thu-bat-dac-di-thumbnail.jpg",
 	 "channel": "channel 19",
 	 "nation": "USA",
@@ -336,7 +913,40 @@ export const movie = [
 	 "year": "2021",
 	 "episode": "11",
 	 "series":"yes",
-	 "link":"https://youtu.be/tgbNymZ7vqY",
+	 "link":[
+     {
+    "part":"1",
+    "src":"https://youtu.be/tgbNymZ7vqY"
+    },
+    {
+    "part":"2",
+    "src":"https://youtu.be/tgbNymZ7vqY"
+    },
+    {
+    "part":"3",
+    "src":"https://youtu.be/tgbNymZ7vqY"
+    },
+    {
+    "part":"4",
+    "src":"https://youtu.be/tgbNymZ7vqY"
+    },
+		{
+		"part":"5",
+		"src":"https://youtu.be/tgbNymZ7vqY"
+		},
+		{
+		"part":"6",
+		"src":"https://youtu.be/tgbNymZ7vqY"
+		},
+		{
+		"part":"7",
+		"src":"https://youtu.be/tgbNymZ7vqY"
+		},
+		{
+		"part":"8",
+		"src":"https://youtu.be/tgbNymZ7vqY"
+		}
+    ],
 	 "id": "19"
 	},
 	{
@@ -353,7 +963,40 @@ export const movie = [
 	 "year": "2020",
 	 "episode": "11",
 	 "series":"yes",
-	 "link":"https://youtu.be/tgbNymZ7vqY",
+	 "link":[
+     {
+    "part":"1",
+    "src":"https://youtu.be/tgbNymZ7vqY"
+    },
+    {
+    "part":"2",
+    "src":"https://youtu.be/tgbNymZ7vqY"
+    },
+    {
+    "part":"3",
+    "src":"https://youtu.be/tgbNymZ7vqY"
+    },
+    {
+    "part":"4",
+    "src":"https://youtu.be/tgbNymZ7vqY"
+    },
+		{
+		"part":"5",
+		"src":"https://youtu.be/tgbNymZ7vqY"
+		},
+		{
+		"part":"6",
+		"src":"https://youtu.be/tgbNymZ7vqY"
+		},
+		{
+		"part":"7",
+		"src":"https://youtu.be/tgbNymZ7vqY"
+		},
+		{
+		"part":"8",
+		"src":"https://youtu.be/tgbNymZ7vqY"
+		}
+    ],
 	 "id": "20"
 	},
 	{
@@ -370,7 +1013,40 @@ export const movie = [
 	 "year": "2021",
 	 "episode": "11",
 	 "series":"yes",
-	 "link":"https://youtu.be/tgbNymZ7vqY",
+	 "link":[
+     {
+    "part":"1",
+    "src":"https://youtu.be/tgbNymZ7vqY"
+    },
+    {
+    "part":"2",
+    "src":"https://youtu.be/tgbNymZ7vqY"
+    },
+    {
+    "part":"3",
+    "src":"https://youtu.be/tgbNymZ7vqY"
+    },
+    {
+    "part":"4",
+    "src":"https://youtu.be/tgbNymZ7vqY"
+    },
+		{
+		"part":"5",
+		"src":"https://youtu.be/tgbNymZ7vqY"
+		},
+		{
+		"part":"6",
+		"src":"https://youtu.be/tgbNymZ7vqY"
+		},
+		{
+		"part":"7",
+		"src":"https://youtu.be/tgbNymZ7vqY"
+		},
+		{
+		"part":"8",
+		"src":"https://youtu.be/tgbNymZ7vqY"
+		}
+    ],
 	 "id": "21"
 	},
 	{
@@ -387,7 +1063,40 @@ export const movie = [
 	 "year": "2022",
 	 "episode": "11",
 	 "series":"yes",
-	 "link":"https://youtu.be/tgbNymZ7vqY",
+	 "link":[
+     {
+    "part":"1",
+    "src":"https://youtu.be/tgbNymZ7vqY"
+    },
+    {
+    "part":"2",
+    "src":"https://youtu.be/tgbNymZ7vqY"
+    },
+    {
+    "part":"3",
+    "src":"https://youtu.be/tgbNymZ7vqY"
+    },
+    {
+    "part":"4",
+    "src":"https://youtu.be/tgbNymZ7vqY"
+    },
+		{
+		"part":"5",
+		"src":"https://youtu.be/tgbNymZ7vqY"
+		},
+		{
+		"part":"6",
+		"src":"https://youtu.be/tgbNymZ7vqY"
+		},
+		{
+		"part":"7",
+		"src":"https://youtu.be/tgbNymZ7vqY"
+		},
+		{
+		"part":"8",
+		"src":"https://youtu.be/tgbNymZ7vqY"
+		}
+    ],
 	 "id": "22"
 	},
 	{
@@ -404,7 +1113,40 @@ export const movie = [
 	 "year": "2016",
 	 "episode": "11",
 	 "series":"yes",
-	 "link":"https://youtu.be/tgbNymZ7vqY",
+	 "link":[
+     {
+    "part":"1",
+    "src":"https://youtu.be/tgbNymZ7vqY"
+    },
+    {
+    "part":"2",
+    "src":"https://youtu.be/tgbNymZ7vqY"
+    },
+    {
+    "part":"3",
+    "src":"https://youtu.be/tgbNymZ7vqY"
+    },
+    {
+    "part":"4",
+    "src":"https://youtu.be/tgbNymZ7vqY"
+    },
+		{
+		"part":"5",
+		"src":"https://youtu.be/tgbNymZ7vqY"
+		},
+		{
+		"part":"6",
+		"src":"https://youtu.be/tgbNymZ7vqY"
+		},
+		{
+		"part":"7",
+		"src":"https://youtu.be/tgbNymZ7vqY"
+		},
+		{
+		"part":"8",
+		"src":"https://youtu.be/tgbNymZ7vqY"
+		}
+    ],
 	 "id": "23"
 	},
 	{
@@ -421,7 +1163,40 @@ export const movie = [
 	 "year": "2022",
 	 "episode": "11",
 	 "series":"yes",
-	 "link":"https://youtu.be/tgbNymZ7vqY",
+	 "link":[
+     {
+    "part":"1",
+    "src":"https://youtu.be/tgbNymZ7vqY"
+    },
+    {
+    "part":"2",
+    "src":"https://youtu.be/tgbNymZ7vqY"
+    },
+    {
+    "part":"3",
+    "src":"https://youtu.be/tgbNymZ7vqY"
+    },
+    {
+    "part":"4",
+    "src":"https://youtu.be/tgbNymZ7vqY"
+    },
+		{
+		"part":"5",
+		"src":"https://youtu.be/tgbNymZ7vqY"
+		},
+		{
+		"part":"6",
+		"src":"https://youtu.be/tgbNymZ7vqY"
+		},
+		{
+		"part":"7",
+		"src":"https://youtu.be/tgbNymZ7vqY"
+		},
+		{
+		"part":"8",
+		"src":"https://youtu.be/tgbNymZ7vqY"
+		}
+    ],
 	 "id": "24"
 	},
 	{
@@ -438,7 +1213,40 @@ export const movie = [
 	 "year": "2022",
 	 "episode": "11",
 	 "series":"yes",
-	 "link":"https://youtu.be/tgbNymZ7vqY",
+	 "link":[
+     {
+    "part":"1",
+    "src":"https://youtu.be/tgbNymZ7vqY"
+    },
+    {
+    "part":"2",
+    "src":"https://youtu.be/tgbNymZ7vqY"
+    },
+    {
+    "part":"3",
+    "src":"https://youtu.be/tgbNymZ7vqY"
+    },
+    {
+    "part":"4",
+    "src":"https://youtu.be/tgbNymZ7vqY"
+    },
+		{
+		"part":"5",
+		"src":"https://youtu.be/tgbNymZ7vqY"
+		},
+		{
+		"part":"6",
+		"src":"https://youtu.be/tgbNymZ7vqY"
+		},
+		{
+		"part":"7",
+		"src":"https://youtu.be/tgbNymZ7vqY"
+		},
+		{
+		"part":"8",
+		"src":"https://youtu.be/tgbNymZ7vqY"
+		}
+    ],
 	 "id": "25"
 	},
 	{
@@ -455,7 +1263,40 @@ export const movie = [
 	 "year": "2022",
 	 "episode": "11",
 	 "series":"yes",
-	 "link":"https://youtu.be/tgbNymZ7vqY",
+	 "link":[
+     {
+    "part":"1",
+    "src":"https://youtu.be/tgbNymZ7vqY"
+    },
+    {
+    "part":"2",
+    "src":"https://youtu.be/tgbNymZ7vqY"
+    },
+    {
+    "part":"3",
+    "src":"https://youtu.be/tgbNymZ7vqY"
+    },
+    {
+    "part":"4",
+    "src":"https://youtu.be/tgbNymZ7vqY"
+    },
+		{
+		"part":"5",
+		"src":"https://youtu.be/tgbNymZ7vqY"
+		},
+		{
+		"part":"6",
+		"src":"https://youtu.be/tgbNymZ7vqY"
+		},
+		{
+		"part":"7",
+		"src":"https://youtu.be/tgbNymZ7vqY"
+		},
+		{
+		"part":"8",
+		"src":"https://youtu.be/tgbNymZ7vqY"
+		}
+    ],
 	 "id": "26"
 	},
 	{
@@ -472,7 +1313,40 @@ export const movie = [
 	 "year": "2022",
 	 "episode": "11",
 	 "series":"yes",
-	 "link":"https://youtu.be/tgbNymZ7vqY",
+	 "link":[
+     {
+    "part":"1",
+    "src":"https://youtu.be/tgbNymZ7vqY"
+    },
+    {
+    "part":"2",
+    "src":"https://youtu.be/tgbNymZ7vqY"
+    },
+    {
+    "part":"3",
+    "src":"https://youtu.be/tgbNymZ7vqY"
+    },
+    {
+    "part":"4",
+    "src":"https://youtu.be/tgbNymZ7vqY"
+    },
+		{
+		"part":"5",
+		"src":"https://youtu.be/tgbNymZ7vqY"
+		},
+		{
+		"part":"6",
+		"src":"https://youtu.be/tgbNymZ7vqY"
+		},
+		{
+		"part":"7",
+		"src":"https://youtu.be/tgbNymZ7vqY"
+		},
+		{
+		"part":"8",
+		"src":"https://youtu.be/tgbNymZ7vqY"
+		}
+    ],
 	 "id": "27"
 	},
 	{
@@ -489,7 +1363,40 @@ export const movie = [
 	 "year": "2022",
 	 "episode": "11",
 	 "series":"yes",
-	 "link":"https://youtu.be/tgbNymZ7vqY",
+	 "link":[
+     {
+    "part":"1",
+    "src":"https://youtu.be/tgbNymZ7vqY"
+    },
+    {
+    "part":"2",
+    "src":"https://youtu.be/tgbNymZ7vqY"
+    },
+    {
+    "part":"3",
+    "src":"https://youtu.be/tgbNymZ7vqY"
+    },
+    {
+    "part":"4",
+    "src":"https://youtu.be/tgbNymZ7vqY"
+    },
+		{
+		"part":"5",
+		"src":"https://youtu.be/tgbNymZ7vqY"
+		},
+		{
+		"part":"6",
+		"src":"https://youtu.be/tgbNymZ7vqY"
+		},
+		{
+		"part":"7",
+		"src":"https://youtu.be/tgbNymZ7vqY"
+		},
+		{
+		"part":"8",
+		"src":"https://youtu.be/tgbNymZ7vqY"
+		}
+    ],
 	 "id": "28"
 	},
 	{
@@ -506,7 +1413,40 @@ export const movie = [
 	 "year": "2022",
 	 "episode": "11",
 	 "series":"yes",
-	 "link":"https://youtu.be/tgbNymZ7vqY",
+	 "link":[
+     {
+    "part":"1",
+    "src":"https://youtu.be/tgbNymZ7vqY"
+    },
+    {
+    "part":"2",
+    "src":"https://youtu.be/tgbNymZ7vqY"
+    },
+    {
+    "part":"3",
+    "src":"https://youtu.be/tgbNymZ7vqY"
+    },
+    {
+    "part":"4",
+    "src":"https://youtu.be/tgbNymZ7vqY"
+    },
+		{
+		"part":"5",
+		"src":"https://youtu.be/tgbNymZ7vqY"
+		},
+		{
+		"part":"6",
+		"src":"https://youtu.be/tgbNymZ7vqY"
+		},
+		{
+		"part":"7",
+		"src":"https://youtu.be/tgbNymZ7vqY"
+		},
+		{
+		"part":"8",
+		"src":"https://youtu.be/tgbNymZ7vqY"
+		}
+    ],
 	 "id": "29"
 	},
 	{
@@ -523,7 +1463,40 @@ export const movie = [
 	 "year": "2021",
 	 "episode": "11",
 	 "series":"yes",
-	 "link":"https://youtu.be/tgbNymZ7vqY",
+	 "link":[
+     {
+    "part":"1",
+    "src":"https://youtu.be/tgbNymZ7vqY"
+    },
+    {
+    "part":"2",
+    "src":"https://youtu.be/tgbNymZ7vqY"
+    },
+    {
+    "part":"3",
+    "src":"https://youtu.be/tgbNymZ7vqY"
+    },
+    {
+    "part":"4",
+    "src":"https://youtu.be/tgbNymZ7vqY"
+    },
+		{
+		"part":"5",
+		"src":"https://youtu.be/tgbNymZ7vqY"
+		},
+		{
+		"part":"6",
+		"src":"https://youtu.be/tgbNymZ7vqY"
+		},
+		{
+		"part":"7",
+		"src":"https://youtu.be/tgbNymZ7vqY"
+		},
+		{
+		"part":"8",
+		"src":"https://youtu.be/tgbNymZ7vqY"
+		}
+    ],
 	 "id": "30"
 	},
 	{
@@ -540,7 +1513,40 @@ export const movie = [
 	 "year": "2022",
 	 "episode": "11",
 	 "series":"yes",
-	 "link":"https://youtu.be/tgbNymZ7vqY",
+	 "link":[
+     {
+    "part":"1",
+    "src":"https://youtu.be/tgbNymZ7vqY"
+    },
+    {
+    "part":"2",
+    "src":"https://youtu.be/tgbNymZ7vqY"
+    },
+    {
+    "part":"3",
+    "src":"https://youtu.be/tgbNymZ7vqY"
+    },
+    {
+    "part":"4",
+    "src":"https://youtu.be/tgbNymZ7vqY"
+    },
+		{
+		"part":"5",
+		"src":"https://youtu.be/tgbNymZ7vqY"
+		},
+		{
+		"part":"6",
+		"src":"https://youtu.be/tgbNymZ7vqY"
+		},
+		{
+		"part":"7",
+		"src":"https://youtu.be/tgbNymZ7vqY"
+		},
+		{
+		"part":"8",
+		"src":"https://youtu.be/tgbNymZ7vqY"
+		}
+    ],
 	 "id": "31"
 	},
 	{
@@ -557,7 +1563,40 @@ export const movie = [
 	 "year": "2022",
 	 "episode": "11",
 	 "series":"yes",
-	 "link":"https://youtu.be/tgbNymZ7vqY",
+	 "link":[
+     {
+    "part":"1",
+    "src":"https://youtu.be/tgbNymZ7vqY"
+    },
+    {
+    "part":"2",
+    "src":"https://youtu.be/tgbNymZ7vqY"
+    },
+    {
+    "part":"3",
+    "src":"https://youtu.be/tgbNymZ7vqY"
+    },
+    {
+    "part":"4",
+    "src":"https://youtu.be/tgbNymZ7vqY"
+    },
+		{
+		"part":"5",
+		"src":"https://youtu.be/tgbNymZ7vqY"
+		},
+		{
+		"part":"6",
+		"src":"https://youtu.be/tgbNymZ7vqY"
+		},
+		{
+		"part":"7",
+		"src":"https://youtu.be/tgbNymZ7vqY"
+		},
+		{
+		"part":"8",
+		"src":"https://youtu.be/tgbNymZ7vqY"
+		}
+    ],
 	 "id": "32"
 	}
  ]
@@ -575,3 +1614,257 @@ export const movie = [
 //   "img": "$img",
 //   "id": "$id"
 //  }
+[
+	{
+	 "id": 1,
+	 "first_name": "Emiline",
+	 "last_name": "McClune",
+	 "email": "emcclune0@xrea.com",
+	 "permission": "admin"
+	},
+	{
+	 "id": 2,
+	 "first_name": "Felix",
+	 "last_name": "Ingleston",
+	 "email": "fingleston1@hibu.com",
+	 "permission": "admin"
+	},
+	{
+	 "id": 3,
+	 "first_name": "Travus",
+	 "last_name": "Bergstram",
+	 "email": "tbergstram2@pbs.org",
+	 "permission": "admin"
+	},
+	{
+	 "id": 4,
+	 "first_name": "Holly-anne",
+	 "last_name": "Knighton",
+	 "email": "hknighton3@booking.com",
+	 "permission": "admin"
+	},
+	{
+	 "id": 5,
+	 "first_name": "Sollie",
+	 "last_name": "Naulty",
+	 "email": "snaulty4@hud.gov",
+	 "permission": "user"
+	},
+	{
+	 "id": 6,
+	 "first_name": "Annie",
+	 "last_name": "Cockayme",
+	 "email": "acockayme5@tuttocitta.it",
+	 "permission": "user"
+	},
+	{
+	 "id": 7,
+	 "first_name": "Celinda",
+	 "last_name": "Sharvill",
+	 "email": "csharvill6@narod.ru",
+	 "permission": "user"
+	},
+	{
+	 "id": 8,
+	 "first_name": "Lamond",
+	 "last_name": "Ricket",
+	 "email": "lricket7@washington.edu",
+	 "permission": "user"
+	},
+	{
+	 "id": 9,
+	 "first_name": "Florida",
+	 "last_name": "Licciardiello",
+	 "email": "flicciardiello8@sina.com.cn",
+	 "permission": "admin"
+	},
+	{
+	 "id": 10,
+	 "first_name": "Gerianne",
+	 "last_name": "Jonas",
+	 "email": "gjonas9@typepad.com",
+	 "permission": "admin"
+	},
+	{
+	 "id": 11,
+	 "first_name": "Amy",
+	 "last_name": "Tarbath",
+	 "email": "atarbatha@t.co",
+	 "permission": "user"
+	},
+	{
+	 "id": 12,
+	 "first_name": "Jerrilyn",
+	 "last_name": "Devil",
+	 "email": "jdevilb@upenn.edu",
+	 "permission": "user"
+	},
+	{
+	 "id": 13,
+	 "first_name": "Derrik",
+	 "last_name": "Halvorsen",
+	 "email": "dhalvorsenc@loc.gov",
+	 "permission": "user"
+	},
+	{
+	 "id": 14,
+	 "first_name": "Kellia",
+	 "last_name": "Driutti",
+	 "email": "kdriuttid@skyrock.com",
+	 "permission": "user"
+	},
+	{
+	 "id": 15,
+	 "first_name": "Denys",
+	 "last_name": "Abrams",
+	 "email": "dabramse@godaddy.com",
+	 "permission": "user"
+	},
+	{
+	 "id": 16,
+	 "first_name": "Sophie",
+	 "last_name": "Wadmore",
+	 "email": "swadmoref@taobao.com",
+	 "permission": "user"
+	},
+	{
+	 "id": 17,
+	 "first_name": "Ivonne",
+	 "last_name": "Axby",
+	 "email": "iaxbyg@paginegialle.it",
+	 "permission": "user"
+	},
+	{
+	 "id": 18,
+	 "first_name": "Andee",
+	 "last_name": "Babcock",
+	 "email": "ababcockh@hubpages.com",
+	 "permission": "admin"
+	},
+	{
+	 "id": 19,
+	 "first_name": "Shawn",
+	 "last_name": "Baxstair",
+	 "email": "sbaxstairi@artisteer.com",
+	 "permission": "admin"
+	},
+	{
+	 "id": 20,
+	 "first_name": "Randolph",
+	 "last_name": "Chowne",
+	 "email": "rchownej@nymag.com",
+	 "permission": "user"
+	},
+	{
+	 "id": 21,
+	 "first_name": "Hayward",
+	 "last_name": "Emmet",
+	 "email": "hemmetk@ustream.tv",
+	 "permission": "admin"
+	},
+	{
+	 "id": 22,
+	 "first_name": "Paule",
+	 "last_name": "Kleinhausen",
+	 "email": "pkleinhausenl@bigcartel.com",
+	 "permission": "user"
+	},
+	{
+	 "id": 23,
+	 "first_name": "Berton",
+	 "last_name": "Wingeatt",
+	 "email": "bwingeattm@taobao.com",
+	 "permission": "admin"
+	},
+	{
+	 "id": 24,
+	 "first_name": "Ameline",
+	 "last_name": "Jeanon",
+	 "email": "ajeanonn@bandcamp.com",
+	 "permission": "admin"
+	},
+	{
+	 "id": 25,
+	 "first_name": "Shepperd",
+	 "last_name": "Oertzen",
+	 "email": "soertzeno@arstechnica.com",
+	 "permission": "user"
+	},
+	{
+	 "id": 26,
+	 "first_name": "Sean",
+	 "last_name": "Veltmann",
+	 "email": "sveltmannp@jigsy.com",
+	 "permission": "user"
+	},
+	{
+	 "id": 27,
+	 "first_name": "Julie",
+	 "last_name": "Pigot",
+	 "email": "jpigotq@archive.org",
+	 "permission": "user"
+	},
+	{
+	 "id": 28,
+	 "first_name": "Goldi",
+	 "last_name": "Tink",
+	 "email": "gtinkr@tripod.com",
+	 "permission": "user"
+	},
+	{
+	 "id": 29,
+	 "first_name": "Jeannie",
+	 "last_name": "Kennelly",
+	 "email": "jkennellys@hugedomains.com",
+	 "permission": "user"
+	},
+	{
+	 "id": 30,
+	 "first_name": "Josephine",
+	 "last_name": "Kennefick",
+	 "email": "jkennefickt@icq.com",
+	 "permission": "admin"
+	},
+	{
+	 "id": 31,
+	 "first_name": "Elli",
+	 "last_name": "Pettigrew",
+	 "email": "epettigrewu@nsw.gov.au",
+	 "permission": "admin"
+	},
+	{
+	 "id": 32,
+	 "first_name": "Nevins",
+	 "last_name": "McGlaughn",
+	 "email": "nmcglaughnv@webnode.com",
+	 "permission": "user"
+	},
+	{
+	 "id": 33,
+	 "first_name": "Roseann",
+	 "last_name": "Schwant",
+	 "email": "rschwantw@bandcamp.com",
+	 "permission": "admin"
+	},
+	{
+	 "id": 34,
+	 "first_name": "Hunt",
+	 "last_name": "McGaughay",
+	 "email": "hmcgaughayx@freewebs.com",
+	 "permission": "Polygen,der"
+	},
+	{
+	 "id": 35,
+	 "first_name": "Inger",
+	 "last_name": "Sussans",
+	 "email": "isussansy@webnode.com",
+	 "permission": "user"
+	},
+	{
+	 "id": 36,
+	 "first_name": "Hobie",
+	 "last_name": "Rodman",
+	 "email": "hrodmanz@oakley.com",
+	 "permission": "admin"
+	}
+ ]
