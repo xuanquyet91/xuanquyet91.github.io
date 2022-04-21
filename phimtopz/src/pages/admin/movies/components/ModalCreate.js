@@ -3,6 +3,8 @@ import Box from "@mui/material/Box";
 import TextField from "@mui/material/TextField";
 import Modal from "@mui/material/Modal";
 import Button from "@mui/material/Button";
+import { CKEditor } from "@ckeditor/ckeditor5-react";
+import ClassicEditor from "@ckeditor/ckeditor5-build-classic";
 
 const style = {
   position: "absolute",
@@ -124,21 +126,21 @@ const ModalCreate = (props) => {
             }
             variant="filled"
           />
-          {/* <div className="editor">
-            <CKEditor
-              editor={ClassicEditor}
-              id="header"
-              data="<p></p>"
-              onReady={(editor) => {
-                // You can store the "editor" and use when it is needed.
-                console.log("Editor is ready to use!", editor);
-              }}
-              onChange={(event, editor) => {
-                const data = editor.getData();
-                setText(data);
-              }}
-            />
-          </div> */}
+          {/* <div className="editor"> */}
+          <CKEditor
+            editor={ClassicEditor}
+            id="header"
+            data="<p></p>"
+            onReady={(editor) => {
+              // You can store the "editor" and use when it is needed.
+              // console.log("Editor is ready to use!", editor);
+            }}
+            onChange={(event, editor) => {
+              const data = editor.getData();
+              // setText(data);
+            }}
+          />
+          {/* </div> */}
           <Button
             variant="outlined"
             onClick={(e) => {

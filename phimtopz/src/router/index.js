@@ -7,10 +7,10 @@ import LoginLayout from "../layouts/login/index";
 import AdminLayout from "../layouts/admin/index";
 import Login from "../pages/login/Login";
 import Admin from "../pages/admin/Admin";
-import CategoryAdmin from "../pages/admin/categories/CategoryAdmin";
 import UsersAdmin from "../pages/admin/UsersAdmin";
 import TagsAdmin from "../pages/admin/TagsAdmin";
 import WatchMovie from "../pages/watchMovie/WatchMovie";
+import MovieAdmin from "../pages/admin/movies/MovieAdmin";
 
 export const routes = [
   {
@@ -39,6 +39,11 @@ export const routes = [
     Layout: MainLayout,
   },
   {
+    Element: WatchMovie,
+    path: "/watch-movie/:Episode/:part",
+    Layout: MainLayout,
+  },
+  {
     Element: Register,
     path: "/register",
     Layout: LoginLayout,
@@ -54,7 +59,7 @@ export const routes = [
     Layout: AdminLayout,
   },
   {
-    Element: CategoryAdmin,
+    Element: MovieAdmin,
     path: "/admin/category-admin",
     Layout: AdminLayout,
   },

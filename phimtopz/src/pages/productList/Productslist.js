@@ -1,21 +1,22 @@
 import React, { useEffect, useState } from "react";
 import productApi from "../../api/productApi";
-// import Search from './Search'
 import Topic from "../../components/Topic";
-import { Link, useParams } from "react-router-dom";
+import {  useParams } from "react-router-dom";
 import ItemProductList from "./ItemProductList";
 import { MdPlayArrow } from "react-icons/md";
-// import { IdContext } from "./ItemProductList";
+import { useNavigate } from "react-router-dom";
 
 const Productslist = () => {
-  // const idProduct = useContext(IdContext);
-  // console.log(idProduct);
+  // console.log(React);
+  // console.log(useEffect);
+  // console.log(Topic);
   const [productList, setProductList] = useState([]);
   const { typeMovie } = useParams();
   const listFilter = ["Sắp xếp", "Quốc Gia", "Năm", "Tag"];
   const listItem = ["ACTION", "HORROR", "FANTASY"];
   const [editType, setEditType] = useState(typeMovie.toUpperCase());
   const [editChange, setEditChange] = useState();
+  let navigate = useNavigate();
 
   useEffect(() => {
     const fetchProductList = async () => {
@@ -28,11 +29,15 @@ const Productslist = () => {
     };
     fetchProductList();
   }, []);
-  //
+
   const handlerOnchange = (ele) => {
+  //push value url (`/productslist/${idFilm}`)
+  console.log(navigate(`/productslist/${ele.toLowerCase()}`));
+  navigate(`/productslist/${ele.toLowerCase()}`);
     setEditChange(ele);
   };
   const handleClickFilter = () => {
+    navigate(`/productslist/${editChange.toLowerCase()}`);
     setEditType(editChange);
   };
   return (
@@ -83,10 +88,12 @@ const Productslist = () => {
           className="grid-layout"
           style={{ width: "1020px", margin: "auto", display: "flex" }}
         >
-          {/* <Link to={`/productdetail/${idProduct}`} className="link-item"> */}
-          <ItemProductList productList={productList} editType={editType} />
-          {/* </Link> */}
-          {/* {()=> handleClickFilter()} */}
+          {
+            <ItemProductList
+              productList={productList}
+              editType={editType}
+            />
+          }
           <Topic />
         </div>
       </div>

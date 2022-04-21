@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import { AiFillStar } from "react-icons/ai";
 import { BsFillBookmarkStarFill } from "react-icons/bs";
-import { Link, useParams } from "react-router-dom";
+import { Link, useNavigate, useParams } from "react-router-dom";
 
 const Product = ({ productList }) => {
+  let navigate = useNavigate();
   const { productId } = useParams();
   const productItem = productList.find((prod) => prod.id === productId);
   // console.log(productList, productItem, productId);
@@ -14,13 +15,14 @@ const Product = ({ productList }) => {
 
   const handlerRemoveLocal = () => {
     localStorage.setItem("currentPage", "1");
+    // navigate(`/watch-movie/${id}?part=1`);
   };
 
   return (
     <div className="product">
       <div className="product__content">
         <div className="product__content__left">
-          <img src={productItem?.img} alt="" />
+          { <img src={productItem?.img == '$img'? 'https://via.placeholder.com/300.png/09f/fff%20C/O%20https://placeholder.com/':productItem?.img} alt="" />}
           <div className="btn">
             <button>Thêm vào tủ</button>
             <Link to={`/watch-movie/${productItem?.id}`}>

@@ -13,6 +13,7 @@ export const movie = [
 	 "year": "2022",
 	 "episode": "10",
 	 "series":"yes",
+	 "tag":["anime","gintama"],
 	 "link":[
      {
     "part":"1",
@@ -63,6 +64,7 @@ export const movie = [
 	 "year": "2022",
 	 "episode": "11",
 	 "series":"yes",
+	 "tag":["anime","gintama"],
 	 "link":[
      {
     "part":"1",
@@ -113,6 +115,7 @@ export const movie = [
 	 "year": "2021",
 	 "episode": "11",
 	 "series":"yes",
+	 "tag":["anime","gintama"],
 	 "link":[
      {
     "part":"1",
@@ -163,6 +166,7 @@ export const movie = [
 	 "year": "2020",
 	 "episode": "11",
 	 "series":"yes",
+	 "tag":["anime","gintama"],
 	 "link":[
      {
     "part":"1",
@@ -213,6 +217,7 @@ export const movie = [
 	 "year": "2021",
 	 "episode": "11",
 	 "series":"yes",
+	 "tag":["anime","gintama"],
 	 "link":[
      {
     "part":"1",
@@ -263,6 +268,7 @@ export const movie = [
 	 "year": "2022",
 	 "episode": "11",
 	 "series":"yes",
+	 "tag":["anime","gintama"],
 	 "link":[
      {
     "part":"1",
@@ -313,6 +319,7 @@ export const movie = [
 	 "year": "2016",
 	 "episode": "11",
 	 "series":"yes",
+	 "tag":["anime","gintama"],
 	 "link":[
      {
     "part":"1",
@@ -363,6 +370,7 @@ export const movie = [
 	 "year": "2022",
 	 "episode": "11",
 	 "series":"yes",
+	 "tag":["anime","gintama"],
 	 "link":[
      {
     "part":"1",
@@ -413,6 +421,7 @@ export const movie = [
 	 "year": "2022",
 	 "episode": "11",
 	 "series":"yes",
+	 "tag":["anime","gintama"],
 	 "link":[
      {
     "part":"1",
@@ -463,6 +472,7 @@ export const movie = [
 	 "year": "2022",
 	 "episode": "11",
 	 "series":"yes",
+	 "tag":["anime","gintama"],
 	 "link":[
      {
     "part":"1",
@@ -513,6 +523,7 @@ export const movie = [
 	 "year": "2022",
 	 "episode": "11",
 	 "series":"yes",
+	 "tag":["anime","gintama"],
 	 "link":[
      {
     "part":"1",
@@ -563,6 +574,7 @@ export const movie = [
 	 "year": "2022",
 	 "episode": "11",
 	 "series":"yes",
+	 "tag":["anime","gintama"],
 	 "link":[
      {
     "part":"1",
@@ -613,6 +625,7 @@ export const movie = [
 	 "year": "2022",
 	 "episode": "11",
 	 "series":"yes",
+	 "tag":["anime","gintama"],
 	 "link":[
      {
     "part":"1",
@@ -663,6 +676,7 @@ export const movie = [
 	 "year": "2021",
 	 "episode": "11",
 	 "series":"yes",
+	 "tag":["anime","gintama"],
 	 "link":[
      {
     "part":"1",
@@ -713,6 +727,7 @@ export const movie = [
 	 "year": "2022",
 	 "episode": "11",
 	 "series":"yes",
+	 "tag":["anime","gintama"],
 	 "link":[
      {
     "part":"1",
@@ -763,6 +778,7 @@ export const movie = [
 	 "year": "2022",
 	 "episode": "11",
 	 "series":"yes",
+	 "tag":["anime","gintama"],
 	 "link":[
      {
     "part":"1",
@@ -813,6 +829,7 @@ export const movie = [
 	 "year": "2022",
 	 "episode": "11",
 	 "series":"yes",
+	 "tag":["anime","gintama"],
 	 "link":[
      {
     "part":"1",
@@ -863,6 +880,7 @@ export const movie = [
 	 "year": "2022",
 	 "episode": "11",
 	 "series":"yes",
+	 "tag":["anime","gintama"],
 	 "link":[
      {
     "part":"1",
@@ -913,6 +931,7 @@ export const movie = [
 	 "year": "2021",
 	 "episode": "11",
 	 "series":"yes",
+	 "tag":["anime","gintama"],
 	 "link":[
      {
     "part":"1",
@@ -963,6 +982,7 @@ export const movie = [
 	 "year": "2020",
 	 "episode": "11",
 	 "series":"yes",
+	 "tag":["anime","gintama"],
 	 "link":[
      {
     "part":"1",
@@ -1013,6 +1033,7 @@ export const movie = [
 	 "year": "2021",
 	 "episode": "11",
 	 "series":"yes",
+	 "tag":["anime","gintama"],
 	 "link":[
      {
     "part":"1",
@@ -1063,6 +1084,7 @@ export const movie = [
 	 "year": "2022",
 	 "episode": "11",
 	 "series":"yes",
+	 "tag":["anime","gintama"],
 	 "link":[
      {
     "part":"1",
@@ -1113,6 +1135,7 @@ export const movie = [
 	 "year": "2016",
 	 "episode": "11",
 	 "series":"yes",
+	 "tag":["anime","gintama"],
 	 "link":[
      {
     "part":"1",
@@ -1163,6 +1186,7 @@ export const movie = [
 	 "year": "2022",
 	 "episode": "11",
 	 "series":"yes",
+	 "tag":["anime","gintama"],
 	 "link":[
      {
     "part":"1",
@@ -1213,6 +1237,7 @@ export const movie = [
 	 "year": "2022",
 	 "episode": "11",
 	 "series":"yes",
+	 "tag":["anime","gintama"],
 	 "link":[
      {
     "part":"1",
@@ -1263,6 +1288,7 @@ export const movie = [
 	 "year": "2022",
 	 "episode": "11",
 	 "series":"yes",
+	 "tag":["anime","gintama"],
 	 "link":[
      {
     "part":"1",
@@ -1313,6 +1339,7 @@ export const movie = [
 	 "year": "2022",
 	 "episode": "11",
 	 "series":"yes",
+	 "tag":["anime","gintama"],
 	 "link":[
      {
     "part":"1",
@@ -1363,6 +1390,7 @@ export const movie = [
 	 "year": "2022",
 	 "episode": "11",
 	 "series":"yes",
+	 "tag":["anime","gintama"],
 	 "link":[
      {
     "part":"1",
@@ -1413,6 +1441,7 @@ export const movie = [
 	 "year": "2022",
 	 "episode": "11",
 	 "series":"yes",
+	 "tag":["anime","gintama"],
 	 "link":[
      {
     "part":"1",
@@ -1463,6 +1492,7 @@ export const movie = [
 	 "year": "2021",
 	 "episode": "11",
 	 "series":"yes",
+	 "tag":["anime","gintama"],
 	 "link":[
      {
     "part":"1",
@@ -1513,6 +1543,7 @@ export const movie = [
 	 "year": "2022",
 	 "episode": "11",
 	 "series":"yes",
+	 "tag":["anime","gintama"],
 	 "link":[
      {
     "part":"1",
@@ -1563,6 +1594,7 @@ export const movie = [
 	 "year": "2022",
 	 "episode": "11",
 	 "series":"yes",
+	 "tag":["anime","gintama"],
 	 "link":[
      {
     "part":"1",

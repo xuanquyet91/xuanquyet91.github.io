@@ -82,6 +82,7 @@ const Header = () => {
             )}
             renderInput={(params) => (
               <TextField
+              onChange={(e)=>{console.log(e.target.value)}}
               {...params} />
             )}
           />

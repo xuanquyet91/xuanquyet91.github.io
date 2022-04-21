@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from "react";
 import productApi from "../../api/productApi";
-import Item from "../../components/Item";
+// import Item from "../../components/Item";
 import { CgDanger } from "react-icons/cg";
 import { BsServer } from "react-icons/bs";
 import { AiFillStar } from "react-icons/ai";
-import { Link, useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
+import ItemWatchMovie from "./ItemWatchMovie";
 // import { getWatchMovie } from './WatchMovie.sevice';
 
 const WatchMovie = () => {
@@ -14,6 +15,8 @@ const WatchMovie = () => {
   const { Episode } = useParams();
   // const productEpisode = productList.find(prod => prod.id === Episode)
   const partButton = productList[Episode - 1]?.link;
+  let navigate = useNavigate();
+
   // console.log(source);
   useEffect(() => {
     const fetchProductList = async () => {
@@ -39,6 +42,7 @@ const WatchMovie = () => {
   const handlerSelect = (isSelect, src) => {
     localStorage.setItem("currentPage", isSelect);
     setIsSelect(isSelect);
+    navigate(`/watch-movie/${Episode}?part=${isSelect}`);
     // setSource(src);
   };
 
@@ -104,23 +108,21 @@ const WatchMovie = () => {
             </div>
             <div className="watchMovie__play__bottom__severAuto">
               {partButton?.map((item, index) => (
-                <Link key={index} to={`/watch-movie/${Episode}/${item.part}`}>
-                  <button
-                    className={
-                      item.part == localStorage.getItem("currentPage")
-                        ? "selected"
-                        : "non-selected"
-                    }
-                    onClick={() => handlerSelect(item.part, item.src)}
-                  >
-                    {item.part}
-                  </button>
-                </Link>
+                <button
+                  className={
+                    item.part === localStorage.getItem("currentPage")
+                      ? "selected"
+                      : "non-selected"
+                  }
+                  onClick={() => handlerSelect(item.part, item.src)}
+                >
+                  {item.part}
+                </button>
               ))}
             </div>
           </div>
         </div>
-        <Item productList={productList.slice(0, 12)} />
+        <ItemWatchMovie productList={productList.slice(0, 15)} />
       </div>
     </div>
   );

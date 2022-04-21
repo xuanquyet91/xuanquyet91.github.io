@@ -1,30 +1,29 @@
-
-.admin{
+.admin {
   width: $width-PC;
   margin: auto;
-  font-family: 'Poppins', sans-serif;
-  &__title{
+  font-family: "Poppins", sans-serif;
+  &__title {
     background-color: #e9ecef;
     padding: 18px 10px;
     text-transform: uppercase;
     display: flex;
     justify-content: space-between;
-    img{
-        width: 110px;
+    img {
+      width: 110px;
     }
-    svg{
+    svg {
       font-size: 20px;
       color: crimson;
       cursor: pointer;
     }
-    h2{
-        font-size: 16px;
-        text-align: center;
-        font-weight: bold;
+    h2 {
+      font-size: 16px;
+      text-align: center;
+      font-weight: bold;
     }
-    }
-  &__dashboard{
-    font-family: 'Poppins', sans-serif !important;
+  }
+  &__dashboard {
+    font-family: "Poppins", sans-serif !important;
     display: grid;
     grid-template-columns: 1fr 5fr;
     column-gap: 15px;
@@ -32,100 +31,108 @@
     margin-top: 5px;
     border-top: 1px solid #e9ecef;
     padding-top: 15px;
-      &__table{
-        height: 450px;
-        border-top: 1px solid #e9ecef;
-        &__handleData{
-            &__search{
-                display: flex;
-                flex-direction: row;
-                &--submit{
-                    button{
-                        padding: 10px 15px;
-                        border-radius: 3px;
-                        font-size: 13px;
-                        background-color: #1976d2;
-                        color: $color-primary-white;
-                        outline: none;
-                        border: none;
-                        cursor: pointer;
-                        margin-top: 15px;
-                        display: flex;
-                        margin-left: 85%;
-                    }
-                }
-                &__input{
-                    padding: 20px 10px;
-                    // margin-bottom: 10px;
-                    // border-bottom: 1px solid #e9ecef;
-                    input{
-                        width: 200px;
-                        padding: 8px 10px;
-                        border-radius: 2px;
-                        border: 1px solid #e9ecef;
-                        font-size: 13px;
-                        outline: none;
-                    }
-                    button{
-                        padding: 8px 10px;
-                        border-radius: 2px;
-                        font-size: 13px;
-                        background-color: #17a2b8;
-                        color: $color-primary-white;
-                        outline: none;
-                        border: none;
-                        cursor: pointer;
-                    }
-                  }
-            
-              }
+    &__table {
+      height: 450px;
+      border-top: 1px solid #e9ecef;
+      &__handleData {
+        &__search {
+          display: flex;
+          flex-direction: row;
+          &--submit {
+            button {
+              padding: 10px 15px;
+              border-radius: 3px;
+              font-size: 13px;
+              background-color: #1976d2;
+              color: $color-primary-white;
+              outline: none;
+              border: none;
+              cursor: pointer;
+              margin-top: 15px;
+              display: flex;
+              margin-left: 85%;
+            }
           }
+          &__input {
+            padding: 20px 10px;
+            // margin-bottom: 10px;
+            // border-bottom: 1px solid #e9ecef;
+            input {
+              width: 200px;
+              padding: 8px 10px;
+              border-radius: 2px;
+              border: 1px solid #e9ecef;
+              font-size: 13px;
+              outline: none;
+            }
+            button {
+              padding: 8px 10px;
+              border-radius: 2px;
+              font-size: 13px;
+              background-color: #17a2b8;
+              color: $color-primary-white;
+              outline: none;
+              border: none;
+              cursor: pointer;
+            }
+          }
+        }
       }
+    }
   }
 }
-.css-1wnsr1i{
-    border: none !important;
-    border-radius: 10px !important;
+.css-1wnsr1i {
+  border: none !important;
+  border-radius: 10px !important;
 }
 button.MuiButton-root {
-    margin-left: 20px;
-    height: 31px;
-    margin-top: 21px;
+  margin-left: 20px;
+  height: 31px;
+  margin-top: 21px;
 }
-label[data-shrink=false]+.MuiInputBase-formControl .css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input{
-    height: 10px;
+label[data-shrink="false"]
+  + .MuiInputBase-formControl
+  .css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input {
+  height: 10px;
 }
 .MuiFormControl-root.MuiTextField-root.css-1u3bzj6-MuiFormControl-root-MuiTextField-root {
-    margin: 10px 20px;
+  margin: 10px 20px;
 }
 .css-sh22l5-MuiButtonBase-root-MuiAccordionSummary-root.Mui-expanded {
-    height: 40px !important;
+  height: 40px !important;
 }
-.css-apqrd9-MuiTableBody-root{
-    button{
-        outline: none;
-        border: none;
-        border-radius: 2px;
-        padding: 5px 15px;
-        margin-right: 5px;
-        font-weight: 600;
-        cursor: pointer;
-        .css-1ygcj2i-MuiTableCell-root {
-            color: #000 ;
-            font-weight: 600;
-        }
+.css-apqrd9-MuiTableBody-root {
+  button {
+    outline: none;
+    border: none;
+    border-radius: 2px;
+    padding: 5px 15px;
+    margin-right: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    .css-1ygcj2i-MuiTableCell-root {
+      color: #000;
+      font-weight: 600;
     }
+  }
 }
 .css-ahj2mt-MuiTypography-root,
 .css-1ygcj2i-MuiTableCell-root,
 .css-1mup1te-MuiTableCell-root {
-    font-family: 'Poppins', sans-serif !important;
+  font-family: "Poppins", sans-serif !important;
 }
-.css-15v22id-MuiAccordionDetails-root { 
-    background-color: #fff2b861;
+.css-15v22id-MuiAccordionDetails-root {
+  background-color: #fff2b861;
 }
-p.css-ahj2mt-MuiTypography-root{
-    padding-bottom: 5px;
-    border-bottom: 1px solid #e7d4d4b3;
-    cursor: pointer;
+p.css-ahj2mt-MuiTypography-root {
+  padding-bottom: 5px;
+  border-bottom: 1px solid #e7d4d4b3;
+  cursor: pointer;
+}
+.css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input {
+  height: 0.4375em !important;
+  font-size: 15px !important;
+}
+.css-14s5rfu-MuiFormLabel-root-MuiInputLabel-root {
+  font-size: 15px !important;
 }
