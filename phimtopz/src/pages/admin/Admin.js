@@ -1,6 +1,4 @@
 import React from "react";
-import MovieAdmin from "./movies/MovieAdmin";
-
 const Admin = () => {
   return (
     <>

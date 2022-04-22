@@ -9,9 +9,9 @@ import { TextField } from "@mui/material";
 import Box from "@mui/material/Box";
 
 const listStyle3 = {
-  color: '#fff',
+  color: "#fff",
   // backgroundColor: '#000'
-}
+};
 const Header = () => {
   let navigate = useNavigate();
 
@@ -61,10 +61,14 @@ const Header = () => {
           <div className="header__center__search">
           </div>
         </div> */}
-        <div style={{width: '400px'}}>
+        <div style={{ width: "400px" }}>
           <Autocomplete
             sx={{ width: "400" }}
-            style={{backgroundColor:'#202020', border:'1px solid white', borderRadius:'5px'}}
+            style={{
+              backgroundColor: "#202020",
+              border: "1px solid white",
+              borderRadius: "5px",
+            }}
             options={productList}
             onChange={(event, value) => handler(value.id)}
             autoHighlight
@@ -82,8 +86,11 @@ const Header = () => {
             )}
             renderInput={(params) => (
               <TextField
-              onChange={(e)=>{console.log(e.target.value)}}
-              {...params} />
+                onChange={(e) => {
+                  console.log(e.target.value);
+                }}
+                {...params}
+              />
             )}
           />
         </div>
@@ -108,7 +115,7 @@ const Header = () => {
                   <button onClick={() => logout()} className="log-out">
                     Log Out
                   </button>
-                  <Link to="/Admin" className="link-item">
+                  <Link to="admin/movie-admin" className="link-item">
                     <button
                       className="admin-setting"
                       style={{ marginLeft: "10px" }}

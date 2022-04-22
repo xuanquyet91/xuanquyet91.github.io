@@ -22,15 +22,8 @@ const style = {
 };
 
 const ModalCreate = (props) => {
-  const {
-    open,
-    handleClose,
-    formCreate,
-    setFormCreate,
-    onSubmit,
-    tagList,
-    categoryList,
-  } = props;
+  const { open, handleClose, formCreate, setFormCreate, onSubmit, tagList } =
+    props;
 
   return (
     <Modal

@@ -17,12 +17,12 @@ import {
   Paper,
   TablePagination,
 } from "@mui/material";
-import SendIcon from "@mui/icons-material/Send";
+import EditIcon from "@mui/icons-material/Edit";
 import { CKEditor } from "@ckeditor/ckeditor5-react";
 import ClassicEditor from "@ckeditor/ckeditor5-build-classic";
 
 import productApi from "../../../api/productApi";
-import ModalCreate from "./components/ModalCreate";
+import ModalCreate from "../tags/components/ModalCreate";
 import tagApi from "../../../api/tagApi";
 import categoryApi from "../../../api/categoryApi";
 
@@ -56,7 +56,7 @@ let dataDetail = {
   id: "",
 };
 const MovieAdmin = () => {
-  console.log(TextField);
+  // console.log(TextField);
   const [page, setPage] = useState(1);
   const [query, setQuery] = useState("");
   const [rowsPerPage, setRowsPerPage] = useState(10);
@@ -159,7 +159,7 @@ const MovieAdmin = () => {
       const params = { page, limit: rowsPerPage };
       const response = await categoryApi.getAll(params);
       setCategoryList(response);
-      // console.log("success to fetch product list: ", response);
+      console.log("success to fetch product list: ", response);
     } catch (error) {
       console.log("Failed to fetch product list: ", error);
     }
@@ -305,6 +305,8 @@ const MovieAdmin = () => {
 
           {/* //add */}
           <ModalCreate
+            categoryList={categoryList}
+            tagList={tagList}
             open={open}
             handleClose={handleClose}
             setFormCreate={setFormCreate}
@@ -562,7 +564,7 @@ const MovieAdmin = () => {
                   <Button
                     variant="contained"
                     type="submit"
-                    endIcon={<SendIcon />}
+                    endIcon={<EditIcon />}
                   >
                     Save
                   </Button>

@@ -35,13 +35,22 @@ const NavAdmin = () => {
           </Link>
         </AccordionSummary>
       </Accordion>
+      {/* CATEGORIES */}
+      <Accordion>
+        <AccordionSummary aria-controls="panel1a-content" id="panel1a-header">
+          <Link to="/admin/categories-admin" className="link-item">
+            <Typography>Categories</Typography>
+          </Link>
+        </AccordionSummary>
+      </Accordion>
+      {/* MOVIE */}
       <Accordion>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel1a-content"
           id="panel1a-header"
         >
-          <Link to="/admin/category-admin" className="link-item">
+          <Link to="/admin/movie-admin" className="link-item">
             <Typography>Movies</Typography>
           </Link>
         </AccordionSummary>
