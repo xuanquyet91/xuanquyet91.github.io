@@ -1,9 +1,12 @@
 import { useState } from "react";
 import FormInput from "./FormInput";
-import {CgClose} from "react-icons/cg"
-import {Link} from "react-router-dom"
+import { CgClose } from "react-icons/cg";
+import { Link, useNavigate } from "react-router-dom";
+import userApi from "../../api/userApi";
+import axios from "axios";
 
 const Register = () => {
+  const [userList, setUserList] = useState([]);
   const [values, setValues] = useState({
     username: "",
     email: "",
@@ -62,21 +65,43 @@ const Register = () => {
       required: true,
     },
   ];
+  let navigate = useNavigate();
+
+  const fetchUserList = async () => {
+    try {
+      // const params = { page, limit };
+      const response = await userApi.getAll();
+      setUserList(response);
+      // console.log("success to fetch product list: ", response);
+    } catch (error) {
+      console.log("Failed to fetch product list: ", error);
+    }
+  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    axios
+      .post(`https://624bab2444505084bc54160d.mockapi.io/user`, values)
+      .then(async (response) => {
+        console.log("add succcess!", response);
+        navigate(`/login`);
+        await fetchUserList();
+      });
+
+    console.log(values);
   };
 
   const onChange = (e) => {
-    console.log([e.target.name]);
+    // console.log({ [e.target.name]: e.target.value });
+    // console.log(values);
     setValues({ ...values, [e.target.name]: e.target.value });
   };
 
   return (
     <div className="register">
       <form onSubmit={handleSubmit}>
-        <Link to='/' className='link-item'>
-          <CgClose/>
+        <Link to="/" className="link-item">
+          <CgClose />
         </Link>
         <h1>Register</h1>
         {inputs.map((input) => (
@@ -87,11 +112,10 @@ const Register = () => {
             onChange={onChange}
           />
         ))}
-        <button>Submit</button>
+        <button type="submit">Submit</button>
       </form>
     </div>
   );
 };
 
 export default Register;
-

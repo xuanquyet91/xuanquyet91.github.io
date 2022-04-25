@@ -182,7 +182,7 @@ const CategoriesAdmin = () => {
             onClick={handleOpenModalCreate}
             variant="contained"
           >
-            ADD MOVIE
+            ADD CATEGORY
           </Button>
         </div>
       </div>

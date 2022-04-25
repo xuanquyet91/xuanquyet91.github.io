@@ -33,7 +33,7 @@ const style = {
 };
 
 let dataDetail = {
-  account: "",
+  username: "",
   password: "",
   permission: "",
   id: "",
@@ -47,7 +47,7 @@ const UsersAdmin = () => {
 
   const [userList, setUserList] = useState([]);
   const [typeForm, settypeForm] = useState(null);
-  const keys = ["account"];
+  const keys = ["username"];
 
   const [text, setText] = useState("");
   const [deleteID, setDeleteID] = useState("");
@@ -57,9 +57,11 @@ const UsersAdmin = () => {
   const handleOpenModalCreate = (data) => {
     settypeForm(2);
     setFormCreate({
-      account: "",
+      username: "",
       password: "",
       permission: "",
+      email: "",
+      birthday: "",
       id: "",
     });
     dataDetail = { ...data };
@@ -177,7 +179,7 @@ const UsersAdmin = () => {
             onClick={handleOpenModalCreate}
             variant="contained"
           >
-            ADD MOVIE
+            ADD USER
           </Button>
         </div>
       </div>
@@ -187,9 +189,11 @@ const UsersAdmin = () => {
             <TableHead>
               <TableRow style={{ backgroundColor: "#dae0e5" }}>
                 <TableCell align="left">#</TableCell>
-                <TableCell align="left">ACCOUNT</TableCell>
+                <TableCell align="left">USERNAME</TableCell>
                 <TableCell align="left">PASSWORD</TableCell>
                 <TableCell align="left">PERMISSION</TableCell>
+                <TableCell align="left">EMAIL</TableCell>
+                <TableCell align="left">BIRTHDAY</TableCell>
                 <TableCell align="center">ACTION</TableCell>
               </TableRow>
             </TableHead>
@@ -204,13 +208,19 @@ const UsersAdmin = () => {
                     {row.id}
                   </TableCell>
                   <TableCell align="left" sx={{ maxWidth: 150 }}>
-                    {row.account}
+                    {row.username}
                   </TableCell>
                   <TableCell align="left" sx={{ maxWidth: 150 }}>
                     {row.password}
                   </TableCell>
                   <TableCell align="left" sx={{ maxWidth: 150 }}>
                     {row.permission}
+                  </TableCell>
+                  <TableCell align="left" sx={{ maxWidth: 150 }}>
+                    {row.email}
+                  </TableCell>
+                  <TableCell align="left" sx={{ maxWidth: 150 }}>
+                    {row.birthday}
                   </TableCell>
                   <TableCell align="center">
                     <button
@@ -251,7 +261,7 @@ const UsersAdmin = () => {
           >
             <Box sx={style} style={{ width: 350 }}>
               <Typography id="modal-modal-title" variant="h6" component="h2">
-                Do you want to delete your account?
+                Do you want to delete your username?
               </Typography>
               <Button
                 style={{ marginLeft: "25%" }}
@@ -280,12 +290,12 @@ const UsersAdmin = () => {
                 <Box gridColumn="span 12">
                   <TextField
                     id="outlined-basic"
-                    defaultValue={formUpdate.account}
-                    name="account"
+                    defaultValue={formUpdate.username}
+                    name="username"
                     onChange={(e) => {
-                      setForm({ ...formUpdate, account: e.target.value });
+                      setForm({ ...formUpdate, username: e.target.value });
                     }}
-                    label="Account"
+                    label="username"
                     variant="outlined"
                   />
                 </Box>
@@ -313,7 +323,30 @@ const UsersAdmin = () => {
                     variant="outlined"
                   />
                 </Box>
-
+                <Box gridColumn="span 6">
+                  <TextField
+                    id="outlined-basic"
+                    defaultValue={formUpdate.email}
+                    name="email"
+                    onChange={(e) => {
+                      setForm({ ...formUpdate, email: e.target.value });
+                    }}
+                    label="Email"
+                    variant="outlined"
+                  />
+                </Box>
+                <Box gridColumn="span 6">
+                  <TextField
+                    id="outlined-basic"
+                    defaultValue={formUpdate.birthday}
+                    name="birthday"
+                    onChange={(e) => {
+                      setForm({ ...formUpdate, birthday: e.target.value });
+                    }}
+                    label="Birthday"
+                    variant="outlined"
+                  />
+                </Box>
                 <Box
                   gridColumn="span 12"
                   className="optionSubmit"

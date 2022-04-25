@@ -179,7 +179,7 @@ const TagsAdmin = () => {
             onClick={handleOpenModalCreate}
             variant="contained"
           >
-            ADD MOVIE
+            ADD TAG
           </Button>
         </div>
       </div>
